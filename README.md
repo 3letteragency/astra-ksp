@@ -1,19 +1,19 @@
 
 # Table of Contents
 
-1.  [Astra](#orga01eca7)
-    1.  [Tasks <code>[0/4]</code>](#org2cfb801)
-    2.  [KSP Mod Requirements](#org73d270e)
-    3.  [On Hold](#orgc8e5e30)
+1.  [Astra](#org799177e)
+    1.  [Tasks <code>[0/4]</code>](#org075be62)
+    2.  [KSP Mod Requirements](#orgd6f0fdf)
+    3.  [On Hold](#org1daf6e9)
 
 
 
-<a id="orga01eca7"></a>
+<a id="org799177e"></a>
 
 # Astra
 
 
-<a id="org2cfb801"></a>
+<a id="org075be62"></a>
 
 ## Tasks <code>[0/4]</code>
 
@@ -29,7 +29,7 @@
                     -   <https://answers.unity.com/questions/138715/read-command-line-arguments.html>
                     -   <https://answers.unity.com/questions/366195/parameters-at-startup.html>
 -   [-] Stage 1 - Prep <code>[0/3]</code>
-    -   [ ] Base VM Image <code>[/]</code>
+    -   [ ] Base VM Image(Packer) <code>[/]</code>
         -   [ ] KSP Installed
         -   [ ] Mods installed
         -   [ ] Loads arbitrary sfs game save at a scene where kRPC is started and may take over
@@ -41,10 +41,9 @@
     -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 -   [ ] Stage 2 - Data <code>[0/1]</code>
     -   [ ] Set up all kRPC Data Stream
-        -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org73d270e"></a>
+<a id="orgd6f0fdf"></a>
 
 ## KSP Mod Requirements
 
@@ -53,7 +52,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orgc8e5e30"></a>
+<a id="org1daf6e9"></a>
 
 ## On Hold
 
