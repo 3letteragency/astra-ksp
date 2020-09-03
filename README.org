@@ -1,0 +1,20 @@
+#+TITLE: Astra Docs and Planning
+#+DESCRIPTION: Astra is a mission control framework for KSP to facilitate fully automated missions and operations. Also hoping to learn a bit about control theory in the process.
+#+AUTHOR: Tyler Weldon
+#+EMAIL: tylerweldon94@gmail.com
+
+* Astra
+** Tasks [0/3]
+- [-] R&D
+  - [ ] Can we set up a headless/graphically limited KSP?
+  - [ ] If not headless, can we automate the launching of KSP "instances", and entering/setting up the game as desired(specific missions, locations, etc.) via the [[https://krpc.github.io/krpc/cpp/api/ui/ui.html][kRPC UI API]]?
+- [-] Stage 1 - Prep [0/3]
+  - [ ] Set up game
+  - [ ] Create a restore point from clean configuration
+  - [ ] Choose kRPC client language
+- [-] Stage 2 - Data [0/1]
+  - [ ] Set up all kRPC Data Streams
+** KSP Mod Requirements
+- [[https://krpc.github.io/krpc/][kRPC]] - kRPC allows you to control Kerbal Space Program from scripts running outside of the game.
+- [[https://github.com/KSP-RO/RealismOverhaul/wiki][Realism Overhaul]] - Its not certain this will place nice with [[https://krpc.github.io/krpc/][kRPC]], however realistic(ish?) control theory is really the purpose of this project so we will proceed with it until/unless we encounter problems.
+- [[https://ksp-kos.github.io/KOS/][kOS]] - kOS might be useful for some simpler tasks where we don't want the full power of kRPC. Might use, might not. We'll see.
