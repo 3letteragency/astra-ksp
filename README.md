@@ -1,19 +1,19 @@
 
 # Table of Contents
 
-1.  [Astra](#orgb7bd5d0)
-    1.  [Tasks <code>[0/4]</code>](#org307f04b)
-    2.  [KSP Mod Requirements](#org0ec7f9c)
-    3.  [On Hold](#org9335560)
+1.  [Astra](#orga6915b2)
+    1.  [Tasks <code>[0/4]</code>](#org8a3c4b6)
+    2.  [KSP Mod Requirements](#org94fbc73)
+    3.  [On Hold](#org8eef5bd)
 
 
 
-<a id="orgb7bd5d0"></a>
+<a id="orga6915b2"></a>
 
 # Astra
 
 
-<a id="org307f04b"></a>
+<a id="org8a3c4b6"></a>
 
 ## Tasks <code>[0/4]</code>
 
@@ -41,9 +41,10 @@
     -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 -   [ ] Stage 2 - Data <code>[0/1]</code>
     -   [ ] Set up all kRPC Data Stream
+        -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org0ec7f9c"></a>
+<a id="org94fbc73"></a>
 
 ## KSP Mod Requirements
 
@@ -52,7 +53,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org9335560"></a>
+<a id="org8eef5bd"></a>
 
 ## On Hold
 
