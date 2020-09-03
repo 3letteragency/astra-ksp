@@ -1,19 +1,19 @@
 
 # Table of Contents
 
-1.  [Astra](#org799177e)
-    1.  [Tasks <code>[0/4]</code>](#org075be62)
-    2.  [KSP Mod Requirements](#orgd6f0fdf)
-    3.  [On Hold](#org1daf6e9)
+1.  [Astra](#orgb7bd5d0)
+    1.  [Tasks <code>[0/4]</code>](#org307f04b)
+    2.  [KSP Mod Requirements](#org0ec7f9c)
+    3.  [On Hold](#org9335560)
 
 
 
-<a id="org799177e"></a>
+<a id="orgb7bd5d0"></a>
 
 # Astra
 
 
-<a id="org075be62"></a>
+<a id="org307f04b"></a>
 
 ## Tasks <code>[0/4]</code>
 
@@ -32,7 +32,7 @@
     -   [ ] Base VM Image(Packer) <code>[/]</code>
         -   [ ] KSP Installed
         -   [ ] Mods installed
-        -   [ ] Loads arbitrary sfs game save at a scene where kRPC is started and may take over
+        -   [ ] Loads arbitrary sfs game
     -   [ ] Base sfs loaded by base image instances
         -   [ ] kRPC AutoStarts and listening on 0.0.0.0
     -   [X] Choose kRPC client language - C++
@@ -43,7 +43,7 @@
     -   [ ] Set up all kRPC Data Stream
 
 
-<a id="orgd6f0fdf"></a>
+<a id="org0ec7f9c"></a>
 
 ## KSP Mod Requirements
 
@@ -52,7 +52,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org1daf6e9"></a>
+<a id="org9335560"></a>
 
 ## On Hold
 

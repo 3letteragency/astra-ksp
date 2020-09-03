@@ -20,7 +20,7 @@
   - [ ] Base VM Image(Packer) [/]
     - [ ] KSP Installed
     - [ ] Mods installed
-    - [ ] Loads arbitrary sfs game save at a scene where kRPC is started and may take over
+    - [ ] Loads arbitrary sfs game
   - [ ] Base sfs loaded by base image instances
     - [ ] kRPC AutoStarts and listening on 0.0.0.0
   - [X] Choose kRPC client language - C++
