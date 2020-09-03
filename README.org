@@ -5,7 +5,7 @@
 
 * Astra | Status: Planning
 ** Tasks [0/4]
-- [-] R&D
+- [-] R&D [/]
   - [ ] Can we set up a headless/graphically limited KSP?
     * Running KSP in a VM seems promising.
       * Set all graphics settings to minimum
