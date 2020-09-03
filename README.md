@@ -1,26 +1,23 @@
 
 # Table of Contents
 
-1.  [Astra](#orgc54ec39)
-    1.  [Tasks <code>[0/4]</code>](#org196c4e2)
-    2.  [KSP Mod Requirements](#orgcd2c05b)
+1.  [Astra](#orgc5462ba)
+    1.  [Tasks <code>[0/4]</code>](#org0aaf7f9)
+    2.  [KSP Mod Requirements](#org6f2be8b)
+    3.  [On Hold](#org8fa1570)
 
 
 
-<a id="orgc54ec39"></a>
+<a id="orgc5462ba"></a>
 
 # Astra
 
 
-<a id="org196c4e2"></a>
+<a id="org0aaf7f9"></a>
 
 ## Tasks <code>[0/4]</code>
 
--   [-] R&D
-    -   [X] Do I even want to use KSP? This [Orbiter Space flight simulator](http://orbit.medphys.ucl.ac.uk/index.html) seems interesting:
-        -   Results: perhaps I&rsquo;ll work up to this at some point&#x2026;
-        -   [Docs](https://www.orbiterwiki.org/wiki/)
-        -   [SDK Docs](https://www.orbiterwiki.org/wiki/SDK_documentation)
+-   [ ] R&D
     -   [ ] Can we set up a headless/graphically limited KSP?
         -   Running KSP in a VM seems promising.
             -   Set all graphics settings to minimum
@@ -36,11 +33,21 @@
     -   [ ] Set up all kRPC Data Streams
 
 
-<a id="orgcd2c05b"></a>
+<a id="org6f2be8b"></a>
 
 ## KSP Mod Requirements
 
 -   [kRPC](https://krpc.github.io/krpc/) - kRPC allows you to control Kerbal Space Program from scripts running outside of the game.
 -   [Realism Overhaul](https://github.com/KSP-RO/RealismOverhaul/wiki) - Its not certain this will place nice with [kRPC](https://krpc.github.io/krpc/), however realistic(ish?) control theory is really the purpose of this project so we will proceed with it until/unless we encounter problems.
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
+
+
+<a id="org8fa1570"></a>
+
+## On Hold
+
+-   [X] Do I even want to use KSP? This [Orbiter Space flight simulator](http://orbit.medphys.ucl.ac.uk/index.html) seems interesting:
+    -   Results: perhaps I&rsquo;ll work up to this at some point&#x2026;
+    -   [Docs](https://www.orbiterwiki.org/wiki/)
+    -   [SDK Docs](https://www.orbiterwiki.org/wiki/SDK_documentation)
 

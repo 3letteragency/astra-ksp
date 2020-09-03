@@ -5,11 +5,7 @@
 
 * Astra
 ** Tasks [0/4]
-- [-] R&D
-  - [X] Do I even want to use KSP? This [[http://orbit.medphys.ucl.ac.uk/index.html][Orbiter Space flight simulator]] seems interesting:
-    * Results: perhaps I'll work up to this at some point...
-    * [[https://www.orbiterwiki.org/wiki/][Docs]]
-    * [[https://www.orbiterwiki.org/wiki/SDK_documentation][SDK Docs]]
+- [ ] R&D
   - [ ] Can we set up a headless/graphically limited KSP?
     * Running KSP in a VM seems promising.
       * Set all graphics settings to minimum
@@ -27,3 +23,8 @@
 - [[https://krpc.github.io/krpc/][kRPC]] - kRPC allows you to control Kerbal Space Program from scripts running outside of the game.
 - [[https://github.com/KSP-RO/RealismOverhaul/wiki][Realism Overhaul]] - Its not certain this will place nice with [[https://krpc.github.io/krpc/][kRPC]], however realistic(ish?) control theory is really the purpose of this project so we will proceed with it until/unless we encounter problems.
 - [[https://ksp-kos.github.io/KOS/][kOS]] - kOS might be useful for some simpler tasks where we don't want the full power of kRPC. Might use, might not. We'll see.
+** On Hold
+  - [X] Do I even want to use KSP? This [[http://orbit.medphys.ucl.ac.uk/index.html][Orbiter Space flight simulator]] seems interesting:
+    * Results: perhaps I'll work up to this at some point...
+    * [[https://www.orbiterwiki.org/wiki/][Docs]]
+    * [[https://www.orbiterwiki.org/wiki/SDK_documentation][SDK Docs]]
