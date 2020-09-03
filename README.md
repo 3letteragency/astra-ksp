@@ -1,19 +1,19 @@
 
 # Table of Contents
 
-1.  [Astra](#orgc5462ba)
-    1.  [Tasks <code>[0/4]</code>](#org0aaf7f9)
-    2.  [KSP Mod Requirements](#org6f2be8b)
-    3.  [On Hold](#org8fa1570)
+1.  [Astra](#org7564428)
+    1.  [Tasks <code>[0/4]</code>](#orgabebde6)
+    2.  [KSP Mod Requirements](#org39a163f)
+    3.  [On Hold](#orgf9cfa2f)
 
 
 
-<a id="orgc5462ba"></a>
+<a id="org7564428"></a>
 
 # Astra
 
 
-<a id="org0aaf7f9"></a>
+<a id="orgabebde6"></a>
 
 ## Tasks <code>[0/4]</code>
 
@@ -22,6 +22,12 @@
         -   Running KSP in a VM seems promising.
             -   Set all graphics settings to minimum
     -   [ ] If not headless, can we automate the launching of KSP &ldquo;instances&rdquo;, and entering/setting up the game as desired(specific missions, locations, etc.) via the [kRPC UI API](https://krpc.github.io/krpc/cpp/api/ui/ui.html)?
+        -   Might be able to use the Unity [Batch Mode](https://docs.unity3d.com/Manual/CLIBatchmodeCoroutines.html) and [nographics](https://docs.unity3d.com/Manual/CommandLineArguments.html) options to facilitate headless.
+        -   Will need some means of automatically launching specified game saves.
+            -   [AutoLoadGame](https://github.com/allista/AutoLoadGame) might do the trick.
+                -   Might modify to use Unity CLI args instead of config file:
+                    -   <https://answers.unity.com/questions/138715/read-command-line-arguments.html>
+                    -   <https://answers.unity.com/questions/366195/parameters-at-startup.html>
 -   [ ] Stage 1 - Prep <code>[0/3]</code>
     -   [ ] Set up game
     -   [ ] Create a restore point from clean configuration
@@ -30,10 +36,10 @@
     -   [ ] [GMAT](https://opensource.gsfc.nasa.gov/projects/GMAT/index.php) - Planning
     -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 -   [ ] Stage 2 - Data <code>[0/1]</code>
-    -   [ ] Set up all kRPC Data Streams
+    -   [ ] Set up all kRPC Data Stream Sexual assault now paralyzed waist down&#x2026;&#x2026;.. sounds like KARMA 😂 s
 
 
-<a id="org6f2be8b"></a>
+<a id="org39a163f"></a>
 
 ## KSP Mod Requirements
 
@@ -42,7 +48,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org8fa1570"></a>
+<a id="orgf9cfa2f"></a>
 
 ## On Hold
 

@@ -10,6 +10,12 @@
     * Running KSP in a VM seems promising.
       * Set all graphics settings to minimum
   - [ ] If not headless, can we automate the launching of KSP "instances", and entering/setting up the game as desired(specific missions, locations, etc.) via the [[https://krpc.github.io/krpc/cpp/api/ui/ui.html][kRPC UI API]]?
+    * Might be able to use the Unity [[https://docs.unity3d.com/Manual/CLIBatchmodeCoroutines.html][Batch Mode]] and [[https://docs.unity3d.com/Manual/CommandLineArguments.html][nographics]] options to facilitate headless.
+    * Will need some means of automatically launching specified game saves.
+      * [[https://github.com/allista/AutoLoadGame][AutoLoadGame]] might do the trick.
+        * Might modify to use Unity CLI args instead of config file:
+          + https://answers.unity.com/questions/138715/read-command-line-arguments.html
+          + https://answers.unity.com/questions/366195/parameters-at-startup.html
 - [ ] Stage 1 - Prep [0/3]
   - [ ] Set up game
   - [ ] Create a restore point from clean configuration
@@ -18,7 +24,7 @@
   - [ ] [[https://opensource.gsfc.nasa.gov/projects/GMAT/index.php][GMAT]] - Planning
   - [ ] [[https://github.com/nasa/openmct][OpenMCT]] - Ops HUD
 - [ ] Stage 2 - Data [0/1]
-  - [ ] Set up all kRPC Data Streams
+  - [ ] Set up all kRPC Data Stream Sexual assault now paralyzed waist down........ sounds like KARMA 😂 s
 ** KSP Mod Requirements
 - [[https://krpc.github.io/krpc/][kRPC]] - kRPC allows you to control Kerbal Space Program from scripts running outside of the game.
 - [[https://github.com/KSP-RO/RealismOverhaul/wiki][Realism Overhaul]] - Its not certain this will place nice with [[https://krpc.github.io/krpc/][kRPC]], however realistic(ish?) control theory is really the purpose of this project so we will proceed with it until/unless we encounter problems.
