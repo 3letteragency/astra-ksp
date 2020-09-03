@@ -1,22 +1,25 @@
 
 # Table of Contents
 
-1.  [Astra](#org322f2f8)
-    1.  [Tasks <code>[0/3]</code>](#org839a8d1)
-    2.  [KSP Mod Requirements](#org7030e0c)
+1.  [Astra](#org36d04d3)
+    1.  [Tasks <code>[0/3]</code>](#org7a99633)
+    2.  [KSP Mod Requirements](#org3477099)
 
 
 
-<a id="org322f2f8"></a>
+<a id="org36d04d3"></a>
 
 # Astra
 
 
-<a id="org839a8d1"></a>
+<a id="org7a99633"></a>
 
 ## Tasks <code>[0/3]</code>
 
 -   [-] R&D
+    -   [ ] Do I even want to use KSP? This [Orbiter Space flight simulator](http://orbit.medphys.ucl.ac.uk/index.html) seems interesting:
+        -   [Docs](https://www.orbiterwiki.org/wiki/)
+        -   [SDK Docs](https://www.orbiterwiki.org/wiki/SDK_documentation)
     -   [ ] Can we set up a headless/graphically limited KSP?
     -   [ ] If not headless, can we automate the launching of KSP &ldquo;instances&rdquo;, and entering/setting up the game as desired(specific missions, locations, etc.) via the [kRPC UI API](https://krpc.github.io/krpc/cpp/api/ui/ui.html)?
 -   [-] Stage 1 - Prep <code>[0/3]</code>
@@ -27,7 +30,7 @@
     -   [ ] Set up all kRPC Data Streams
 
 
-<a id="org7030e0c"></a>
+<a id="org3477099"></a>
 
 ## KSP Mod Requirements
 
