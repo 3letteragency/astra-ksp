@@ -1,19 +1,19 @@
 
 # Table of Contents
 
-1.  [Astra](#org840b7d2)
-    1.  [Tasks <code>[0/4]</code>](#org601f479)
-    2.  [KSP Mod Requirements](#orge1a015d)
-    3.  [On Hold](#org72d45a1)
+1.  [Astra](#orga01eca7)
+    1.  [Tasks <code>[0/4]</code>](#org2cfb801)
+    2.  [KSP Mod Requirements](#org73d270e)
+    3.  [On Hold](#orgc8e5e30)
 
 
 
-<a id="org840b7d2"></a>
+<a id="orga01eca7"></a>
 
 # Astra
 
 
-<a id="org601f479"></a>
+<a id="org2cfb801"></a>
 
 ## Tasks <code>[0/4]</code>
 
@@ -28,22 +28,23 @@
                 -   Might modify to use Unity CLI args instead of config file:
                     -   <https://answers.unity.com/questions/138715/read-command-line-arguments.html>
                     -   <https://answers.unity.com/questions/366195/parameters-at-startup.html>
--   [ ] Stage 1 - Prep <code>[0/3]</code>
+-   [-] Stage 1 - Prep <code>[0/3]</code>
     -   [ ] Base VM Image <code>[/]</code>
         -   [ ] KSP Installed
         -   [ ] Mods installed
-        -   [ ] Loads arbitrary sfs game save at a scene where kRPC may take over
-        -   [ ] kRPC AutoStarts, listening on 0.0.0.0
-    -   [ ] Create a restore point from clean configuration
+        -   [ ] Loads arbitrary sfs game save at a scene where kRPC is started and may take over
+    -   [ ] Base sfs loaded by base image instances
+        -   [ ] kRPC AutoStarts and listening on 0.0.0.0
     -   [X] Choose kRPC client language - C++
 -   [ ] RL Software integrations <code>[0/2]</code>
     -   [ ] [GMAT](https://opensource.gsfc.nasa.gov/projects/GMAT/index.php) - Planning
     -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 -   [ ] Stage 2 - Data <code>[0/1]</code>
-    -   [ ] Set up all kRPC Data Stream Sexual assault now paralyzed waist down&#x2026;&#x2026;.. sounds like KARMA 😂 s
+    -   [ ] Set up all kRPC Data Stream
+        -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="orge1a015d"></a>
+<a id="org73d270e"></a>
 
 ## KSP Mod Requirements
 
@@ -52,7 +53,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org72d45a1"></a>
+<a id="orgc8e5e30"></a>
 
 ## On Hold
 

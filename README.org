@@ -16,19 +16,20 @@
         * Might modify to use Unity CLI args instead of config file:
           + https://answers.unity.com/questions/138715/read-command-line-arguments.html
           + https://answers.unity.com/questions/366195/parameters-at-startup.html
-- [ ] Stage 1 - Prep [0/3]
+- [-] Stage 1 - Prep [0/3]
   - [ ] Base VM Image [/]
     - [ ] KSP Installed
     - [ ] Mods installed
-    - [ ] Loads arbitrary sfs game save at a scene where kRPC may take over
-    - [ ] kRPC AutoStarts, listening on 0.0.0.0
-  - [ ] Create a restore point from clean configuration
+    - [ ] Loads arbitrary sfs game save at a scene where kRPC is started and may take over
+  - [ ] Base sfs loaded by base image instances
+    - [ ] kRPC AutoStarts and listening on 0.0.0.0
   - [X] Choose kRPC client language - C++
 - [ ] RL Software integrations [0/2]
   - [ ] [[https://opensource.gsfc.nasa.gov/projects/GMAT/index.php][GMAT]] - Planning
   - [ ] [[https://github.com/nasa/openmct][OpenMCT]] - Ops HUD
 - [ ] Stage 2 - Data [0/1]
-  - [ ] Set up all kRPC Data Stream Sexual assault now paralyzed waist down........ sounds like KARMA 😂 s
+  - [ ] Set up all kRPC Data Stream
+    * Pipe into GMAT and OpenMCT ???
 ** KSP Mod Requirements
 - [[https://krpc.github.io/krpc/][kRPC]] - kRPC allows you to control Kerbal Space Program from scripts running outside of the game.
 - [[https://github.com/KSP-RO/RealismOverhaul/wiki][Realism Overhaul]] - Its not certain this will place nice with [[https://krpc.github.io/krpc/][kRPC]], however realistic(ish?) control theory is really the purpose of this project so we will proceed with it until/unless we encounter problems.
