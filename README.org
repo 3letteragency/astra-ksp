@@ -23,7 +23,7 @@
     - [ ] Loads arbitrary sfs game save at a scene where kRPC may take over
     - [ ] kRPC AutoStarts, listening on 0.0.0.0
   - [ ] Create a restore point from clean configuration
-  - [ ] Choose kRPC client language
+  - [X] Choose kRPC client language - C++
 - [ ] RL Software integrations [0/2]
   - [ ] [[https://opensource.gsfc.nasa.gov/projects/GMAT/index.php][GMAT]] - Planning
   - [ ] [[https://github.com/nasa/openmct][OpenMCT]] - Ops HUD

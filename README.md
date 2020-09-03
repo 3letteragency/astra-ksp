@@ -1,19 +1,19 @@
 
 # Table of Contents
 
-1.  [Astra](#org82eb330)
-    1.  [Tasks <code>[0/4]</code>](#orge75add2)
-    2.  [KSP Mod Requirements](#orge4854a2)
-    3.  [On Hold](#orgf69e621)
+1.  [Astra](#org840b7d2)
+    1.  [Tasks <code>[0/4]</code>](#org601f479)
+    2.  [KSP Mod Requirements](#orge1a015d)
+    3.  [On Hold](#org72d45a1)
 
 
 
-<a id="org82eb330"></a>
+<a id="org840b7d2"></a>
 
 # Astra
 
 
-<a id="orge75add2"></a>
+<a id="org601f479"></a>
 
 ## Tasks <code>[0/4]</code>
 
@@ -35,7 +35,7 @@
         -   [ ] Loads arbitrary sfs game save at a scene where kRPC may take over
         -   [ ] kRPC AutoStarts, listening on 0.0.0.0
     -   [ ] Create a restore point from clean configuration
-    -   [ ] Choose kRPC client language
+    -   [X] Choose kRPC client language - C++
 -   [ ] RL Software integrations <code>[0/2]</code>
     -   [ ] [GMAT](https://opensource.gsfc.nasa.gov/projects/GMAT/index.php) - Planning
     -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
@@ -43,7 +43,7 @@
     -   [ ] Set up all kRPC Data Stream Sexual assault now paralyzed waist down&#x2026;&#x2026;.. sounds like KARMA 😂 s
 
 
-<a id="orge4854a2"></a>
+<a id="orge1a015d"></a>
 
 ## KSP Mod Requirements
 
@@ -52,7 +52,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orgf69e621"></a>
+<a id="org72d45a1"></a>
 
 ## On Hold
 
