@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [Astra | Status: Planning](#orga8bf1d9)
-    1.  [R&D <code>[0/2]</code>](#orga0d0d70)
-    2.  [Stage 1 - Prep <code>[1/3]</code>](#orge2864ac)
-    3.  [Stage 2 - Data <code>[0/1]</code>](#org28bda1d)
-    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org2df8a54)
-    5.  [KSP Mod Requirements](#orgafe140d)
-    6.  [On Hold](#orgc73343b)
+1.  [Astra | Status: Planning](#org3fbc925)
+    1.  [R&D <code>[0/2]</code>](#org268d5ea)
+    2.  [Stage 1 - Prep <code>[1/3]</code>](#org7dd3ae5)
+    3.  [Stage 2 - Data <code>[0/1]</code>](#org1a4fa16)
+    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orgbdfe6c2)
+    5.  [KSP Mod Requirements](#org6f16879)
+    6.  [On Hold](#orge29df3c)
 
 
 
-<a id="orga8bf1d9"></a>
+<a id="org3fbc925"></a>
 
 # Astra | Status: Planning
 
 
-<a id="orga0d0d70"></a>
+<a id="org268d5ea"></a>
 
 ## STRT R&D <code>[0/2]</code>
 
@@ -32,11 +32,12 @@
                 -   <https://answers.unity.com/questions/366195/parameters-at-startup.html>
 
 
-<a id="orge2864ac"></a>
+<a id="org7dd3ae5"></a>
 
 ## STRT Stage 1 - Prep <code>[1/3]</code>
 
--   [-] Base VM Image(Packer) <code>[0/3]</code>
+-   [-] Base VM Image(Packer) <code>[0/4]</code>
+    -   [ ] CLI Steam management, steamcmd?
     -   [ ] KSP Installed
     -   [ ] Mods installed
     -   [ ] Loads arbitrary sfs game
@@ -45,7 +46,7 @@
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org28bda1d"></a>
+<a id="org1a4fa16"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -53,7 +54,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org2df8a54"></a>
+<a id="orgbdfe6c2"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -61,7 +62,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="orgafe140d"></a>
+<a id="org6f16879"></a>
 
 ## KSP Mod Requirements
 
@@ -70,7 +71,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orgc73343b"></a>
+<a id="orge29df3c"></a>
 
 ## On Hold
 
