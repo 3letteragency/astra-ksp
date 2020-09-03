@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1.  [Astra | Status: Planning](#org687b292)
-    1.  [Tasks <code>[0/4]</code>](#orgad81227)
-    2.  [KSP Mod Requirements](#org03b49a2)
-    3.  [On Hold](#orgc48e86a)
+1.  [Astra | Status: Planning](#orgab862ad)
+    1.  [Tasks <code>[0/4]</code>](#orgd6af563)
+    2.  [KSP Mod Requirements](#org270f347)
+    3.  [On Hold](#org1d98423)
 
 
 
-<a id="org687b292"></a>
+<a id="orgab862ad"></a>
 
 # Astra | Status: Planning
 
 
-<a id="orgad81227"></a>
+<a id="orgd6af563"></a>
 
 ## Tasks <code>[0/4]</code>
 
--   [-] R&D <code>[/]</code>
+-   [-] R&D <code>[0/2]</code>
     -   [ ] Can we set up a headless/graphically limited KSP?
         -   Running KSP in a VM seems promising.
             -   Set all graphics settings to minimum
@@ -28,8 +28,8 @@
                 -   Might modify to use Unity CLI args instead of config file:
                     -   <https://answers.unity.com/questions/138715/read-command-line-arguments.html>
                     -   <https://answers.unity.com/questions/366195/parameters-at-startup.html>
--   [-] Stage 1 - Prep <code>[0/3]</code>
-    -   [ ] Base VM Image(Packer) <code>[/]</code>
+-   [-] Stage 1 - Prep <code>[1/3]</code>
+    -   [ ] Base VM Image(Packer) <code>[0/3]</code>
         -   [ ] KSP Installed
         -   [ ] Mods installed
         -   [ ] Loads arbitrary sfs game
@@ -44,7 +44,7 @@
         -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org03b49a2"></a>
+<a id="org270f347"></a>
 
 ## KSP Mod Requirements
 
@@ -53,7 +53,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orgc48e86a"></a>
+<a id="org1d98423"></a>
 
 ## On Hold
 
