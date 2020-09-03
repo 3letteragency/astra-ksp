@@ -1,19 +1,19 @@
 
 # Table of Contents
 
-1.  [Astra](#org7564428)
-    1.  [Tasks <code>[0/4]</code>](#orgabebde6)
-    2.  [KSP Mod Requirements](#org39a163f)
-    3.  [On Hold](#orgf9cfa2f)
+1.  [Astra](#org82eb330)
+    1.  [Tasks <code>[0/4]</code>](#orge75add2)
+    2.  [KSP Mod Requirements](#orge4854a2)
+    3.  [On Hold](#orgf69e621)
 
 
 
-<a id="org7564428"></a>
+<a id="org82eb330"></a>
 
 # Astra
 
 
-<a id="orgabebde6"></a>
+<a id="orge75add2"></a>
 
 ## Tasks <code>[0/4]</code>
 
@@ -29,7 +29,11 @@
                     -   <https://answers.unity.com/questions/138715/read-command-line-arguments.html>
                     -   <https://answers.unity.com/questions/366195/parameters-at-startup.html>
 -   [ ] Stage 1 - Prep <code>[0/3]</code>
-    -   [ ] Set up game
+    -   [ ] Base VM Image <code>[/]</code>
+        -   [ ] KSP Installed
+        -   [ ] Mods installed
+        -   [ ] Loads arbitrary sfs game save at a scene where kRPC may take over
+        -   [ ] kRPC AutoStarts, listening on 0.0.0.0
     -   [ ] Create a restore point from clean configuration
     -   [ ] Choose kRPC client language
 -   [ ] RL Software integrations <code>[0/2]</code>
@@ -39,7 +43,7 @@
     -   [ ] Set up all kRPC Data Stream Sexual assault now paralyzed waist down&#x2026;&#x2026;.. sounds like KARMA 😂 s
 
 
-<a id="org39a163f"></a>
+<a id="orge4854a2"></a>
 
 ## KSP Mod Requirements
 
@@ -48,7 +52,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orgf9cfa2f"></a>
+<a id="orgf69e621"></a>
 
 ## On Hold
 

@@ -17,7 +17,11 @@
           + https://answers.unity.com/questions/138715/read-command-line-arguments.html
           + https://answers.unity.com/questions/366195/parameters-at-startup.html
 - [ ] Stage 1 - Prep [0/3]
-  - [ ] Set up game
+  - [ ] Base VM Image [/]
+    - [ ] KSP Installed
+    - [ ] Mods installed
+    - [ ] Loads arbitrary sfs game save at a scene where kRPC may take over
+    - [ ] kRPC AutoStarts, listening on 0.0.0.0
   - [ ] Create a restore point from clean configuration
   - [ ] Choose kRPC client language
 - [ ] RL Software integrations [0/2]
