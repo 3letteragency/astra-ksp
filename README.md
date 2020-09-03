@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1.  [Astra | Status: Planning](#orge3bb1d2)
-    1.  [Tasks <code>[0/4]</code>](#org8d24e72)
-    2.  [KSP Mod Requirements](#org8ebe04e)
-    3.  [On Hold](#org1243f40)
+1.  [Astra | Status: Planning](#org66f8b84)
+    1.  [Tasks <code>[0/4]</code>](#org58277c3)
+    2.  [KSP Mod Requirements](#orgf93a44c)
+    3.  [On Hold](#orgd21a045)
 
 
 
-<a id="orge3bb1d2"></a>
+<a id="org66f8b84"></a>
 
 # Astra | Status: Planning
 
 
-<a id="org8d24e72"></a>
+<a id="org58277c3"></a>
 
 ## Tasks <code>[0/4]</code>
 
--   [ ] R&D
+-   [-] R&D
     -   [ ] Can we set up a headless/graphically limited KSP?
         -   Running KSP in a VM seems promising.
             -   Set all graphics settings to minimum
@@ -44,7 +44,7 @@
         -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org8ebe04e"></a>
+<a id="orgf93a44c"></a>
 
 ## KSP Mod Requirements
 
@@ -53,7 +53,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org1243f40"></a>
+<a id="orgd21a045"></a>
 
 ## On Hold
 
