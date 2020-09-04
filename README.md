@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [Astra | Status: Planning](#org3fbc925)
-    1.  [R&D <code>[0/2]</code>](#org268d5ea)
-    2.  [Stage 1 - Prep <code>[1/3]</code>](#org7dd3ae5)
-    3.  [Stage 2 - Data <code>[0/1]</code>](#org1a4fa16)
-    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orgbdfe6c2)
-    5.  [KSP Mod Requirements](#org6f16879)
-    6.  [On Hold](#orge29df3c)
+1.  [Astra | Status: Planning](#org211957c)
+    1.  [R&D <code>[0/2]</code>](#org74fbfb9)
+    2.  [Stage 1 - Prep <code>[1/3]</code>](#org0349465)
+    3.  [Stage 2 - Data <code>[0/1]</code>](#org43d87dc)
+    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org098cd98)
+    5.  [KSP Mod Requirements](#orgfd1d4af)
+    6.  [On Hold](#org5e3f699)
 
 
 
-<a id="org3fbc925"></a>
+<a id="org211957c"></a>
 
 # Astra | Status: Planning
 
 
-<a id="org268d5ea"></a>
+<a id="org74fbfb9"></a>
 
 ## STRT R&D <code>[0/2]</code>
 
@@ -32,12 +32,18 @@
                 -   <https://answers.unity.com/questions/366195/parameters-at-startup.html>
 
 
-<a id="org7dd3ae5"></a>
+<a id="org0349465"></a>
 
 ## STRT Stage 1 - Prep <code>[1/3]</code>
 
--   [-] Base VM Image(Packer) <code>[0/4]</code>
-    -   [ ] CLI Steam management, steamcmd?
+-   [-] Base VM Image(Packer) <code>[1/4]</code>
+    -   [X] CLI Steam management - steamcmd works
+        -   Make sure deb frontend noninteractive works
+        -   Non-interactive steamcmd
+        -   Missing some 32bit libs by default
+        -   2fa?
+        -   Otherwise, seems to work just fine then directly launch with the binary installed in ~/.steam/&#x2026;
+        -   As an alternative should we run into unfixable issues w/ steam, direct download from Squad and hosting that in a private s3 should be fine.
     -   [ ] KSP Installed
     -   [ ] Mods installed
     -   [ ] Loads arbitrary sfs game
@@ -46,7 +52,7 @@
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org1a4fa16"></a>
+<a id="org43d87dc"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -54,7 +60,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="orgbdfe6c2"></a>
+<a id="org098cd98"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -62,7 +68,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org6f16879"></a>
+<a id="orgfd1d4af"></a>
 
 ## KSP Mod Requirements
 
@@ -71,7 +77,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orge29df3c"></a>
+<a id="org5e3f699"></a>
 
 ## On Hold
 
