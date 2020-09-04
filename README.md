@@ -1,22 +1,24 @@
 
 # Table of Contents
 
-1.  [Astra | Status: Planning](#orgd047b73)
-    1.  [R&D <code>[0/2]</code>](#org034ca6b)
-    2.  [Stage 1 - Prep <code>[1/4]</code>](#orgcd4ffbe)
-    3.  [Stage 2 - Data <code>[0/1]</code>](#orgb22fdf1)
-    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org694fa3d)
-    5.  [KSP Mod Requirements](#org30808f0)
-    6.  [On Hold](#org6f71028)
+1.  [Astra | Status: Planning](#orge42e1c9)
+    1.  [R&D <code>[0/2]</code>](#org1085a67)
+    2.  [Stage 1 - Prep <code>[1/4]</code>](#org9993578)
+    3.  [Stage 2 - Data <code>[0/1]</code>](#org3be5aa8)
+    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org117382f)
+    5.  [Stage 4 - Operations <code>[0/2]</code>](#org31d102e)
+    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orgb201759)
+    7.  [KSP Mod Requirements](#org98e81e2)
+    8.  [On Hold](#org13ae04f)
 
 
 
-<a id="orgd047b73"></a>
+<a id="orge42e1c9"></a>
 
 # Astra | Status: Planning
 
 
-<a id="org034ca6b"></a>
+<a id="org1085a67"></a>
 
 ## STRT R&D <code>[0/2]</code>
 
@@ -32,7 +34,7 @@
                 -   <https://answers.unity.com/questions/366195/parameters-at-startup.html>
 
 
-<a id="orgcd4ffbe"></a>
+<a id="org9993578"></a>
 
 ## STRT Stage 1 - Prep <code>[1/4]</code>
 
@@ -55,7 +57,7 @@
 -   [X] Choose kRPC client language - C++
 
 
-<a id="orgb22fdf1"></a>
+<a id="org3be5aa8"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -63,7 +65,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org694fa3d"></a>
+<a id="org117382f"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -71,7 +73,20 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org30808f0"></a>
+<a id="org31d102e"></a>
+
+## TODO Stage 4 - Operations <code>[0/2]</code>
+
+-   [-] Starlink(s) <code>[0/0]</code>
+-   [-] Long running, real time ops <code>[0/0]</code>
+
+
+<a id="orgb201759"></a>
+
+## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
+
+
+<a id="org98e81e2"></a>
 
 ## KSP Mod Requirements
 
@@ -80,7 +95,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org6f71028"></a>
+<a id="org13ae04f"></a>
 
 ## On Hold
 
