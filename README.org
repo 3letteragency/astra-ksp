@@ -19,6 +19,7 @@
 - [ ] Automate S3 hosting of tar'd game download
     * No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.
     * Will be nice to automate, but is not strictly necessary and would only need to be done on game updates.
+    * If ever necessary can provide "depot" and manifest ID's to steamcmd to DL specific KSP releases.
 - [-] Base VM Image(Packer) [1/4]
   - [X] CLI Steam management - steamcmd works
     * +Make sure deb frontend noninteractive works+

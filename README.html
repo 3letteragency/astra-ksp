@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-09-04 Fri 10:36 -->
+<!-- 2020-09-04 Fri 10:57 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Astra Docs and Planning</title>
@@ -227,28 +227,28 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb77618b">1. Astra | Status: Planning</a>
+<li><a href="#orgd0a678f">1. Astra | Status: Planning</a>
 <ul>
-<li><a href="#org3d6bef8">1.1. <span class="todo STRT">STRT</span> R&amp;D <code>[0/2]</code></a></li>
-<li><a href="#org4284d28">1.2. <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[1/4]</code></a></li>
-<li><a href="#orgb37724b">1.3. <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></a></li>
-<li><a href="#orgf5fc6db">1.4. <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></a></li>
-<li><a href="#orgd700216">1.5. <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></a></li>
-<li><a href="#org6eeb83b">1.6. <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></a></li>
-<li><a href="#orgeee6c77">1.7. KSP Mod Requirements</a></li>
-<li><a href="#orge77972c">1.8. On Hold</a></li>
+<li><a href="#org971641b">1.1. <span class="todo STRT">STRT</span> R&amp;D <code>[0/2]</code></a></li>
+<li><a href="#orgff40bd3">1.2. <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[1/4]</code></a></li>
+<li><a href="#org288fc2a">1.3. <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></a></li>
+<li><a href="#orgc8dda75">1.4. <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></a></li>
+<li><a href="#org6f3754b">1.5. <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></a></li>
+<li><a href="#org24c9ab1">1.6. <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></a></li>
+<li><a href="#org08b0603">1.7. KSP Mod Requirements</a></li>
+<li><a href="#orgcc3ba90">1.8. On Hold</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgb77618b" class="outline-2">
-<h2 id="orgb77618b"><span class="section-number-2">1</span> Astra | Status: Planning</h2>
+<div id="outline-container-orgd0a678f" class="outline-2">
+<h2 id="orgd0a678f"><span class="section-number-2">1</span> Astra | Status: Planning</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org3d6bef8" class="outline-3">
-<h3 id="org3d6bef8"><span class="section-number-3">1.1</span> <span class="todo STRT">STRT</span> R&amp;D <code>[0/2]</code></h3>
+<div id="outline-container-org971641b" class="outline-3">
+<h3 id="org971641b"><span class="section-number-3">1.1</span> <span class="todo STRT">STRT</span> R&amp;D <code>[0/2]</code></h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Can we set up a headless/graphically limited KSP?
@@ -276,14 +276,15 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org4284d28" class="outline-3">
-<h3 id="org4284d28"><span class="section-number-3">1.2</span> <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[1/4]</code></h3>
+<div id="outline-container-orgff40bd3" class="outline-3">
+<h3 id="orgff40bd3"><span class="section-number-3">1.2</span> <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[1/4]</code></h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Automate S3 hosting of tar&rsquo;d game download
 <ul class="org-ul">
 <li>No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.</li>
 <li>Will be nice to automate, but is not strictly necessary and would only need to be done on game updates.</li>
+<li>If ever necessary can provide &ldquo;depot&rdquo; and manifest ID&rsquo;s to steamcmd to DL specific KSP releases.</li>
 </ul></li>
 <li class="trans"><code>[-]</code> Base VM Image(Packer) <code>[1/4]</code>
 <ul class="org-ul">
@@ -308,8 +309,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb37724b" class="outline-3">
-<h3 id="orgb37724b"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></h3>
+<div id="outline-container-org288fc2a" class="outline-3">
+<h3 id="org288fc2a"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Set up client w/ all kRPC Data Stream
@@ -319,8 +320,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf5fc6db" class="outline-3">
-<h3 id="orgf5fc6db"><span class="section-number-3">1.4</span> <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></h3>
+<div id="outline-container-orgc8dda75" class="outline-3">
+<h3 id="orgc8dda75"><span class="section-number-3">1.4</span> <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></h3>
 <div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> <a href="https://opensource.gsfc.nasa.gov/projects/GMAT/index.php">GMAT</a> - Planning</li>
@@ -328,8 +329,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd700216" class="outline-3">
-<h3 id="orgd700216"><span class="section-number-3">1.5</span> <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></h3>
+<div id="outline-container-org6f3754b" class="outline-3">
+<h3 id="org6f3754b"><span class="section-number-3">1.5</span> <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></h3>
 <div class="outline-text-3" id="text-1-5">
 <ul class="org-ul">
 <li class="trans"><code>[-]</code> Starlink(s) <code>[0/0]</code></li>
@@ -337,11 +338,11 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org6eeb83b" class="outline-3">
-<h3 id="org6eeb83b"><span class="section-number-3">1.6</span> <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></h3>
+<div id="outline-container-org24c9ab1" class="outline-3">
+<h3 id="org24c9ab1"><span class="section-number-3">1.6</span> <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></h3>
 </div>
-<div id="outline-container-orgeee6c77" class="outline-3">
-<h3 id="orgeee6c77"><span class="section-number-3">1.7</span> KSP Mod Requirements</h3>
+<div id="outline-container-org08b0603" class="outline-3">
+<h3 id="org08b0603"><span class="section-number-3">1.7</span> KSP Mod Requirements</h3>
 <div class="outline-text-3" id="text-1-7">
 <ul class="org-ul">
 <li><a href="https://krpc.github.io/krpc/">kRPC</a> - kRPC allows you to control Kerbal Space Program from scripts running outside of the game.</li>
@@ -350,8 +351,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orge77972c" class="outline-3">
-<h3 id="orge77972c"><span class="section-number-3">1.8</span> On Hold</h3>
+<div id="outline-container-orgcc3ba90" class="outline-3">
+<h3 id="orgcc3ba90"><span class="section-number-3">1.8</span> On Hold</h3>
 <div class="outline-text-3" id="text-1-8">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Do I even want to use KSP? This <a href="http://orbit.medphys.ucl.ac.uk/index.html">Orbiter Space flight simulator</a> seems interesting:
@@ -367,7 +368,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Tyler Weldon</p>
-<p class="date">Created: 2020-09-04 Fri 10:36</p>
+<p class="date">Created: 2020-09-04 Fri 10:57</p>
 </div>
 </body>
 </html>

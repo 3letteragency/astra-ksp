@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [Astra | Status: Planning](#orge42e1c9)
-    1.  [R&D <code>[0/2]</code>](#org1085a67)
-    2.  [Stage 1 - Prep <code>[1/4]</code>](#org9993578)
-    3.  [Stage 2 - Data <code>[0/1]</code>](#org3be5aa8)
-    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org117382f)
-    5.  [Stage 4 - Operations <code>[0/2]</code>](#org31d102e)
-    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orgb201759)
-    7.  [KSP Mod Requirements](#org98e81e2)
-    8.  [On Hold](#org13ae04f)
+1.  [Astra | Status: Planning](#org5fb674e)
+    1.  [R&D <code>[0/2]</code>](#orgc1abe9f)
+    2.  [Stage 1 - Prep <code>[1/4]</code>](#org0fe7733)
+    3.  [Stage 2 - Data <code>[0/1]</code>](#org329fcbd)
+    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orgd64e53c)
+    5.  [Stage 4 - Operations <code>[0/2]</code>](#orgb946716)
+    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orge7e98c9)
+    7.  [KSP Mod Requirements](#org23d56ab)
+    8.  [On Hold](#org9e524df)
 
 
 
-<a id="orge42e1c9"></a>
+<a id="org5fb674e"></a>
 
 # Astra | Status: Planning
 
 
-<a id="org1085a67"></a>
+<a id="orgc1abe9f"></a>
 
 ## STRT R&D <code>[0/2]</code>
 
@@ -34,13 +34,14 @@
                 -   <https://answers.unity.com/questions/366195/parameters-at-startup.html>
 
 
-<a id="org9993578"></a>
+<a id="org0fe7733"></a>
 
 ## STRT Stage 1 - Prep <code>[1/4]</code>
 
 -   [ ] Automate S3 hosting of tar&rsquo;d game download
     -   No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.
     -   Will be nice to automate, but is not strictly necessary and would only need to be done on game updates.
+    -   If ever necessary can provide &ldquo;depot&rdquo; and manifest ID&rsquo;s to steamcmd to DL specific KSP releases.
 -   [-] Base VM Image(Packer) <code>[1/4]</code>
     -   [X] CLI Steam management - steamcmd works
         -   <del>Make sure deb frontend noninteractive works</del>
@@ -57,7 +58,7 @@
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org3be5aa8"></a>
+<a id="org329fcbd"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -65,7 +66,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org117382f"></a>
+<a id="orgd64e53c"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -73,7 +74,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org31d102e"></a>
+<a id="orgb946716"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -81,12 +82,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="orgb201759"></a>
+<a id="orge7e98c9"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="org98e81e2"></a>
+<a id="org23d56ab"></a>
 
 ## KSP Mod Requirements
 
@@ -95,7 +96,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org13ae04f"></a>
+<a id="org9e524df"></a>
 
 ## On Hold
 
