@@ -16,10 +16,6 @@
         + https://answers.unity.com/questions/138715/read-command-line-arguments.html
         + https://answers.unity.com/questions/366195/parameters-at-startup.html
 ** STRT Stage 1 - Prep [1/4]
-- [ ] Automate S3 hosting of tar'd game download
-    * No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.
-    * Will be nice to automate, but is not strictly necessary and would only need to be done on game updates.
-    * If ever necessary can provide "depot" and manifest ID's to steamcmd to DL specific KSP releases.
 - [-] Base VM Image(Packer) [1/4]
   - [X] CLI Steam management - steamcmd works
     * +Make sure deb frontend noninteractive works+
@@ -53,3 +49,8 @@
     * Results: perhaps I'll work up to this at some point...
     * [[https://www.orbiterwiki.org/wiki/][Docs]]
     * [[https://www.orbiterwiki.org/wiki/SDK_documentation][SDK Docs]]
+- [ ] Automate S3 hosting of tar'd game download
+    * On Hold: Can just use steam cmd locally for now to create the tars then automate the uploading/point packer builds to the "latest" tar.
+    * No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.
+    * Will be nice to automate, but is not strictly necessary and would only need to be done on game updates.
+    * If ever necessary can provide "depot" and manifest ID's to steamcmd to DL specific KSP releases.

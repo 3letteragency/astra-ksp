@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [Astra | Status: Planning](#org5fb674e)
-    1.  [R&D <code>[0/2]</code>](#orgc1abe9f)
-    2.  [Stage 1 - Prep <code>[1/4]</code>](#org0fe7733)
-    3.  [Stage 2 - Data <code>[0/1]</code>](#org329fcbd)
-    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orgd64e53c)
-    5.  [Stage 4 - Operations <code>[0/2]</code>](#orgb946716)
-    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orge7e98c9)
-    7.  [KSP Mod Requirements](#org23d56ab)
-    8.  [On Hold](#org9e524df)
+1.  [Astra | Status: Planning](#orgb77e463)
+    1.  [R&D <code>[0/2]</code>](#org52c7376)
+    2.  [Stage 1 - Prep <code>[1/4]</code>](#orgb3eabe5)
+    3.  [Stage 2 - Data <code>[0/1]</code>](#org1b2c4cb)
+    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orga51b5e1)
+    5.  [Stage 4 - Operations <code>[0/2]</code>](#org43935d2)
+    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org2586752)
+    7.  [KSP Mod Requirements](#orga48083a)
+    8.  [On Hold](#orgabfcbbd)
 
 
 
-<a id="org5fb674e"></a>
+<a id="orgb77e463"></a>
 
 # Astra | Status: Planning
 
 
-<a id="orgc1abe9f"></a>
+<a id="org52c7376"></a>
 
 ## STRT R&D <code>[0/2]</code>
 
@@ -34,14 +34,10 @@
                 -   <https://answers.unity.com/questions/366195/parameters-at-startup.html>
 
 
-<a id="org0fe7733"></a>
+<a id="orgb3eabe5"></a>
 
 ## STRT Stage 1 - Prep <code>[1/4]</code>
 
--   [ ] Automate S3 hosting of tar&rsquo;d game download
-    -   No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.
-    -   Will be nice to automate, but is not strictly necessary and would only need to be done on game updates.
-    -   If ever necessary can provide &ldquo;depot&rdquo; and manifest ID&rsquo;s to steamcmd to DL specific KSP releases.
 -   [-] Base VM Image(Packer) <code>[1/4]</code>
     -   [X] CLI Steam management - steamcmd works
         -   <del>Make sure deb frontend noninteractive works</del>
@@ -58,7 +54,7 @@
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org329fcbd"></a>
+<a id="org1b2c4cb"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -66,7 +62,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="orgd64e53c"></a>
+<a id="orga51b5e1"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -74,7 +70,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="orgb946716"></a>
+<a id="org43935d2"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -82,12 +78,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="orge7e98c9"></a>
+<a id="org2586752"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="org23d56ab"></a>
+<a id="orga48083a"></a>
 
 ## KSP Mod Requirements
 
@@ -96,7 +92,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org9e524df"></a>
+<a id="orgabfcbbd"></a>
 
 ## On Hold
 
@@ -104,4 +100,10 @@
     -   Results: perhaps I&rsquo;ll work up to this at some point&#x2026;
     -   [Docs](https://www.orbiterwiki.org/wiki/)
     -   [SDK Docs](https://www.orbiterwiki.org/wiki/SDK_documentation)
+
+-   [ ] Automate S3 hosting of tar&rsquo;d game download
+    -   On Hold: Can just use steam cmd locally for now to create the tars then automate the uploading/point packer builds to the &ldquo;latest&rdquo; tar.
+    -   No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.
+    -   Will be nice to automate, but is not strictly necessary and would only need to be done on game updates.
+    -   If ever necessary can provide &ldquo;depot&rdquo; and manifest ID&rsquo;s to steamcmd to DL specific KSP releases.
 
