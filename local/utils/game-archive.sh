@@ -15,11 +15,12 @@ create_archive(){
 }
 
 upload_archive(){
-
+    s3cmd -c ~/.s3/astra.cfg put /tmp/ksp.tar.gz s3://astra-assets/game-archive
 }
 
 clean(){
     rm -rf /tmp/astra
+    rm -rf /tmp/ksp.tar.gz
 }
 
 main(){
