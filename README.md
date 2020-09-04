@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [Astra | Status: Planning](#org8890015)
-    1.  [R&D <code>[0/2]</code>](#orgfe3195b)
-    2.  [Stage 1 - Prep <code>[1/3]</code>](#orgbcff99b)
-    3.  [Stage 2 - Data <code>[0/1]</code>](#org091d64a)
-    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orge504dcc)
-    5.  [KSP Mod Requirements](#org55bc0e1)
-    6.  [On Hold](#org59d01b4)
+1.  [Astra | Status: Planning](#orgd047b73)
+    1.  [R&D <code>[0/2]</code>](#org034ca6b)
+    2.  [Stage 1 - Prep <code>[1/4]</code>](#orgcd4ffbe)
+    3.  [Stage 2 - Data <code>[0/1]</code>](#orgb22fdf1)
+    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org694fa3d)
+    5.  [KSP Mod Requirements](#org30808f0)
+    6.  [On Hold](#org6f71028)
 
 
 
-<a id="org8890015"></a>
+<a id="orgd047b73"></a>
 
 # Astra | Status: Planning
 
 
-<a id="orgfe3195b"></a>
+<a id="org034ca6b"></a>
 
 ## STRT R&D <code>[0/2]</code>
 
@@ -32,28 +32,30 @@
                 -   <https://answers.unity.com/questions/366195/parameters-at-startup.html>
 
 
-<a id="orgbcff99b"></a>
+<a id="orgcd4ffbe"></a>
 
-## STRT Stage 1 - Prep <code>[1/3]</code>
+## STRT Stage 1 - Prep <code>[1/4]</code>
 
+-   [ ] Automate S3 hosting of tar&rsquo;d game download
+    -   No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.
+    -   Will be nice to automate, but is not strictly necessary and would only need to be done on game updates.
 -   [-] Base VM Image(Packer) <code>[1/4]</code>
     -   [X] CLI Steam management - steamcmd works
-        -   Make sure deb frontend noninteractive works
-        -   Non-interactive steamcmd
-        -   Missing some 32bit libs by default
-        -   2fa?
+        -   <del>Make sure deb frontend noninteractive works</del>
+        -   <del>Non-interactive steamcmd</del>
+        -   <del>Missing some 32bit libs by default</del>
+        -   <del>2fa?</del>
         -   <del>Otherwise, seems to work just fine then directly launch with the binary installed in ~/.steam/&#x2026;</del>
         -   <del>As an alternative should we run into unfixable issues w/ steam, direct download from Squad and hosting that in a private s3 should be fine.</del>
-        -   No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.
     -   [ ] KSP Installed
     -   [ ] Mods installed
     -   [ ] Loads arbitrary sfs game
--   [-] Base sfs loaded by base image instances <code>[0/1]</code>
+-   [ ] Base sfs loaded by base image instances <code>[0/1]</code>
     -   [ ] kRPC AutoStarts and listening on 0.0.0.0
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org091d64a"></a>
+<a id="orgb22fdf1"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -61,7 +63,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="orge504dcc"></a>
+<a id="org694fa3d"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -69,7 +71,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org55bc0e1"></a>
+<a id="org30808f0"></a>
 
 ## KSP Mod Requirements
 
@@ -78,7 +80,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org59d01b4"></a>
+<a id="org6f71028"></a>
 
 ## On Hold
 

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-09-04 Fri 10:21 -->
+<!-- 2020-09-04 Fri 10:31 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Astra Docs and Planning</title>
@@ -227,26 +227,26 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgbef1a6c">1. Astra | Status: Planning</a>
+<li><a href="#org798b308">1. Astra | Status: Planning</a>
 <ul>
-<li><a href="#orgece2798">1.1. <span class="todo STRT">STRT</span> R&amp;D <code>[0/2]</code></a></li>
-<li><a href="#org3d50e38">1.2. <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[1/3]</code></a></li>
-<li><a href="#orga9aecf4">1.3. <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></a></li>
-<li><a href="#org27e6026">1.4. <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></a></li>
-<li><a href="#org2180ef6">1.5. KSP Mod Requirements</a></li>
-<li><a href="#org29a557f">1.6. On Hold</a></li>
+<li><a href="#org5ca20b3">1.1. <span class="todo STRT">STRT</span> R&amp;D <code>[0/2]</code></a></li>
+<li><a href="#org9164b19">1.2. <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[1/4]</code></a></li>
+<li><a href="#org2a88eba">1.3. <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></a></li>
+<li><a href="#org225b850">1.4. <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></a></li>
+<li><a href="#org9170e0a">1.5. KSP Mod Requirements</a></li>
+<li><a href="#org02a5b20">1.6. On Hold</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgbef1a6c" class="outline-2">
-<h2 id="orgbef1a6c"><span class="section-number-2">1</span> Astra | Status: Planning</h2>
+<div id="outline-container-org798b308" class="outline-2">
+<h2 id="org798b308"><span class="section-number-2">1</span> Astra | Status: Planning</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orgece2798" class="outline-3">
-<h3 id="orgece2798"><span class="section-number-3">1.1</span> <span class="todo STRT">STRT</span> R&amp;D <code>[0/2]</code></h3>
+<div id="outline-container-org5ca20b3" class="outline-3">
+<h3 id="org5ca20b3"><span class="section-number-3">1.1</span> <span class="todo STRT">STRT</span> R&amp;D <code>[0/2]</code></h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Can we set up a headless/graphically limited KSP?
@@ -274,27 +274,31 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org3d50e38" class="outline-3">
-<h3 id="org3d50e38"><span class="section-number-3">1.2</span> <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[1/3]</code></h3>
+<div id="outline-container-org9164b19" class="outline-3">
+<h3 id="org9164b19"><span class="section-number-3">1.2</span> <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[1/4]</code></h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Automate S3 hosting of tar&rsquo;d game download
+<ul class="org-ul">
+<li>No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.</li>
+<li>Will be nice to automate, but is not strictly necessary and would only need to be done on game updates.</li>
+</ul></li>
 <li class="trans"><code>[-]</code> Base VM Image(Packer) <code>[1/4]</code>
 <ul class="org-ul">
 <li class="on"><code>[X]</code> CLI Steam management - steamcmd works
 <ul class="org-ul">
-<li>Make sure deb frontend noninteractive works</li>
-<li>Non-interactive steamcmd</li>
-<li>Missing some 32bit libs by default</li>
-<li>2fa?</li>
+<li><del>Make sure deb frontend noninteractive works</del></li>
+<li><del>Non-interactive steamcmd</del></li>
+<li><del>Missing some 32bit libs by default</del></li>
+<li><del>2fa?</del></li>
 <li><del>Otherwise, seems to work just fine then directly launch with the binary installed in ~/.steam/&#x2026;</del></li>
 <li><del>As an alternative should we run into unfixable issues w/ steam, direct download from Squad and hosting that in a private s3 should be fine.</del></li>
-<li>No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.</li>
 </ul></li>
 <li class="off"><code>[&#xa0;]</code> KSP Installed</li>
 <li class="off"><code>[&#xa0;]</code> Mods installed</li>
 <li class="off"><code>[&#xa0;]</code> Loads arbitrary sfs game</li>
 </ul></li>
-<li class="trans"><code>[-]</code> Base sfs loaded by base image instances <code>[0/1]</code>
+<li class="off"><code>[&#xa0;]</code> Base sfs loaded by base image instances <code>[0/1]</code>
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> kRPC AutoStarts and listening on 0.0.0.0</li>
 </ul></li>
@@ -302,8 +306,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orga9aecf4" class="outline-3">
-<h3 id="orga9aecf4"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></h3>
+<div id="outline-container-org2a88eba" class="outline-3">
+<h3 id="org2a88eba"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Set up client w/ all kRPC Data Stream
@@ -313,8 +317,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org27e6026" class="outline-3">
-<h3 id="org27e6026"><span class="section-number-3">1.4</span> <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></h3>
+<div id="outline-container-org225b850" class="outline-3">
+<h3 id="org225b850"><span class="section-number-3">1.4</span> <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></h3>
 <div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> <a href="https://opensource.gsfc.nasa.gov/projects/GMAT/index.php">GMAT</a> - Planning</li>
@@ -322,8 +326,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org2180ef6" class="outline-3">
-<h3 id="org2180ef6"><span class="section-number-3">1.5</span> KSP Mod Requirements</h3>
+<div id="outline-container-org9170e0a" class="outline-3">
+<h3 id="org9170e0a"><span class="section-number-3">1.5</span> KSP Mod Requirements</h3>
 <div class="outline-text-3" id="text-1-5">
 <ul class="org-ul">
 <li><a href="https://krpc.github.io/krpc/">kRPC</a> - kRPC allows you to control Kerbal Space Program from scripts running outside of the game.</li>
@@ -332,8 +336,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org29a557f" class="outline-3">
-<h3 id="org29a557f"><span class="section-number-3">1.6</span> On Hold</h3>
+<div id="outline-container-org02a5b20" class="outline-3">
+<h3 id="org02a5b20"><span class="section-number-3">1.6</span> On Hold</h3>
 <div class="outline-text-3" id="text-1-6">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Do I even want to use KSP? This <a href="http://orbit.medphys.ucl.ac.uk/index.html">Orbiter Space flight simulator</a> seems interesting:
@@ -349,7 +353,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Tyler Weldon</p>
-<p class="date">Created: 2020-09-04 Fri 10:21</p>
+<p class="date">Created: 2020-09-04 Fri 10:31</p>
 </div>
 </body>
 </html>
