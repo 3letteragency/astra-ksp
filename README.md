@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [Astra | Status: Planning](#org211957c)
-    1.  [R&D <code>[0/2]</code>](#org74fbfb9)
-    2.  [Stage 1 - Prep <code>[1/3]</code>](#org0349465)
-    3.  [Stage 2 - Data <code>[0/1]</code>](#org43d87dc)
-    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org098cd98)
-    5.  [KSP Mod Requirements](#orgfd1d4af)
-    6.  [On Hold](#org5e3f699)
+1.  [Astra | Status: Planning](#org94030d8)
+    1.  [R&D <code>[0/2]</code>](#org756ce77)
+    2.  [Stage 1 - Prep <code>[1/3]</code>](#org6805606)
+    3.  [Stage 2 - Data <code>[0/1]</code>](#org6981e9b)
+    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orgca8a140)
+    5.  [KSP Mod Requirements](#org203400a)
+    6.  [On Hold](#org778b55f)
 
 
 
-<a id="org211957c"></a>
+<a id="org94030d8"></a>
 
 # Astra | Status: Planning
 
 
-<a id="org74fbfb9"></a>
+<a id="org756ce77"></a>
 
 ## STRT R&D <code>[0/2]</code>
 
@@ -32,7 +32,7 @@
                 -   <https://answers.unity.com/questions/366195/parameters-at-startup.html>
 
 
-<a id="org0349465"></a>
+<a id="org6805606"></a>
 
 ## STRT Stage 1 - Prep <code>[1/3]</code>
 
@@ -42,8 +42,9 @@
         -   Non-interactive steamcmd
         -   Missing some 32bit libs by default
         -   2fa?
-        -   Otherwise, seems to work just fine then directly launch with the binary installed in ~/.steam/&#x2026;
-        -   As an alternative should we run into unfixable issues w/ steam, direct download from Squad and hosting that in a private s3 should be fine.
+        -   `~Otherwise, seems to work just fine then directly launch with the binary installed in ~/.steam/...~`
+        -   `~As an alternative should we run into unfixable issues w/ steam, direct download from Squad and hosting that in a private s3 should be fine.~`
+        -   No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.
     -   [ ] KSP Installed
     -   [ ] Mods installed
     -   [ ] Loads arbitrary sfs game
@@ -52,7 +53,7 @@
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org43d87dc"></a>
+<a id="org6981e9b"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -60,7 +61,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org098cd98"></a>
+<a id="orgca8a140"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -68,7 +69,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="orgfd1d4af"></a>
+<a id="org203400a"></a>
 
 ## KSP Mod Requirements
 
@@ -77,7 +78,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org5e3f699"></a>
+<a id="org778b55f"></a>
 
 ## On Hold
 
