@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-09-04 Fri 11:07 -->
+<!-- 2020-09-04 Fri 11:29 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Astra Docs and Planning</title>
@@ -227,57 +227,59 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org40b3ca5">1. Astra | Status: Planning</a>
+<li><a href="#org6f03fb6">1. Astra | Status: Planning</a>
 <ul>
-<li><a href="#org80c1220">1.1. <span class="todo STRT">STRT</span> R&amp;D <code>[0/2]</code></a></li>
-<li><a href="#org0c58c13">1.2. <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[1/4]</code></a></li>
-<li><a href="#orge35658c">1.3. <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></a></li>
-<li><a href="#orgcf416af">1.4. <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></a></li>
-<li><a href="#org20ccd1f">1.5. <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></a></li>
-<li><a href="#org3ec3b20">1.6. <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></a></li>
-<li><a href="#orga742d6b">1.7. KSP Mod Requirements</a></li>
-<li><a href="#org7eca5cb">1.8. On Hold</a></li>
+<li><a href="#orgd1078d6">1.1. <span class="todo STRT">STRT</span> R&amp;D <code>[2/2]</code></a></li>
+<li><a href="#orge5dd8db">1.2. <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[1/3]</code></a></li>
+<li><a href="#org23232c0">1.3. <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></a></li>
+<li><a href="#org7694a7c">1.4. <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></a></li>
+<li><a href="#orgbedec7f">1.5. <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></a></li>
+<li><a href="#org7da4d4e">1.6. <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></a></li>
+<li><a href="#orge71ce0b">1.7. KSP Mod Requirements</a></li>
+<li><a href="#orgc402405">1.8. On Hold</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org40b3ca5" class="outline-2">
-<h2 id="org40b3ca5"><span class="section-number-2">1</span> Astra | Status: Planning</h2>
+<div id="outline-container-org6f03fb6" class="outline-2">
+<h2 id="org6f03fb6"><span class="section-number-2">1</span> Astra | Status: Planning</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org80c1220" class="outline-3">
-<h3 id="org80c1220"><span class="section-number-3">1.1</span> <span class="todo STRT">STRT</span> R&amp;D <code>[0/2]</code></h3>
+<div id="outline-container-orgd1078d6" class="outline-3">
+<h3 id="orgd1078d6"><span class="section-number-3">1.1</span> <span class="todo STRT">STRT</span> R&amp;D <code>[2/2]</code></h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
-<li class="off"><code>[&#xa0;]</code> Can we set up a headless/graphically limited KSP?
+<li class="on"><code>[X]</code> Can we set up a headless/graphically limited KSP?
 <ul class="org-ul">
-<li>Running KSP in a VM seems promising.
+<li><del>Running KSP in a VM seems promising.</del>
 <ul class="org-ul">
-<li>Set all graphics settings to minimum</li>
+<li><del>Set all graphics settings to minimum</del></li>
 </ul></li>
+<li>We sure can! Unity options: <code>~KSP.x86_64 -batchmode -nographics~</code></li>
 </ul></li>
-<li class="off"><code>[&#xa0;]</code> If not headless, can we automate the launching of KSP &ldquo;instances&rdquo;, and entering/setting up the game as desired(specific missions, locations, etc.) via the <a href="https://krpc.github.io/krpc/cpp/api/ui/ui.html">kRPC UI API</a>?
+<li class="on"><code>[X]</code> If not headless, can we automate the launching of KSP &ldquo;instances&rdquo;, and entering/setting up the game as desired(specific missions, locations, etc.) via the <a href="https://krpc.github.io/krpc/cpp/api/ui/ui.html">kRPC UI API</a>?
 <ul class="org-ul">
-<li>Might be able to use the Unity <a href="https://docs.unity3d.com/Manual/CLIBatchmodeCoroutines.html">Batch Mode</a> and <a href="https://docs.unity3d.com/Manual/CommandLineArguments.html">nographics</a> options to facilitate headless.</li>
-<li>Will need some means of automatically launching specified game saves.
+<li><del>Might be able to use the Unity <a href="https://docs.unity3d.com/Manual/CLIBatchmodeCoroutines.html">Batch Mode</a> and <a href="https://docs.unity3d.com/Manual/CommandLineArguments.html">nographics</a> options to facilitate headless.</del></li>
+<li><del>Will need some means of automatically launching specified game saves.</del>
 <ul class="org-ul">
-<li><a href="https://github.com/allista/AutoLoadGame">AutoLoadGame</a> might do the trick.
+<li><del><a href="https://github.com/allista/AutoLoadGame">AutoLoadGame</a> might do the trick.</del>
 <ul class="org-ul">
-<li>Might modify to use Unity CLI args instead of config file:
+<li><del>Might modify to use Unity CLI args instead of config file:</del>
 <ul class="org-ul">
 <li><a href="https://answers.unity.com/questions/138715/read-command-line-arguments.html">https://answers.unity.com/questions/138715/read-command-line-arguments.html</a></li>
 <li><a href="https://answers.unity.com/questions/366195/parameters-at-startup.html">https://answers.unity.com/questions/366195/parameters-at-startup.html</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
+<li>No longer neccessary, headless is possible w/ unity opts in above task</li>
 </ul></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org0c58c13" class="outline-3">
-<h3 id="org0c58c13"><span class="section-number-3">1.2</span> <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[1/4]</code></h3>
+<div id="outline-container-orge5dd8db" class="outline-3">
+<h3 id="orge5dd8db"><span class="section-number-3">1.2</span> <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[1/3]</code></h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li class="trans"><code>[-]</code> Base VM Image(Packer) <code>[1/4]</code>
@@ -293,7 +295,10 @@
 </ul></li>
 <li class="off"><code>[&#xa0;]</code> KSP Installed</li>
 <li class="off"><code>[&#xa0;]</code> Mods installed</li>
-<li class="off"><code>[&#xa0;]</code> Loads arbitrary sfs game</li>
+<li class="trans"><code>[-]</code> Loads arbitrary sfs game <code>[0/0]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Rework <a href="https://github.com/krpc/krpc/blob/master/tools/TestingTools/src/AutoLoadGame.cs">AutoLoadGame</a> from kRPC to take sfs filename string as commandline arg to <code>~KSP.x86_64~</code></li>
+</ul></li>
 </ul></li>
 <li class="off"><code>[&#xa0;]</code> Base sfs loaded by base image instances <code>[0/1]</code>
 <ul class="org-ul">
@@ -303,8 +308,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orge35658c" class="outline-3">
-<h3 id="orge35658c"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></h3>
+<div id="outline-container-org23232c0" class="outline-3">
+<h3 id="org23232c0"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Set up client w/ all kRPC Data Stream
@@ -314,8 +319,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgcf416af" class="outline-3">
-<h3 id="orgcf416af"><span class="section-number-3">1.4</span> <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></h3>
+<div id="outline-container-org7694a7c" class="outline-3">
+<h3 id="org7694a7c"><span class="section-number-3">1.4</span> <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></h3>
 <div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> <a href="https://opensource.gsfc.nasa.gov/projects/GMAT/index.php">GMAT</a> - Planning</li>
@@ -323,8 +328,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org20ccd1f" class="outline-3">
-<h3 id="org20ccd1f"><span class="section-number-3">1.5</span> <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></h3>
+<div id="outline-container-orgbedec7f" class="outline-3">
+<h3 id="orgbedec7f"><span class="section-number-3">1.5</span> <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></h3>
 <div class="outline-text-3" id="text-1-5">
 <ul class="org-ul">
 <li class="trans"><code>[-]</code> Starlink(s) <code>[0/0]</code></li>
@@ -332,11 +337,11 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org3ec3b20" class="outline-3">
-<h3 id="org3ec3b20"><span class="section-number-3">1.6</span> <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></h3>
+<div id="outline-container-org7da4d4e" class="outline-3">
+<h3 id="org7da4d4e"><span class="section-number-3">1.6</span> <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></h3>
 </div>
-<div id="outline-container-orga742d6b" class="outline-3">
-<h3 id="orga742d6b"><span class="section-number-3">1.7</span> KSP Mod Requirements</h3>
+<div id="outline-container-orge71ce0b" class="outline-3">
+<h3 id="orge71ce0b"><span class="section-number-3">1.7</span> KSP Mod Requirements</h3>
 <div class="outline-text-3" id="text-1-7">
 <ul class="org-ul">
 <li><a href="https://krpc.github.io/krpc/">kRPC</a> - kRPC allows you to control Kerbal Space Program from scripts running outside of the game.</li>
@@ -345,8 +350,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org7eca5cb" class="outline-3">
-<h3 id="org7eca5cb"><span class="section-number-3">1.8</span> On Hold</h3>
+<div id="outline-container-orgc402405" class="outline-3">
+<h3 id="orgc402405"><span class="section-number-3">1.8</span> On Hold</h3>
 <div class="outline-text-3" id="text-1-8">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Do I even want to use KSP? This <a href="http://orbit.medphys.ucl.ac.uk/index.html">Orbiter Space flight simulator</a> seems interesting:
@@ -371,7 +376,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Tyler Weldon</p>
-<p class="date">Created: 2020-09-04 Fri 11:07</p>
+<p class="date">Created: 2020-09-04 Fri 11:29</p>
 </div>
 </body>
 </html>

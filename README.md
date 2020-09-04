@@ -1,42 +1,44 @@
 
 # Table of Contents
 
-1.  [Astra | Status: Planning](#orgb77e463)
-    1.  [R&D <code>[0/2]</code>](#org52c7376)
-    2.  [Stage 1 - Prep <code>[1/4]</code>](#orgb3eabe5)
-    3.  [Stage 2 - Data <code>[0/1]</code>](#org1b2c4cb)
-    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orga51b5e1)
-    5.  [Stage 4 - Operations <code>[0/2]</code>](#org43935d2)
-    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org2586752)
-    7.  [KSP Mod Requirements](#orga48083a)
-    8.  [On Hold](#orgabfcbbd)
+1.  [Astra | Status: Planning](#org286d365)
+    1.  [R&D <code>[2/2]</code>](#org7c382a3)
+    2.  [Stage 1 - Prep <code>[1/3]</code>](#org1bbc984)
+    3.  [Stage 2 - Data <code>[0/1]</code>](#org59c2d73)
+    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orgf46c57e)
+    5.  [Stage 4 - Operations <code>[0/2]</code>](#org496f208)
+    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org33c9df0)
+    7.  [KSP Mod Requirements](#org482f5e1)
+    8.  [On Hold](#orgc52fb3c)
 
 
 
-<a id="orgb77e463"></a>
+<a id="org286d365"></a>
 
 # Astra | Status: Planning
 
 
-<a id="org52c7376"></a>
+<a id="org7c382a3"></a>
 
-## STRT R&D <code>[0/2]</code>
+## STRT R&D <code>[2/2]</code>
 
--   [ ] Can we set up a headless/graphically limited KSP?
-    -   Running KSP in a VM seems promising.
-        -   Set all graphics settings to minimum
--   [ ] If not headless, can we automate the launching of KSP &ldquo;instances&rdquo;, and entering/setting up the game as desired(specific missions, locations, etc.) via the [kRPC UI API](https://krpc.github.io/krpc/cpp/api/ui/ui.html)?
-    -   Might be able to use the Unity [Batch Mode](https://docs.unity3d.com/Manual/CLIBatchmodeCoroutines.html) and [nographics](https://docs.unity3d.com/Manual/CommandLineArguments.html) options to facilitate headless.
-    -   Will need some means of automatically launching specified game saves.
-        -   [AutoLoadGame](https://github.com/allista/AutoLoadGame) might do the trick.
-            -   Might modify to use Unity CLI args instead of config file:
+-   [X] Can we set up a headless/graphically limited KSP?
+    -   <del>Running KSP in a VM seems promising.</del>
+        -   <del>Set all graphics settings to minimum</del>
+    -   We sure can! Unity options: `~KSP.x86_64 -batchmode -nographics~`
+-   [X] If not headless, can we automate the launching of KSP &ldquo;instances&rdquo;, and entering/setting up the game as desired(specific missions, locations, etc.) via the [kRPC UI API](https://krpc.github.io/krpc/cpp/api/ui/ui.html)?
+    -   <del>Might be able to use the Unity [Batch Mode](https://docs.unity3d.com/Manual/CLIBatchmodeCoroutines.html) and [nographics](https://docs.unity3d.com/Manual/CommandLineArguments.html) options to facilitate headless.</del>
+    -   <del>Will need some means of automatically launching specified game saves.</del>
+        -   <del>[AutoLoadGame](https://github.com/allista/AutoLoadGame) might do the trick.</del>
+            -   <del>Might modify to use Unity CLI args instead of config file:</del>
                 -   <https://answers.unity.com/questions/138715/read-command-line-arguments.html>
                 -   <https://answers.unity.com/questions/366195/parameters-at-startup.html>
+    -   No longer neccessary, headless is possible w/ unity opts in above task
 
 
-<a id="orgb3eabe5"></a>
+<a id="org1bbc984"></a>
 
-## STRT Stage 1 - Prep <code>[1/4]</code>
+## STRT Stage 1 - Prep <code>[1/3]</code>
 
 -   [-] Base VM Image(Packer) <code>[1/4]</code>
     -   [X] CLI Steam management - steamcmd works
@@ -48,13 +50,14 @@
         -   <del>As an alternative should we run into unfixable issues w/ steam, direct download from Squad and hosting that in a private s3 should be fine.</del>
     -   [ ] KSP Installed
     -   [ ] Mods installed
-    -   [ ] Loads arbitrary sfs game
+    -   [-] Loads arbitrary sfs game <code>[0/0]</code>
+        -   [ ] Rework [AutoLoadGame](https://github.com/krpc/krpc/blob/master/tools/TestingTools/src/AutoLoadGame.cs) from kRPC to take sfs filename string as commandline arg to `~KSP.x86_64~`
 -   [ ] Base sfs loaded by base image instances <code>[0/1]</code>
     -   [ ] kRPC AutoStarts and listening on 0.0.0.0
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org1b2c4cb"></a>
+<a id="org59c2d73"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -62,7 +65,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="orga51b5e1"></a>
+<a id="orgf46c57e"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -70,7 +73,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org43935d2"></a>
+<a id="org496f208"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -78,12 +81,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="org2586752"></a>
+<a id="org33c9df0"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="orga48083a"></a>
+<a id="org482f5e1"></a>
 
 ## KSP Mod Requirements
 
@@ -92,7 +95,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orgabfcbbd"></a>
+<a id="orgc52fb3c"></a>
 
 ## On Hold
 
