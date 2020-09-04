@@ -1,2 +1,2 @@
 *.env
-terraform/state/.terraform/*
+.terraform*
