@@ -22,8 +22,8 @@
     * Non-interactive steamcmd
     * Missing some 32bit libs by default
     * 2fa?
-    * ~~Otherwise, seems to work just fine then directly launch with the binary installed in ~/.steam/...~~
-    * ~~As an alternative should we run into unfixable issues w/ steam, direct download from Squad and hosting that in a private s3 should be fine.~~
+    * +Otherwise, seems to work just fine then directly launch with the binary installed in ~/.steam/...+
+    * +As an alternative should we run into unfixable issues w/ steam, direct download from Squad and hosting that in a private s3 should be fine.+
     * No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.
   - [ ] KSP Installed
   - [ ] Mods installed
