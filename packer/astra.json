@@ -28,7 +28,8 @@
         "GAME_ARCHIVE_URL={{ user `game_archive_url` }}"
       ],
       "inline": [
-        "env",
+        "apt -y update",
+        "apt -y install mono-runtime",
         "useradd -m astra",
         "wget $GAME_ARCHIVE_URL -O /tmp/ksp.tar.gz",
         "tar -xzvf /tmp/ksp.tar.gz -C /home/astra --strip-components=2"

@@ -7,7 +7,8 @@ cd /tmp
 
 get_game(){
     mkdir -p $TARGET_DIR
-    steamcmd +login $STEAM_USER +force_install_dir $TARGET_DIR +app_update $KSP_STEAM_APP_ID +quit
+#    steamcmd +login $STEAM_USER +force_install_dir $TARGET_DIR +app_update $KSP_STEAM_APP_ID +quit
+    steamcmd +login $STEAM_USER +download_depot $KSP_STEAM_APP_ID $KSP_STEAM_DEPOT_ID $KSP_DEPOT_MANIFEST_ID +quit
 }
 
 create_archive(){
