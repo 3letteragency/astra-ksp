@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [Astra](#org12e2d3b)
-    1.  [R&D <code>[2/2]</code>](#org888d7bb)
-    2.  [Stage 1 - Prep <code>[1/3]</code>](#org7204311)
-    3.  [Stage 2 - Data <code>[0/1]</code>](#org8d931b2)
-    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org928cb1f)
-    5.  [Stage 4 - Operations <code>[0/2]</code>](#orgca7aafc)
-    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org1a587ad)
-    7.  [KSP Mod Requirements](#orgb82c019)
-    8.  [On Hold](#org9d842eb)
+1.  [Astra](#org6af8b76)
+    1.  [R&D <code>[2/2]</code>](#org6370f9d)
+    2.  [Stage 1 - Prep <code>[1/3]</code>](#orgb24badb)
+    3.  [Stage 2 - Data <code>[0/1]</code>](#org2caa14d)
+    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org6c8a3c6)
+    5.  [Stage 4 - Operations <code>[0/2]</code>](#org3b8c412)
+    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org83ff9e6)
+    7.  [KSP Mod Requirements](#orgf53f530)
+    8.  [On Hold](#orge17e340)
 
 
 
-<a id="org12e2d3b"></a>
+<a id="org6af8b76"></a>
 
 # Astra
 
 
-<a id="org888d7bb"></a>
+<a id="org6370f9d"></a>
 
 ## STRT R&D <code>[2/2]</code>
 
@@ -36,7 +36,7 @@
     -   No longer neccessary, headless is possible w/ unity opts in above task
 
 
-<a id="org7204311"></a>
+<a id="orgb24badb"></a>
 
 ## STRT Stage 1 - Prep <code>[1/3]</code>
 
@@ -66,11 +66,12 @@
         -   [ ] Rework [AutoLoadGame](https://github.com/krpc/krpc/blob/master/tools/TestingTools/src/AutoLoadGame.cs) from kRPC to take sfs filename string as commandline arg to `~KSP.x86_64~`
         -   [ ] Figure out how to write sfs/scenario files for your base
         -   [ ] kRPC AutoStarts and listening on 0.0.0.0
+            -   Is it possible to set this via the SFS File? Might need to extend here.
     -   [ ] Mods installed
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org8d931b2"></a>
+<a id="org2caa14d"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -78,7 +79,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org928cb1f"></a>
+<a id="org6c8a3c6"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -86,7 +87,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="orgca7aafc"></a>
+<a id="org3b8c412"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -94,12 +95,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="org1a587ad"></a>
+<a id="org83ff9e6"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="orgb82c019"></a>
+<a id="orgf53f530"></a>
 
 ## KSP Mod Requirements
 
@@ -108,7 +109,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org9d842eb"></a>
+<a id="orge17e340"></a>
 
 ## On Hold
 

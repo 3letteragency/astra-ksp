@@ -44,6 +44,7 @@
     - [ ] Rework [[https://github.com/krpc/krpc/blob/master/tools/TestingTools/src/AutoLoadGame.cs][AutoLoadGame]] from kRPC to take sfs filename string as commandline arg to ~~KSP.x86_64~~
     - [ ] Figure out how to write sfs/scenario files for your base
     - [ ] kRPC AutoStarts and listening on 0.0.0.0
+      * Is it possible to set this via the SFS File? Might need to extend here.
   - [ ] Mods installed
 - [X] Choose kRPC client language - C++
 ** TODO Stage 2 - Data [0/1]
