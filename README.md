@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [Astra](#orgc007297)
-    1.  [R&D <code>[2/2]</code>](#org965afeb)
-    2.  [Stage 1 - Prep <code>[1/3]</code>](#org68d96fc)
-    3.  [Stage 2 - Data <code>[0/1]</code>](#orgf5c03bc)
-    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org85125fd)
-    5.  [Stage 4 - Operations <code>[0/2]</code>](#orgc80f55f)
-    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org13bd956)
-    7.  [KSP Mod Requirements](#orge5ada81)
-    8.  [On Hold](#orgde18b53)
+1.  [Astra](#org4805857)
+    1.  [R&D <code>[2/2]</code>](#orgd90c529)
+    2.  [Stage 1 - Prep <code>[1/2]</code>](#org0ab9c1e)
+    3.  [Stage 2 - Data <code>[0/1]</code>](#orge3eb28a)
+    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orgb0c4df0)
+    5.  [Stage 4 - Operations <code>[0/2]</code>](#orgc2fa681)
+    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orgd1773a6)
+    7.  [KSP Mod Requirements](#org9280f2a)
+    8.  [On Hold](#org5b49129)
 
 
 
-<a id="orgc007297"></a>
+<a id="org4805857"></a>
 
 # Astra
 
 
-<a id="org965afeb"></a>
+<a id="orgd90c529"></a>
 
 ## STRT R&D <code>[2/2]</code>
 
@@ -36,13 +36,13 @@
     -   No longer neccessary, headless is possible w/ unity opts in above task
 
 
-<a id="org68d96fc"></a>
+<a id="org0ab9c1e"></a>
 
-## STRT Stage 1 - Prep <code>[1/3]</code>
+## STRT Stage 1 - Prep <code>[1/2]</code>
 
--   [-] Base VM Image(Packer) <code>[2/6]</code>
+-   [-] Base VM Image(Packer) <code>[3/6]</code>
     -   [ ] Automate version bumping on every build and passing down version variable to other locations(i.e. TF plans snapshot string variables)
-    -   [ ] Add ssh key
+    -   [X] Add ssh key
     -   Ubuntu base image
     -   Vultr builder
     -   KSP Archive is uploaded to build server from local
@@ -54,16 +54,15 @@
         -   <del>Otherwise, seems to work just fine then directly launch with the binary installed in ~/.steam/&#x2026;</del>
         -   <del>As an alternative should we run into unfixable issues w/ steam, direct download from Squad and hosting that in a private s3 should be fine.</del>
     -   [X] KSP Installed
-    -   [ ] Loads arbitrary sfs game <code>[0/2]</code>
+    -   [ ] Loads arbitrary sfs game <code>[0/3]</code>
         -   [ ] Rework [AutoLoadGame](https://github.com/krpc/krpc/blob/master/tools/TestingTools/src/AutoLoadGame.cs) from kRPC to take sfs filename string as commandline arg to `~KSP.x86_64~`
         -   [ ] Figure out how to write sfs/scenario files for your base
+        -   [ ] kRPC AutoStarts and listening on 0.0.0.0
     -   [ ] Mods installed
--   [ ] Base sfs loaded by base image instances <code>[0/1]</code>
-    -   [ ] kRPC AutoStarts and listening on 0.0.0.0
 -   [X] Choose kRPC client language - C++
 
 
-<a id="orgf5c03bc"></a>
+<a id="orge3eb28a"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -71,7 +70,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org85125fd"></a>
+<a id="orgb0c4df0"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -79,7 +78,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="orgc80f55f"></a>
+<a id="orgc2fa681"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -87,12 +86,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="org13bd956"></a>
+<a id="orgd1773a6"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="orge5ada81"></a>
+<a id="org9280f2a"></a>
 
 ## KSP Mod Requirements
 
@@ -101,7 +100,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orgde18b53"></a>
+<a id="org5b49129"></a>
 
 ## On Hold
 

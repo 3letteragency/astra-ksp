@@ -17,27 +17,26 @@
         + https://answers.unity.com/questions/138715/read-command-line-arguments.html
         + https://answers.unity.com/questions/366195/parameters-at-startup.html
   * No longer neccessary, headless is possible w/ unity opts in above task
-** STRT Stage 1 - Prep [1/3]
-- [-] Base VM Image(Packer) [2/6]
+** STRT Stage 1 - Prep [1/2]
+- [-] Base VM Image(Packer) [3/6]
   - [ ] Automate version bumping on every build and passing down version variable to other locations(i.e. TF plans snapshot string variables)
-  - [ ] Add ssh key
-  * Ubuntu base image
-  * Vultr builder
-  * KSP Archive is uploaded to build server from local
-  * [X] CLI Steam management - steamcmd works
+  - [X] Add ssh key
+  - Ubuntu base image
+  - Vultr builder
+  - KSP Archive is uploaded to build server from local
+  - [X] CLI Steam management - steamcmd works
     * +Make sure deb frontend noninteractive works+
     * +Non-interactive steamcmd+
     * +Missing some 32bit libs by default+
     * +2fa?+
     * +Otherwise, seems to work just fine then directly launch with the binary installed in ~/.steam/...+
     * +As an alternative should we run into unfixable issues w/ steam, direct download from Squad and hosting that in a private s3 should be fine.+
-  * [X] KSP Installed
-  * [ ] Loads arbitrary sfs game [0/2]
+  - [X] KSP Installed
+  - [ ] Loads arbitrary sfs game [0/3]
     - [ ] Rework [[https://github.com/krpc/krpc/blob/master/tools/TestingTools/src/AutoLoadGame.cs][AutoLoadGame]] from kRPC to take sfs filename string as commandline arg to ~~KSP.x86_64~~
     - [ ] Figure out how to write sfs/scenario files for your base
-  * [ ] Mods installed
-- [ ] Base sfs loaded by base image instances [0/1]
-  - [ ] kRPC AutoStarts and listening on 0.0.0.0
+    - [ ] kRPC AutoStarts and listening on 0.0.0.0
+  - [ ] Mods installed
 - [X] Choose kRPC client language - C++
 ** TODO Stage 2 - Data [0/1]
 - [ ] Set up client w/ all kRPC Data Stream
