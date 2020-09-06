@@ -1,3 +1,4 @@
 *.env
 .terraform*
 /local/assets/
+terraform.tfstate*
