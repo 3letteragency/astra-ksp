@@ -18,6 +18,7 @@
         + https://answers.unity.com/questions/366195/parameters-at-startup.html
   * No longer neccessary, headless is possible w/ unity opts in above task
 ** STRT Stage 1 - Prep [1/7]
+  - [ ] Automate game-archiver
   - [ ] Split Project into multiple repos [0/2]
     - [ ] Terraform [0/2]
       - [ ] Modules
