@@ -14,9 +14,9 @@ data "vultr_region" "region" {
   }
 }
 
-data "vultr_snapshot" "snapshot" {
+data "vultr_os" "astra_os" {
   filter {
-    name = "description"
-    values = [ var.astra_node_snapshot ]
+    name   = "name"
+    values = [var.os]
   }
 }
