@@ -1,21 +1,22 @@
 {
   "variables": {
     "vultr_api_key": "{{ env `VULTR_API_KEY` }}",
-    "game_archive_url": "{{ env `GAME_ARCHIVE_URL` }}"
+    "game_archive_url": "{{ env `GAME_ARCHIVE_URL` }}",
+    "vultr_ssh_key_id_mission_control": "{{ env `VULTR_SSH_KEY_ID_MISSION_CONTROL` }}"
   },
   "builders": [
     {
       "type": "vultr",
       "api_key": "{{ user `vultr_api_key` }}",
       "os_id": 387,
-      "region_id": 1,
+      "region_id": 22,
       "plan_id": 201,
       "snapshot_description": "astra-node",
       "ssh_username": "root",
       "ssh_key_ids": [
-        "5f5507ed4d724"
+        "{{ user `vultr_ssh_key_id_mission_control` }}"
       ],
-      "state_timeout": "20m",
+      "state_timeout": "60m",
       "instance_label": "astra-node",
       "hostname": "astra-node"
     }
@@ -30,6 +31,7 @@
         "apt -y update",
         "apt -y install mono-runtime",
         "useradd -m astra",
+        "chsh astra -s /bin/bash",
         "mkdir -p /home/astra/ksp",
         "wget $GAME_ARCHIVE_URL -O /tmp/ksp.tar.gz",
         "tar -xzvf /tmp/ksp.tar.gz -C /home/astra/ksp",

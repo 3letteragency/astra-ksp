@@ -1,4 +1,4 @@
-module "base_dev" {
+module "astra" {
   source = "../../modules/terraform-astra-node"
-  machine_type = 204
+  region = "Toronto"
 }

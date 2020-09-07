@@ -5,10 +5,10 @@ variable "region" {
 
 variable "machine_type" {
   type = number
-  default = 403
+  default = 204
 }
 
-variable "os" {
+variable "snapshot" {
   type = string
-  default = "Ubuntu 20.04 x64"
+  default = "astra-node"
 }
