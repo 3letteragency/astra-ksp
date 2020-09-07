@@ -19,10 +19,10 @@
   * No longer neccessary, headless is possible w/ unity opts in above task
 ** STRT Stage 1 - Prep [2/4]
   - [X] Automate game-archiver
-  - [ ] Base VM Image(Packer) [0/3]
+  - [ ] Base VM Image(Packer) [0/4]
     - [ ] Install KSP 1.7.3 from S3
     - [ ] Install/POC kRPC and AutoLoadGame SFS
-    - [-] Automate mod install [/]
+    - [-] Automate mod install [0/3]
       - [ ] Install CKAN.deb
       - [ ] kRPC manually from github
       - [ ] RO via CKAN
