@@ -23,9 +23,9 @@
     - [X] Install KSP 1.7.3 from S3
     - [-] Automate mod install [1/3]
       - [X] Install CKAN.deb
-      - [ ] kRPC manually from github
+      - [X] kRPC manually from github
       - [ ] RO via CKAN
-    - [ ] Install/POC kRPC and AutoLoadGame SFS
+    - [ ] POC kRPC and AutoLoadGame SFS
     - [ ] Loads arbitrary sfs game [0/3]
       - [ ] Rework [[https://github.com/krpc/krpc/blob/master/tools/TestingTools/src/AutoLoadGame.cs][AutoLoadGame]] from kRPC to take sfs filename string as commandline arg to ~~KSP.x86_64~~
       - [ ] Figure out how to write sfs/scenario files for your base
