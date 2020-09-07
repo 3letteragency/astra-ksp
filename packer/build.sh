@@ -4,6 +4,8 @@ set -euxo pipefail
 source ../project.env
 
 export GAME_ARCHIVE_URL=$(s3cmd -c $ASTRA_S3_CFG signurl $ASTRA_ASSETS_BUCKET/$S3_GAME_ARCHIVE_PREFIX/$KSP_TAR_FILENAME $(date -d 'today + 1 day' +%s))
+export CKAN_VERSION="1.28.0"
+export CKAN_DEB_URL=$(echo "https://github.com/KSP-CKAN/CKAN/releases/download/v${CKAN_VERSION}/ckan_${CKAN_VERSION}_all.deb")
 
 validate(){
     packer validate astra.json
