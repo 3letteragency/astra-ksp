@@ -23,7 +23,7 @@
     - [ ] Modules
     - [ ] Plans
   - [ ] Packer Base Image
-- [-] Base VM Image(Packer) [3/7]
+- [-] Base VM Image(Packer) [3/8]
   - [ ] KSP Needs to be pinned to 1.7.3 for compatibility between both kRPC and RO :(
   - [ ] Userdata json structure for:
     * b64 encoded sfs

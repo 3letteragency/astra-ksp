@@ -9,5 +9,5 @@ variable "region" {
 
 variable "machine_type" {
   type = number
-  default = 403
+  default = 404
 }
