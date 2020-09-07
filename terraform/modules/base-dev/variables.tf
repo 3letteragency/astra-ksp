@@ -5,7 +5,7 @@ variable "region" {
 
 variable "machine_type" {
   type = number
-  default = 404
+  default = 403
 }
 
 variable "os" {

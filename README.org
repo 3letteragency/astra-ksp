@@ -18,13 +18,36 @@
         + https://answers.unity.com/questions/366195/parameters-at-startup.html
   * No longer neccessary, headless is possible w/ unity opts in above task
 ** STRT Stage 1 - Prep [1/7]
-- [ ] Pin KSP to 1.7.3
-- [ ] Get KSP 1.7.3 running
-- [ ] Install mods via CKAN
-- [ ] Load Arbitrary SFS via cli args(modded version of AutoLoadGame)
-- [ ] SFS File that autostarts kRPCServer
-- [ ] Load Arbitrary b64 encoded SFS(w/ kRPC autostarted) via userdata
-- [X] Choose kRPC client language - C++
+  - [ ] Split Project into multiple repos [0/2]
+    - [ ] Terraform [0/2]
+      - [ ] Modules
+      - [ ] Plans
+    - [ ] Packer Base Image
+  - [-] Base VM Image(Packer) [3/7]
+    - [ ] KSP Needs to be pinned to 1.7.3 for compatibility between both kRPC and RO :(
+    - [ ] Userdata json structure for:
+      * b64 encoded sfs
+      * Authorized keys
+    - [ ] Automate version bumping on every build and passing down version variable to other locations(i.e. TF plans snapshot string variables)
+    - [X] Add ssh key
+    - Ubuntu base image
+    - Vultr builder
+    - KSP Archive is uploaded to build server from local
+    - [X] CLI Steam management - steamcmd works
+      * +Make sure deb frontend noninteractive works+
+      * +Non-interactive steamcmd+
+      * +Missing some 32bit libs by default+
+      * +2fa?+
+      * +Otherwise, seems to work just fine then directly launch with the binary installed in ~/.steam/...+
+      * +As an alternative should we run into unfixable issues w/ steam, direct download from Squad and hosting that in a private s3 should be fine.+
+    - [X] KSP Installed
+    - [ ] Loads arbitrary sfs game [0/3]
+      - [ ] Rework [[https://github.com/krpc/krpc/blob/master/tools/TestingTools/src/AutoLoadGame.cs][AutoLoadGame]] from kRPC to take sfs filename string as commandline arg to ~~KSP.x86_64~~
+      - [ ] Figure out how to write sfs/scenario files for your base
+      - [ ] kRPC AutoStarts and listening on 0.0.0.0
+        * Is it possible to set this via the SFS File? Might need to extend here.
+    - [ ] Mods installed
+  - [X] Choose kRPC client language - C++
 ** TODO Stage 2 - Data [0/1]
 - [ ] Set up client w/ all kRPC Data Stream - Once this is done, revisiting the image build will probably be worth it.
   * Pipe into GMAT and OpenMCT ???
@@ -49,31 +72,3 @@
     * No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.
     * Will be nice to automate, but is not strictly necessary and would only need to be done on game updates.
     * If ever necessary can provide "depot" and manifest ID's to steamcmd to DL specific KSP releases.
-  - [-] Base VM Image(Packer) [3/8] - On hold, image building is taking too much time and is not very clean to automate with steamcmd atm. Will need to revisit once project is further along. Not currently worth pursuing, better to get some real work done.
-    - [ ] KSP Needs to be pinned to 1.7.3 for compatibility between both kRPC and RO :(
-    - [ ] Userdata json structure for:
-      * b64 encoded sfs
-      * Authorized keys
-    - [ ] Automate version bumping on every build and passing down version variable to other locations(i.e. TF plans snapshot string variables)
-    - [X] Add ssh key
-    - Ubuntu base image
-    - Vultr builder
-    - KSP Archive is uploaded to build server from local
-    - [X] CLI Steam management - steamcmd works
-      * +Make sure deb frontend noninteractive works+
-      * +Non-interactive steamcmd+
-      * +Missing some 32bit libs by default+
-      * +2fa?+
-      * +Otherwise, seems to work just fine then directly launch with the binary installed in ~/.steam/...+
-      * +As an alternative should we run into unfixable issues w/ steam, direct download from Squad and hosting that in a private s3 should be fine.+
-    - [X] KSP Installed
-    - [ ] Loads arbitrary sfs game [0/3]
-      - [ ] Rework [[https://github.com/krpc/krpc/blob/master/tools/TestingTools/src/AutoLoadGame.cs][AutoLoadGame]] from kRPC to take sfs filename string as commandline arg to ~~KSP.x86_64~~
-      - [ ] Figure out how to write sfs/scenario files for your base
-      - [ ] kRPC AutoStarts and listening on 0.0.0.0
-        * Is it possible to set this via the SFS File? Might need to extend here.
-    - [ ] Mods installed
-  - [-] Split Project into multiple repos [0/1] - Similar to Packer build, not currently worth pursuing till a greater bulk of work is done.
-    - [ ] Terraform [0/2]
-      - [ ] Modules
-      - [ ] Plans
