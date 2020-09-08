@@ -19,18 +19,14 @@
   * No longer neccessary, headless is possible w/ unity opts in above task
 ** STRT Stage 1 - Prep [2/4]
   - [X] Automate game-archiver
-  - [ ] Base VM Image(Packer) [1/4]
+  - [-] Base VM Image(Packer) [1/4]
     - [X] Install KSP 1.7.3 from S3
-    - [-] Automate mod install [1/3]
+    - [-] Automate mod install [2/3]
       - [X] Install CKAN.deb
       - [X] kRPC manually from github
       - [ ] RO via CKAN
-    - [ ] POC kRPC and AutoLoadGame SFS
-    - [ ] Loads arbitrary sfs game [0/3]
-      - [ ] Rework [[https://github.com/krpc/krpc/blob/master/tools/TestingTools/src/AutoLoadGame.cs][AutoLoadGame]] from kRPC to take sfs filename string as commandline arg to ~~KSP.x86_64~~
-      - [ ] Figure out how to write sfs/scenario files for your base
-      - [ ] kRPC AutoStarts and listening on 0.0.0.0
-        * Is it possible to set this via the SFS File? Might need to extend here.
+    - [ ] AutoLoadGame - Now supports specifying SFS files
+    - [ ] POC kRPC
   - [ ] Split Project into multiple repos [0/2]
     - [ ] Terraform [0/2]
       - [ ] Modules
