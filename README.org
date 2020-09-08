@@ -18,6 +18,9 @@
         + https://answers.unity.com/questions/366195/parameters-at-startup.html
   * No longer neccessary, headless is possible w/ unity opts in above task
 ** STRT Stage 1 - Prep [2/4]
+  - [ ] Need to implement an Xvfb workflow using screenshots to debug Automation
+    * There are module load errors in KSP.log, not sure if its preventing AutoLoadGame from doing its thing, or if that is related to the Changelog startup dialog in KSP Main Menu.
+    * Why are we stuck at the Change Log dialog on KSP Start?
   - [X] Automate game-archiver
   - [-] Base VM Image(Packer) [1/4]
     - [X] Install KSP 1.7.3 from S3
@@ -50,12 +53,10 @@
 - [[https://github.com/KSP-RO/RealismOverhaul/wiki][Realism Overhaul]] - Its not certain this will place nice with [[https://krpc.github.io/krpc/][kRPC]], however realistic(ish?) control theory is really the purpose of this project so we will proceed with it until/unless we encounter problems.
 - [[https://ksp-kos.github.io/KOS/][kOS]] - kOS might be useful for some simpler tasks where we don't want the full power of kRPC. Might use, might not. We'll see.
 ** On Hold
+  - [ ] Properly version Packer builds
+    - dev builds by commit short SHA
+    - "Prod" builds by Releae Tag
   - [X] Do I even want to use KSP? This [[http://orbit.medphys.ucl.ac.uk/index.html][Orbiter Space flight simulator]] seems interesting:
     * Results: perhaps I'll work up to this at some point...
     * [[https://www.orbiterwiki.org/wiki/][Docs]]
     * [[https://www.orbiterwiki.org/wiki/SDK_documentation][SDK Docs]]
-  - [ ] Automate S3 hosting of tar'd game download
-    * On Hold: Can just use steam cmd locally for now to create the tars then automate the uploading/point packer builds to the "latest" tar.
-    * No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.
-    * Will be nice to automate, but is not strictly necessary and would only need to be done on game updates.
-    * If ever necessary can provide "depot" and manifest ID's to steamcmd to DL specific KSP releases.
