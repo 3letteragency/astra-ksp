@@ -64,6 +64,7 @@
         "mkdir -p /tmp/alg",
         "unzip /tmp/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip -d /tmp/alg",
         "mv /tmp/alg/GameData/AutoLoadGame/ /home/astra/ksp/GameData/",
+        "chown -R astra:astra /home/astra/ksp/GameData",
         "rm -rf /tmp/alg",
         "rm -f /tmp/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip"
       ]
