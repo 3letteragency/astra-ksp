@@ -21,10 +21,10 @@
   - [X] Automate game-archiver
   - [-] Base VM Image(Packer) [1/4]
     - [X] Install KSP 1.7.3 from S3
-    - [-] Automate mod install [2/3]
+    - [-] Automate mod install [3/4]
       - [X] Install CKAN.deb
       - [X] kRPC manually from github
-      - [ ] AutoLoadGame - Allista
+      - [X] AutoLoadGame - Allista
       - [ ] RO via CKAN
     - [ ] AutoLoadGame - Now supports specifying SFS files
     - [ ] POC kRPC
