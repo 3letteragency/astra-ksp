@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [Astra](#orga786c8d)
-    1.  [R&D <code>[2/2]</code>](#orgf990a06)
-    2.  [Stage 1 - Prep <code>[2/4]</code>](#org40375bb)
-    3.  [Stage 2 - Data <code>[0/1]</code>](#org938cda5)
-    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org8f0e890)
-    5.  [Stage 4 - Operations <code>[0/2]</code>](#org75dc839)
-    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org95431f9)
-    7.  [KSP Mod Requirements](#org60cbb85)
-    8.  [On Hold](#org8ddfb51)
+1.  [Astra](#orgcfec3c1)
+    1.  [R&D <code>[2/2]</code>](#orgf8922cf)
+    2.  [Stage 1 - Prep <code>[2/4]</code>](#org87b386b)
+    3.  [Stage 2 - Data <code>[0/1]</code>](#org2b0d85c)
+    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orgae8d92a)
+    5.  [Stage 4 - Operations <code>[0/2]</code>](#orgee5e234)
+    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org06acaa3)
+    7.  [KSP Mod Requirements](#orga9aac1a)
+    8.  [On Hold](#orgbccb410)
 
 
 
-<a id="orga786c8d"></a>
+<a id="orgcfec3c1"></a>
 
 # Astra
 
 
-<a id="orgf990a06"></a>
+<a id="orgf8922cf"></a>
 
 ## STRT R&D <code>[2/2]</code>
 
@@ -36,13 +36,15 @@
     -   No longer neccessary, headless is possible w/ unity opts in above task
 
 
-<a id="org40375bb"></a>
+<a id="org87b386b"></a>
 
 ## STRT Stage 1 - Prep <code>[2/4]</code>
 
 -   [ ] Need to implement an Xvfb workflow using screenshots to debug Automation
     -   There are module load errors in KSP.log, not sure if its preventing AutoLoadGame from doing its thing, or if that is related to the Changelog startup dialog in KSP Main Menu.
     -   Why are we stuck at the Change Log dialog on KSP Start?
+        -   ksp settings.cfg:
+            -   SHOW<sub>WHATSNEW</sub><sub>DIALOG</sub> = False
 -   [X] Automate game-archiver
 -   [-] Base VM Image(Packer) <code>[1/4]</code>
     -   [X] Install KSP 1.7.3 from S3
@@ -61,7 +63,7 @@
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org938cda5"></a>
+<a id="org2b0d85c"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -69,7 +71,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org8f0e890"></a>
+<a id="orgae8d92a"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -77,7 +79,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org75dc839"></a>
+<a id="orgee5e234"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -85,12 +87,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="org95431f9"></a>
+<a id="org06acaa3"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="org60cbb85"></a>
+<a id="orga9aac1a"></a>
 
 ## KSP Mod Requirements
 
@@ -100,7 +102,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org8ddfb51"></a>
+<a id="orgbccb410"></a>
 
 ## On Hold
 

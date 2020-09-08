@@ -21,6 +21,8 @@
   - [ ] Need to implement an Xvfb workflow using screenshots to debug Automation
     * There are module load errors in KSP.log, not sure if its preventing AutoLoadGame from doing its thing, or if that is related to the Changelog startup dialog in KSP Main Menu.
     * Why are we stuck at the Change Log dialog on KSP Start?
+      * ksp settings.cfg:
+        * SHOW_WHATSNEW_DIALOG = False
   - [X] Automate game-archiver
   - [-] Base VM Image(Packer) [1/4]
     - [X] Install KSP 1.7.3 from S3
