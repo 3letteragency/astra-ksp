@@ -8,6 +8,8 @@ export CKAN_VERSION="1.28.0"
 export CKAN_DEB_URL=$(echo "https://github.com/KSP-CKAN/CKAN/releases/download/v${CKAN_VERSION}/ckan_${CKAN_VERSION}_all.deb")
 export KRPC_VERSION="0.4.8"
 export KRPC_ZIP_URL=$(echo "https://github.com/krpc/krpc/releases/download/v${KRPC_VERSION}/krpc-${KRPC_VERSION}.zip")
+export AUTOLOADGAME_VERSION="1.0.10"
+export AUTOLOADGAME_ZIP_URL=$(echo "https://github.com/allista/AutoLoadGame/releases/download/v${AUTOLOADGAME_VERSION}/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip")
 
 validate(){
     packer validate astra.json

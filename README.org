@@ -24,6 +24,7 @@
     - [-] Automate mod install [2/3]
       - [X] Install CKAN.deb
       - [X] kRPC manually from github
+      - [ ] AutoLoadGame - Allista
       - [ ] RO via CKAN
     - [ ] AutoLoadGame - Now supports specifying SFS files
     - [ ] POC kRPC

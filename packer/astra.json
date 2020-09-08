@@ -6,7 +6,9 @@
     "ckan_deb_url": "{{ env `CKAN_DEB_URL` }}",
     "krpc_version": "{{ env `KRPC_VERSION` }}",
     "krpc_zip_url": "{{ env `KRPC_ZIP_URL` }}",
-    "vultr_ssh_key_id_mission_control": "{{ env `VULTR_SSH_KEY_ID_MISSION_CONTROL` }}"
+    "vultr_ssh_key_id_mission_control": "{{ env `VULTR_SSH_KEY_ID_MISSION_CONTROL` }}",
+    "autoloadgame_version": "{{ env `AUTOLOADGAME_VERSION`}}",
+    "autoloadgame_zip_url": "{{ env `AUTOLOADGAME_ZIP_URL` }}"
   },
   "builders": [
     {
@@ -33,7 +35,9 @@
         "CKAN_VERSION={{ user `ckan_version` }}",
         "CKAN_DEB_URL={{ user `ckan_deb_url` }}",
         "KRPC_VERSION={{ user `krpc_version` }}",
-        "KRPC_ZIP_URL={{ user `krpc_zip_url` }}"
+        "KRPC_ZIP_URL={{ user `krpc_zip_url` }}",
+        "AUTOLOADGAME_VERSION={{ user `autoloadgame_version` }}",
+        "AUTOLOADGAME_ZIP_URL={{ user `autoloadgame_zip_url` }}"
       ],
       "inline": [
         "apt -y update",
@@ -55,7 +59,13 @@
         "unzip /tmp/krpc-${KRPC_VERSION}.zip -d /tmp/krpc",
         "mv /tmp/krpc/GameData/kRPC /home/astra/ksp/GameData",
         "rm -f /tmp/krpc",
-        "rm -f /tmp/krpc-${KRPC_VERSION}.zip"
+        "rm -f /tmp/krpc-${KRPC_VERSION}.zip",
+        "wget $AUTOLOADGAME_ZIP_URL -O /tmp/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip",
+        "mkdir -p /tmp/alg",
+        "unzip /tmp/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip -d /tmp/alg",
+        "mv /tmp/alg/GameData/AutoLoadGame/ /home/astra/ksp/GameData/",
+        "rm -rf /tmp/alg",
+        "rm -f /tmp/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip"
       ]
     }
   ]
