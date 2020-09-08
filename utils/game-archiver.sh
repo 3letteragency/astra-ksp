@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
-# secrets
+source ../secrets.env
 source ../project.env
 
 get_ksp(){

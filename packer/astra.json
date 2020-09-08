@@ -58,7 +58,7 @@
         "mkdir krpc",
         "unzip /tmp/krpc-${KRPC_VERSION}.zip -d /tmp/krpc",
         "mv /tmp/krpc/GameData/kRPC /home/astra/ksp/GameData",
-        "rm -f /tmp/krpc",
+        "rm -rf /tmp/krpc",
         "rm -f /tmp/krpc-${KRPC_VERSION}.zip",
         "wget $AUTOLOADGAME_ZIP_URL -O /tmp/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip",
         "mkdir -p /tmp/alg",
