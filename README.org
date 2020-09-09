@@ -17,28 +17,33 @@
         + https://answers.unity.com/questions/138715/read-command-line-arguments.html
         + https://answers.unity.com/questions/366195/parameters-at-startup.html
   * No longer neccessary, headless is possible w/ unity opts in above task
-** STRT Stage 1 - Prep [2/4]
-  - [ ] Need to implement an Xvfb workflow using screenshots to debug Automation
-    * There are module load errors in KSP.log, not sure if its preventing AutoLoadGame from doing its thing, or if that is related to the Changelog startup dialog in KSP Main Menu.
-    * Why are we stuck at the Change Log dialog on KSP Start?
+** STRT Stage 1 - Prep [2/5]
+  - [ ] Need to implement an automated Xvfb workflow using screenshots to debug Automation
+    * +There are module load errors in KSP.log, not sure if its preventing AutoLoadGame from doing its thing, or if that is related to the Changelog startup dialog in KSP Main Menu.+ KSP 1.8.1 Works great
+    * +Why are we stuck at the Change Log dialog on KSP Start?+ A bit annoying but appears to be inconsequential for my automation purposes.
       * ksp settings.cfg:
         * SHOW_WHATSNEW_DIALOG = False
-        * Version 1.7.3 was not honoring settings.cfg, lets see if 1.8.1 works
+        * +Version 1.7.3 was not honoring settings.cfg, lets see if 1.8.1 works+ Still not honored in 1.8.1 but again, appears inconsequential
   - [X] Automate game-archiver
-  - [-] Base VM Image(Packer) [1/4]
+  - [-] Base VM Image(Packer) [3/8]
+    - [ ] astra-base.sfs
+    - [ ] AutoLoadGame.conf
+    - [ ] settings.cfg
+    - [ ] krpc-settings.cfg
     - [X] Install KSP 1.7.3 from S3
     - [-] Automate mod install [3/4]
       - [X] Install CKAN.deb
       - [X] kRPC manually from github
       - [X] AutoLoadGame - Allista
       - [ ] RO via CKAN
-    - [ ] AutoLoadGame - Now supports specifying SFS files
-    - [ ] POC kRPC
-  - [ ] Split Project into multiple repos [0/2]
+    - [X] AutoLoadGame - Now supports specifying SFS files
+    - [X] POC kRPC
+  - [ ] Split Project into multiple repos [0/3]
     - [ ] Terraform [0/2]
       - [ ] Modules
       - [ ] Plans
     - [ ] Packer Base Image
+    - [ ] Astractl
   - [X] Choose kRPC client language - C++
 ** TODO Stage 2 - Data [0/1]
 - [ ] Set up client w/ all kRPC Data Stream - Once this is done, revisiting the image build will probably be worth it.
