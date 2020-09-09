@@ -41,7 +41,7 @@
       ],
       "inline": [
         "apt -y update",
-        "apt -y install mono-runtime unzip x11-apps scrot",
+        "apt -y install mono-runtime unzip xvfb scrot",
         "useradd -m astra",
         "chsh astra -s /bin/bash",
         "mkdir -p /home/astra/ksp",
