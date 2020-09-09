@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [Astra](#orgcfec3c1)
-    1.  [R&D <code>[2/2]</code>](#orgf8922cf)
-    2.  [Stage 1 - Prep <code>[2/4]</code>](#org87b386b)
-    3.  [Stage 2 - Data <code>[0/1]</code>](#org2b0d85c)
-    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orgae8d92a)
-    5.  [Stage 4 - Operations <code>[0/2]</code>](#orgee5e234)
-    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org06acaa3)
-    7.  [KSP Mod Requirements](#orga9aac1a)
-    8.  [On Hold](#orgbccb410)
+1.  [Astra](#org8024ff4)
+    1.  [R&D <code>[2/2]</code>](#org94171a3)
+    2.  [Stage 1 - Prep <code>[2/4]</code>](#org1968540)
+    3.  [Stage 2 - Data <code>[0/1]</code>](#org9c81c07)
+    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org5b48f81)
+    5.  [Stage 4 - Operations <code>[0/2]</code>](#org6676b37)
+    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org8ecef1a)
+    7.  [KSP Mod Requirements](#orgb3dfc97)
+    8.  [On Hold](#org5de7ba6)
 
 
 
-<a id="orgcfec3c1"></a>
+<a id="org8024ff4"></a>
 
 # Astra
 
 
-<a id="orgf8922cf"></a>
+<a id="org94171a3"></a>
 
 ## STRT R&D <code>[2/2]</code>
 
@@ -36,7 +36,7 @@
     -   No longer neccessary, headless is possible w/ unity opts in above task
 
 
-<a id="org87b386b"></a>
+<a id="org1968540"></a>
 
 ## STRT Stage 1 - Prep <code>[2/4]</code>
 
@@ -45,6 +45,7 @@
     -   Why are we stuck at the Change Log dialog on KSP Start?
         -   ksp settings.cfg:
             -   SHOW<sub>WHATSNEW</sub><sub>DIALOG</sub> = False
+            -   Version 1.7.3 was not honoring settings.cfg, lets see if 1.8.1 works
 -   [X] Automate game-archiver
 -   [-] Base VM Image(Packer) <code>[1/4]</code>
     -   [X] Install KSP 1.7.3 from S3
@@ -63,7 +64,7 @@
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org2b0d85c"></a>
+<a id="org9c81c07"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -71,7 +72,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="orgae8d92a"></a>
+<a id="org5b48f81"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -79,7 +80,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="orgee5e234"></a>
+<a id="org6676b37"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -87,12 +88,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="org06acaa3"></a>
+<a id="org8ecef1a"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="orga9aac1a"></a>
+<a id="orgb3dfc97"></a>
 
 ## KSP Mod Requirements
 
@@ -102,7 +103,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orgbccb410"></a>
+<a id="org5de7ba6"></a>
 
 ## On Hold
 

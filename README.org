@@ -23,6 +23,7 @@
     * Why are we stuck at the Change Log dialog on KSP Start?
       * ksp settings.cfg:
         * SHOW_WHATSNEW_DIALOG = False
+        * Version 1.7.3 was not honoring settings.cfg, lets see if 1.8.1 works
   - [X] Automate game-archiver
   - [-] Base VM Image(Packer) [1/4]
     - [X] Install KSP 1.7.3 from S3
