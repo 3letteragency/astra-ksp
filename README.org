@@ -4,19 +4,6 @@
 #+EMAIL: tylerweldon94@gmail.com
 
 * Astra
-** STRT R&D [2/2]
-- [X] Can we set up a headless/graphically limited KSP?
-  * +Running KSP in a VM seems promising.+
-    * +Set all graphics settings to minimum+
-  * We sure can! Unity options: ~~KSP.x86_64 -batchmode -nographics~~
-- [X] If not headless, can we automate the launching of KSP "instances", and entering/setting up the game as desired(specific missions, locations, etc.) via the [[https://krpc.github.io/krpc/cpp/api/ui/ui.html][kRPC UI API]]?
-  * +Might be able to use the Unity [[https://docs.unity3d.com/Manual/CLIBatchmodeCoroutines.html][Batch Mode]] and [[https://docs.unity3d.com/Manual/CommandLineArguments.html][nographics]] options to facilitate headless.+
-  * +Will need some means of automatically launching specified game saves.+
-    * +[[https://github.com/allista/AutoLoadGame][AutoLoadGame]] might do the trick.+
-      * +Might modify to use Unity CLI args instead of config file:+
-        + https://answers.unity.com/questions/138715/read-command-line-arguments.html
-        + https://answers.unity.com/questions/366195/parameters-at-startup.html
-  * No longer neccessary, headless is possible w/ unity opts in above task
 ** STRT Stage 1 - Prep [2/5]
   - [ ] Need to implement an automated Xvfb workflow using screenshots to debug Automation
     * +There are module load errors in KSP.log, not sure if its preventing AutoLoadGame from doing its thing, or if that is related to the Changelog startup dialog in KSP Main Menu.+ KSP 1.8.1 Works great
