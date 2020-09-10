@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1.  [Astra](#orgb6118a4)
-    1.  [Stage 1 - Prep <code>[2/5]</code>](#org28e9ec4)
-    2.  [Stage 2 - Data <code>[0/1]</code>](#org50dac1e)
-    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orgdcd7abc)
-    4.  [Stage 4 - Operations <code>[0/2]</code>](#org66886c6)
-    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org3a77044)
-    6.  [KSP Mod Requirements](#org2f1798c)
-    7.  [On Hold](#org222afe1)
+1.  [Astra](#orgd8489fb)
+    1.  [Stage 1 - Prep <code>[2/5]</code>](#org93aa4b4)
+    2.  [Stage 2 - Data <code>[0/1]</code>](#orgb52c57f)
+    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org60c2d05)
+    4.  [Stage 4 - Operations <code>[0/2]</code>](#orgbd91db2)
+    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org985240d)
+    6.  [KSP Mod Requirements](#org9258691)
+    7.  [On Hold](#orgb226236)
 
 
 
-<a id="orgb6118a4"></a>
+<a id="orgd8489fb"></a>
 
 # Astra
 
 
-<a id="org28e9ec4"></a>
+<a id="org93aa4b4"></a>
 
 ## STRT Stage 1 - Prep <code>[2/5]</code>
 
@@ -35,7 +35,7 @@
     -   [ ] settings.cfg
     -   [ ] krpc-settings.cfg
     -   [X] Install KSP 1.7.3 from S3
-    -   [-] Automate mod install <code>[3/4]</code>
+    -   [-] Automate mod install <code>[3/6]</code>
         -   [X] Install CKAN.deb
         -   [X] kRPC manually from github
         -   [X] AutoLoadGame - Allista
@@ -53,7 +53,7 @@
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org50dac1e"></a>
+<a id="orgb52c57f"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -61,7 +61,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="orgdcd7abc"></a>
+<a id="org60c2d05"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -69,7 +69,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org66886c6"></a>
+<a id="orgbd91db2"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -77,12 +77,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="org3a77044"></a>
+<a id="org985240d"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="org2f1798c"></a>
+<a id="org9258691"></a>
 
 ## KSP Mod Requirements
 
@@ -92,7 +92,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org222afe1"></a>
+<a id="orgb226236"></a>
 
 ## On Hold
 

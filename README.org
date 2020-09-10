@@ -19,7 +19,7 @@
     - [ ] settings.cfg
     - [ ] krpc-settings.cfg
     - [X] Install KSP 1.7.3 from S3
-    - [-] Automate mod install [3/4]
+    - [-] Automate mod install [3/6]
       - [X] Install CKAN.deb
       - [X] kRPC manually from github
       - [X] AutoLoadGame - Allista
