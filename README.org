@@ -6,7 +6,6 @@
 * Astra
 ** STRT Stage 1 - Prep [2/5]
   - [-] Base VM Image(Packer) [3/9]
-    - [ ] Script/Ansible/etc. Out Packer Script provisioner(getting long and unweildy)
     - [-] Automate mod install [5/6]
       - [ ] [[https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/][KK's SpaceX Pack]]
       - [X] RO via CKAN
@@ -28,12 +27,6 @@
       * ksp settings.cfg:
         * SHOW_WHATSNEW_DIALOG = False
         * +Version 1.7.3 was not honoring settings.cfg, lets see if 1.8.1 works+ Still not honored in 1.8.1 but again, appears inconsequential
-  - [ ] Split Project into multiple repos [0/3]
-    - [ ] Terraform [0/2]
-      - [ ] Modules
-      - [ ] Plans
-    - [ ] Packer Base Image
-    - [ ] Astractl
   - [X] Automate game-archiver
   - [X] Choose kRPC client language - C++
 ** TODO Stage 2 - Data [0/1]
@@ -46,6 +39,14 @@
 - [-] Starlink(s) [0/0]
 - [-] Long running, real time ops [0/0]
 ** TODO Stage 5 - Stream Real Time Ops [0/0]
+** TODO Backlog/As Needed [0/2]
+  - [ ] Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)
+  - [ ] Split Project into multiple repos [0/3]
+    - [ ] Terraform [0/2]
+      - [ ] Modules
+      - [ ] Plans
+    - [ ] Packer Base Image
+    - [ ] Astractl
 ** KSP Mod Requirements
 - [[https://github.com/allista/AutoLoadGame][AutoLoadGame]] - by Allista, allows creating a configuration file in your saves dir that will automatically load the specified sfs file upong game start.
 - [[https://krpc.github.io/krpc/][kRPC]] - kRPC allows you to control Kerbal Space Program from scripts running outside of the game.
