@@ -1,31 +1,32 @@
 
 # Table of Contents
 
-1.  [Astra](#org63bc942)
-    1.  [Stage 1 - Prep <code>[2/5]</code>](#org8ea0dd1)
-    2.  [Stage 2 - Data <code>[0/1]</code>](#org01602d3)
-    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org9f55c2c)
-    4.  [Stage 4 - Operations <code>[0/2]</code>](#org7502208)
-    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orgaec6775)
-    6.  [KSP Mod Requirements](#org54f3e69)
-    7.  [On Hold](#org1433706)
+1.  [Astra](#orgff16d8c)
+    1.  [Stage 1 - Prep <code>[2/5]</code>](#org194fa7f)
+    2.  [Stage 2 - Data <code>[0/1]</code>](#org66f8991)
+    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org6bb1f23)
+    4.  [Stage 4 - Operations <code>[0/2]</code>](#org92cd91d)
+    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org8d1fbb8)
+    6.  [KSP Mod Requirements](#orgafe73e2)
+    7.  [On Hold](#org4a1e228)
 
 
 
-<a id="org63bc942"></a>
+<a id="orgff16d8c"></a>
 
 # Astra
 
 
-<a id="org8ea0dd1"></a>
+<a id="org194fa7f"></a>
 
 ## STRT Stage 1 - Prep <code>[2/5]</code>
 
--   [-] Base VM Image(Packer) <code>[3/8]</code>
-    -   [-] Automate mod install <code>[3/6]</code>
-        -   [ ] RO via CKAN
-        -   [ ] Principia
+-   [-] Base VM Image(Packer) <code>[3/9]</code>
+    -   [ ] Script/Ansible Out Packer Script provisioner(getting long and unweildy)
+    -   [-] Automate mod install <code>[5/6]</code>
         -   [ ] [KK&rsquo;s SpaceX Pack](https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/)
+        -   [X] RO via CKAN
+        -   [X] Principia
         -   [X] Install CKAN.deb
         -   [X] kRPC manually from github
         -   [X] AutoLoadGame - Allista
@@ -53,7 +54,7 @@
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org01602d3"></a>
+<a id="org66f8991"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -61,7 +62,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org9f55c2c"></a>
+<a id="org6bb1f23"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -69,7 +70,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org7502208"></a>
+<a id="org92cd91d"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -77,12 +78,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="orgaec6775"></a>
+<a id="org8d1fbb8"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="org54f3e69"></a>
+<a id="orgafe73e2"></a>
 
 ## KSP Mod Requirements
 
@@ -92,7 +93,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org1433706"></a>
+<a id="org4a1e228"></a>
 
 ## On Hold
 
