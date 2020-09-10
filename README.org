@@ -54,7 +54,3 @@
   - [ ] Properly version Packer builds
     - dev builds by commit short SHA
     - "Prod" builds by Releae Tag
-  - [X] Do I even want to use KSP? This [[http://orbit.medphys.ucl.ac.uk/index.html][Orbiter Space flight simulator]] seems interesting:
-    * Results: perhaps I'll work up to this at some point...
-    * [[https://www.orbiterwiki.org/wiki/][Docs]]
-    * [[https://www.orbiterwiki.org/wiki/SDK_documentation][SDK Docs]]

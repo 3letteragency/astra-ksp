@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1.  [Astra](#orgd8489fb)
-    1.  [Stage 1 - Prep <code>[2/5]</code>](#org93aa4b4)
-    2.  [Stage 2 - Data <code>[0/1]</code>](#orgb52c57f)
-    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org60c2d05)
-    4.  [Stage 4 - Operations <code>[0/2]</code>](#orgbd91db2)
-    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org985240d)
-    6.  [KSP Mod Requirements](#org9258691)
-    7.  [On Hold](#orgb226236)
+1.  [Astra](#org4e50e26)
+    1.  [Stage 1 - Prep <code>[2/5]</code>](#org64fafe9)
+    2.  [Stage 2 - Data <code>[0/1]</code>](#org0ffa336)
+    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orgf263158)
+    4.  [Stage 4 - Operations <code>[0/2]</code>](#orgf8aea5f)
+    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org8c0a9d5)
+    6.  [KSP Mod Requirements](#org827d44e)
+    7.  [On Hold](#org472fc59)
 
 
 
-<a id="orgd8489fb"></a>
+<a id="org4e50e26"></a>
 
 # Astra
 
 
-<a id="org93aa4b4"></a>
+<a id="org64fafe9"></a>
 
 ## STRT Stage 1 - Prep <code>[2/5]</code>
 
@@ -53,7 +53,7 @@
 -   [X] Choose kRPC client language - C++
 
 
-<a id="orgb52c57f"></a>
+<a id="org0ffa336"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -61,7 +61,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org60c2d05"></a>
+<a id="orgf263158"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -69,7 +69,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="orgbd91db2"></a>
+<a id="orgf8aea5f"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -77,12 +77,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="org985240d"></a>
+<a id="org8c0a9d5"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="org9258691"></a>
+<a id="org827d44e"></a>
 
 ## KSP Mod Requirements
 
@@ -92,15 +92,11 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orgb226236"></a>
+<a id="org472fc59"></a>
 
 ## On Hold
 
 -   [ ] Properly version Packer builds
     -   dev builds by commit short SHA
     -   &ldquo;Prod&rdquo; builds by Releae Tag
--   [X] Do I even want to use KSP? This [Orbiter Space flight simulator](http://orbit.medphys.ucl.ac.uk/index.html) seems interesting:
-    -   Results: perhaps I&rsquo;ll work up to this at some point&#x2026;
-    -   [Docs](https://www.orbiterwiki.org/wiki/)
-    -   [SDK Docs](https://www.orbiterwiki.org/wiki/SDK_documentation)
 
