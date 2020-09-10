@@ -36,6 +36,8 @@
       - [X] kRPC manually from github
       - [X] AutoLoadGame - Allista
       - [ ] RO via CKAN
+      - [ ] Principia
+      - [ ] [[https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/][KK's SpaceX Pack]]
     - [X] AutoLoadGame - Now supports specifying SFS files
     - [X] POC kRPC
   - [ ] Split Project into multiple repos [0/3]

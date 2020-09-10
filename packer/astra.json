@@ -29,6 +29,11 @@
   ],
   "provisioners": [
     {
+      "type": "file",
+      "source": "files/ksp",
+      "destination": "/tmp/ksp-conf"
+    },
+    {
       "type": "shell",
       "environment_vars": [
         "GAME_ARCHIVE_URL={{ user `game_archive_url` }}",
@@ -66,7 +71,9 @@
         "mv /tmp/alg/GameData/AutoLoadGame/ /home/astra/ksp/GameData/",
         "chown -R astra:astra /home/astra/ksp/GameData",
         "rm -rf /tmp/alg",
-        "rm -f /tmp/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip"
+        "rm -f /tmp/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip",
+        "mkdir -p /home/astra/ksp/saves/astra",
+        "chown -R astra:astra /home/astra"
       ]
     }
   ]
