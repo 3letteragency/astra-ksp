@@ -6,7 +6,7 @@
 * Astra
 ** STRT Stage 1 - Prep [2/5]
   - [-] Base VM Image(Packer) [3/9]
-    - [ ] Script/Ansible Out Packer Script provisioner(getting long and unweildy)
+    - [ ] Script/Ansible/etc. Out Packer Script provisioner(getting long and unweildy)
     - [-] Automate mod install [5/6]
       - [ ] [[https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/][KK's SpaceX Pack]]
       - [X] RO via CKAN

@@ -1,28 +1,28 @@
 
 # Table of Contents
 
-1.  [Astra](#orgff16d8c)
-    1.  [Stage 1 - Prep <code>[2/5]</code>](#org194fa7f)
-    2.  [Stage 2 - Data <code>[0/1]</code>](#org66f8991)
-    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org6bb1f23)
-    4.  [Stage 4 - Operations <code>[0/2]</code>](#org92cd91d)
-    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org8d1fbb8)
-    6.  [KSP Mod Requirements](#orgafe73e2)
-    7.  [On Hold](#org4a1e228)
+1.  [Astra](#org195ce83)
+    1.  [Stage 1 - Prep <code>[2/5]</code>](#orgd36366d)
+    2.  [Stage 2 - Data <code>[0/1]</code>](#org6f9827f)
+    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org7405d12)
+    4.  [Stage 4 - Operations <code>[0/2]</code>](#org1a56aed)
+    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orge604150)
+    6.  [KSP Mod Requirements](#orgd8b1f19)
+    7.  [On Hold](#org5ce3b97)
 
 
 
-<a id="orgff16d8c"></a>
+<a id="org195ce83"></a>
 
 # Astra
 
 
-<a id="org194fa7f"></a>
+<a id="orgd36366d"></a>
 
 ## STRT Stage 1 - Prep <code>[2/5]</code>
 
 -   [-] Base VM Image(Packer) <code>[3/9]</code>
-    -   [ ] Script/Ansible Out Packer Script provisioner(getting long and unweildy)
+    -   [ ] Script/Ansible/etc. Out Packer Script provisioner(getting long and unweildy)
     -   [-] Automate mod install <code>[5/6]</code>
         -   [ ] [KK&rsquo;s SpaceX Pack](https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/)
         -   [X] RO via CKAN
@@ -54,7 +54,7 @@
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org66f8991"></a>
+<a id="org6f9827f"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -62,7 +62,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org6bb1f23"></a>
+<a id="org7405d12"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -70,7 +70,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org92cd91d"></a>
+<a id="org1a56aed"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -78,12 +78,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="org8d1fbb8"></a>
+<a id="orge604150"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="orgafe73e2"></a>
+<a id="orgd8b1f19"></a>
 
 ## KSP Mod Requirements
 
@@ -93,7 +93,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org4a1e228"></a>
+<a id="org5ce3b97"></a>
 
 ## On Hold
 
