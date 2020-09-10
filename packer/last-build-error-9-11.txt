@@ -1,0 +1,20 @@
+
+==> vultr: 2020-09-10 23:35:25 (80.4 MB/s) - ‘principia-galois-1.9.1.zip?AWSAccessKeyId=LFTQP12COLODODD1LED5&Expires=1599867022&Signature=IJmr%2FqO3R+ATxC5yth8wmMQyuq0=’ saved [53771570/53771570]
+==> vultr:
+==> vultr: /tmp/principia-galois-1.9.1.zip: Scheme missing.
+==> vultr: FINISHED --2020-09-10 23:35:25--
+==> vultr: Total wall clock time: 0.8s
+==> vultr: Downloaded: 1 files, 51M in 0.6s (80.4 MB/s)
+==> vultr: Provisioning step had errors: Running the cleanup provisioner, if present...
+==> vultr: Destroying server 40471609
+==> vultr: Deleting temporary SSH key...
+Build 'vultr' errored after 5 minutes 1 second: Script exited with non-zero exit status: 1.Allowed exit codes are: [0]
+
+==> Wait completed after 5 minutes 1 second
+
+==> Some builds didn't complete successfully and had errors:
+--> vultr: Script exited with non-zero exit status: 1.Allowed exit codes are: [0]
+
+==> Builds finished but no artifacts were created.
+
+****** YOU FORGOT TO DO -O IN THE WGET - astra.json LINE 82
