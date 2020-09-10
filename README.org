@@ -7,8 +7,9 @@
 ** STRT Stage 1 - Prep [2/5]
   - [-] Base VM Image(Packer) [3/8]
     - [-] Automate mod install [3/6]
-      - [ ] RO via CKAN
-      - [ ] Principia
+      - [X] RO via CKAN
+        - [ ] Selectively install RO Suggests Mods
+      - [X] Principia
       - [ ] [[https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/][KK's SpaceX Pack]]
       - [X] Install CKAN.deb
       - [X] kRPC manually from github

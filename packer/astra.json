@@ -8,7 +8,9 @@
     "krpc_zip_url": "{{ env `KRPC_ZIP_URL` }}",
     "vultr_ssh_key_id_mission_control": "{{ env `VULTR_SSH_KEY_ID_MISSION_CONTROL` }}",
     "autoloadgame_version": "{{ env `AUTOLOADGAME_VERSION`}}",
-    "autoloadgame_zip_url": "{{ env `AUTOLOADGAME_ZIP_URL` }}"
+    "autoloadgame_zip_url": "{{ env `AUTOLOADGAME_ZIP_URL` }}",
+    "principia_zip_filename": "{{ env `PRINCIPIA_ZIP_FILENAME` }}",
+    "principia_zip_url": "{{ env `PRINCIPIA_ZIP_URL` }}"
   },
   "builders": [
     {
@@ -42,7 +44,9 @@
         "KRPC_VERSION={{ user `krpc_version` }}",
         "KRPC_ZIP_URL={{ user `krpc_zip_url` }}",
         "AUTOLOADGAME_VERSION={{ user `autoloadgame_version` }}",
-        "AUTOLOADGAME_ZIP_URL={{ user `autoloadgame_zip_url` }}"
+        "AUTOLOADGAME_ZIP_URL={{ user `autoloadgame_zip_url` }}",
+        "PRINCIPIA_ZIP_FILENAME={{ user `principia_zip_filename` }}",
+        "PRINCIPIA_ZIP_URL={{ user `principia_zip_url` }}"
       ],
       "inline": [
         "apt -y update",
@@ -73,6 +77,11 @@
         "rm -rf /tmp/alg",
         "rm -f /tmp/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip",
         "mkdir -p /home/astra/ksp/saves/astra",
+        "su astra -c 'ckan install --headless --ksp astra RealismOverhaul'",
+        "wget $PRINCIPIA_ZIP_URL /tmp/$PRINCIPIA_ZIP_FILENAME",
+        "mkdir -p /tmp/principia",
+        "unzip /tmp/$PRINCIPIA_ZIP_FILENAME -d /tmp/principia",
+        "mv /tmp/principia/GameData/Principia /home/astra/ksp/GameData",
         "chown -R astra:astra /home/astra"
       ]
     }
