@@ -1,24 +1,26 @@
 
 # Table of Contents
 
-1.  [Astra](#orge4a69d0)
-    1.  [R&D <code>[2/2]</code>](#org89c4efa)
-    2.  [Stage 1 - Prep <code>[2/5]</code>](#orge2ad019)
-    3.  [Stage 2 - Data <code>[0/1]</code>](#org2b234d7)
-    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org61ec6ce)
-    5.  [Stage 4 - Operations <code>[0/2]</code>](#org25dd08c)
-    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orgaa1203c)
-    7.  [KSP Mod Requirements](#orgecd1e7a)
-    8.  [On Hold](#orgc7a25d7)
+1.  [Astra](#orgb391a95):ATTACH:
+    1.  [R&D <code>[2/2]</code>](#orgdd74702)
+    2.  [Stage 1 - Prep <code>[2/5]</code>](#org8a00c4e)
+    3.  [Stage 2 - Data <code>[0/1]</code>](#orgc602771)
+    4.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org05d71f2)
+    5.  [Stage 4 - Operations <code>[0/2]</code>](#orgc1f25d9)
+    6.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org4e93a21)
+    7.  [KSP Mod Requirements](#orgceaa51b)
+    8.  [On Hold](#org0f5ee68)
 
 
 
-<a id="orge4a69d0"></a>
+<a id="orgb391a95"></a>
 
-# Astra
+# Astra     :ATTACH:
+
+![img](/home/commander/org/.attach/81/9ef899-4257-4bf4-9af1-2d7dbd80b932/_20200910_181424astra-2.png.png)
 
 
-<a id="org89c4efa"></a>
+<a id="orgdd74702"></a>
 
 ## STRT R&D <code>[2/2]</code>
 
@@ -36,7 +38,7 @@
     -   No longer neccessary, headless is possible w/ unity opts in above task
 
 
-<a id="orge2ad019"></a>
+<a id="org8a00c4e"></a>
 
 ## STRT Stage 1 - Prep <code>[2/5]</code>
 
@@ -72,7 +74,7 @@
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org2b234d7"></a>
+<a id="orgc602771"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -80,7 +82,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org61ec6ce"></a>
+<a id="org05d71f2"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -88,7 +90,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org25dd08c"></a>
+<a id="orgc1f25d9"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -96,12 +98,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="orgaa1203c"></a>
+<a id="org4e93a21"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="orgecd1e7a"></a>
+<a id="orgceaa51b"></a>
 
 ## KSP Mod Requirements
 
@@ -111,7 +113,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orgc7a25d7"></a>
+<a id="org0f5ee68"></a>
 
 ## On Hold
 
