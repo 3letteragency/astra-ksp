@@ -1,59 +1,59 @@
 
 # Table of Contents
 
-1.  [Astra](#org4e50e26)
-    1.  [Stage 1 - Prep <code>[2/5]</code>](#org64fafe9)
-    2.  [Stage 2 - Data <code>[0/1]</code>](#org0ffa336)
-    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orgf263158)
-    4.  [Stage 4 - Operations <code>[0/2]</code>](#orgf8aea5f)
-    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org8c0a9d5)
-    6.  [KSP Mod Requirements](#org827d44e)
-    7.  [On Hold](#org472fc59)
+1.  [Astra](#orgbb3d3c1)
+    1.  [Stage 1 - Prep <code>[2/5]</code>](#org57fde1d)
+    2.  [Stage 2 - Data <code>[0/1]</code>](#orgf196730)
+    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orga4c1d0d)
+    4.  [Stage 4 - Operations <code>[0/2]</code>](#orgf3b8402)
+    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org58a966b)
+    6.  [KSP Mod Requirements](#org13c3be9)
+    7.  [On Hold](#org0f47639)
 
 
 
-<a id="org4e50e26"></a>
+<a id="orgbb3d3c1"></a>
 
 # Astra
 
 
-<a id="org64fafe9"></a>
+<a id="org57fde1d"></a>
 
 ## STRT Stage 1 - Prep <code>[2/5]</code>
 
--   [ ] Need to implement an automated Xvfb workflow using screenshots to debug Automation
-    -   <del>There are module load errors in KSP.log, not sure if its preventing AutoLoadGame from doing its thing, or if that is related to the Changelog startup dialog in KSP Main Menu.</del> KSP 1.8.1 Works great
-    -   <del>Why are we stuck at the Change Log dialog on KSP Start?</del> A bit annoying but appears to be inconsequential for my automation purposes.
-        -   ksp settings.cfg:
-            -   SHOW<sub>WHATSNEW</sub><sub>DIALOG</sub> = False
-            -   <del>Version 1.7.3 was not honoring settings.cfg, lets see if 1.8.1 works</del> Still not honored in 1.8.1 but again, appears inconsequential
--   [X] Automate game-archiver
 -   [-] Base VM Image(Packer) <code>[3/8]</code>
     -   [ ] astra-base.sfs
         -   Might need to hop into a graphical run to get the minimal base + mods setup
     -   [ ] AutoLoadGame.conf
     -   [ ] settings.cfg
     -   [ ] krpc-settings.cfg
-    -   [X] Install KSP 1.7.3 from S3
     -   [-] Automate mod install <code>[3/6]</code>
-        -   [X] Install CKAN.deb
-        -   [X] kRPC manually from github
-        -   [X] AutoLoadGame - Allista
         -   [ ] RO via CKAN
         -   [ ] Principia
         -   [ ] [KK&rsquo;s SpaceX Pack](https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/)
+        -   [X] Install CKAN.deb
+        -   [X] kRPC manually from github
+        -   [X] AutoLoadGame - Allista
     -   [X] AutoLoadGame - Now supports specifying SFS files
-    -   [X] POC kRPC
+    -   [X] POC kRPC - connection over Internet successful, responses receieved
+    -   [X] Install KSP <del>1.7.3</del> 1.8.1 from S3
+-   [ ] Need to implement an automated Xvfb workflow using screenshots to debug Automation
+    -   <del>There are module load errors in KSP.log, not sure if its preventing AutoLoadGame from doing its thing, or if that is related to the Changelog startup dialog in KSP Main Menu.</del> KSP 1.8.1 Works great
+    -   <del>Why are we stuck at the Change Log dialog on KSP Start?</del> A bit annoying but appears to be inconsequential for my automation purposes.
+        -   ksp settings.cfg:
+            -   SHOW<sub>WHATSNEW</sub><sub>DIALOG</sub> = False
+            -   <del>Version 1.7.3 was not honoring settings.cfg, lets see if 1.8.1 works</del> Still not honored in 1.8.1 but again, appears inconsequential
 -   [ ] Split Project into multiple repos <code>[0/3]</code>
     -   [ ] Terraform <code>[0/2]</code>
         -   [ ] Modules
         -   [ ] Plans
     -   [ ] Packer Base Image
     -   [ ] Astractl
+-   [X] Automate game-archiver
 -   [X] Choose kRPC client language - C++
 
 
-<a id="org0ffa336"></a>
+<a id="orgf196730"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -61,7 +61,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="orgf263158"></a>
+<a id="orga4c1d0d"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -69,7 +69,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="orgf8aea5f"></a>
+<a id="orgf3b8402"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -77,12 +77,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="org8c0a9d5"></a>
+<a id="org58a966b"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="org827d44e"></a>
+<a id="org13c3be9"></a>
 
 ## KSP Mod Requirements
 
@@ -92,7 +92,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org472fc59"></a>
+<a id="org0f47639"></a>
 
 ## On Hold
 
