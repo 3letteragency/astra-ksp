@@ -27,6 +27,7 @@
   - [X] Automate game-archiver
   - [-] Base VM Image(Packer) [3/8]
     - [ ] astra-base.sfs
+      * Might need to hop into a graphical run to get the minimal base + mods setup
     - [ ] AutoLoadGame.conf
     - [ ] settings.cfg
     - [ ] krpc-settings.cfg
