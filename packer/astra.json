@@ -79,7 +79,7 @@
         "mkdir -p /home/astra/ksp/saves/astra",
         "su astra -c 'ckan update'",
         "su astra -c 'ckan install --headless --no-recommends RealSolarSystem'",
-        "su astra -c 'ckan install --headless --no-recommends RSSTextures204'",
+        "su astra -c 'ckan install --headless --no-recommends RSSTextures2048'",
         "mkdir /tmp/principia",
         "wget $PRINCIPIA_ZIP_URL -O /tmp/$PRINCIPIA_ZIP_FILENAME",
         "unzip /tmp/$PRINCIPIA_ZIP_FILENAME -d /tmp/principia",
