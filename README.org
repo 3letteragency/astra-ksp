@@ -6,8 +6,7 @@
 * Astra
 ** STRT Stage 1 - Prep [2/5]
   - [-] Base VM Image(Packer) [3/9]
-    - [ ] Debug RO Install, problems w/ Kopernicus?
-    - [ ] Graphical Debug script/SFS Building packages
+    - [ ] File provision packer/files/*
     - [-] Automate mod install [5/6]
       - [ ] [[https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/][KK's SpaceX Pack]]
       - [X] RO via CKAN
@@ -15,11 +14,11 @@
       - [X] Install CKAN.deb
       - [X] kRPC manually from github
       - [X] AutoLoadGame - Allista
-    - [ ] astra-base.sfs
+    - [X] astra-base.sfs
       * Might need to hop into a graphical run to get the minimal base + mods setup
-    - [ ] AutoLoadGame.conf
-    - [ ] settings.cfg
-    - [ ] krpc-settings.cfg
+    - [X] AutoLoadGame.conf
+    - [X] settings.cfg
+    - [X] krpc-settings.cfg
     - [X] AutoLoadGame - Now supports specifying SFS files
     - [X] POC kRPC - connection over Internet successful, responses receieved
     - [X] Install KSP +1.7.3+ 1.8.1 from S3
@@ -32,6 +31,7 @@
   - [X] Automate game-archiver
   - [X] Choose kRPC client language - C++
   - [X] VLC/Xvfb workflow for graphical debugging and SFS building
+  - [X] Debug RO Install, problems w/ Kopernicus?
 ** TODO Stage 2 - Data [0/1]
 - [ ] Set up client w/ all kRPC Data Stream - Once this is done, revisiting the image build will probably be worth it.
   * Pipe into GMAT and OpenMCT ???

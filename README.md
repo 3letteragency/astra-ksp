@@ -1,30 +1,29 @@
 
 # Table of Contents
 
-1.  [Astra](#orgb733a02)
-    1.  [Stage 1 - Prep <code>[2/5]</code>](#org388987c)
-    2.  [Stage 2 - Data <code>[0/1]</code>](#org9ed6686)
-    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org4f1b9f4)
-    4.  [Stage 4 - Operations <code>[0/2]</code>](#org8273490)
-    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orgd8d9bb4)
-    6.  [Backlog/As Needed <code>[0/2]</code>](#orgcea257a)
-    7.  [KSP Mod Requirements](#org293dd50)
-    8.  [On Hold](#org7521195)
+1.  [Astra](#org0a1075f)
+    1.  [Stage 1 - Prep <code>[2/5]</code>](#org116b863)
+    2.  [Stage 2 - Data <code>[0/1]</code>](#org10210ef)
+    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org539c452)
+    4.  [Stage 4 - Operations <code>[0/2]</code>](#org8ecb762)
+    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org4b27b3a)
+    6.  [Backlog/As Needed <code>[0/2]</code>](#org8eae2c7)
+    7.  [KSP Mod Requirements](#orgc7bcf05)
+    8.  [On Hold](#org2f13249)
 
 
 
-<a id="orgb733a02"></a>
+<a id="org0a1075f"></a>
 
 # Astra
 
 
-<a id="org388987c"></a>
+<a id="org116b863"></a>
 
 ## STRT Stage 1 - Prep <code>[2/5]</code>
 
 -   [-] Base VM Image(Packer) <code>[3/9]</code>
-    -   [ ] Debug RO Install, problems w/ Kopernicus?
-    -   [ ] Graphical Debug script/SFS Building packages
+    -   [ ] File provision packer/files/\*
     -   [-] Automate mod install <code>[5/6]</code>
         -   [ ] [KK&rsquo;s SpaceX Pack](https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/)
         -   [X] RO via CKAN
@@ -32,11 +31,11 @@
         -   [X] Install CKAN.deb
         -   [X] kRPC manually from github
         -   [X] AutoLoadGame - Allista
-    -   [ ] astra-base.sfs
+    -   [X] astra-base.sfs
         -   Might need to hop into a graphical run to get the minimal base + mods setup
-    -   [ ] AutoLoadGame.conf
-    -   [ ] settings.cfg
-    -   [ ] krpc-settings.cfg
+    -   [X] AutoLoadGame.conf
+    -   [X] settings.cfg
+    -   [X] krpc-settings.cfg
     -   [X] AutoLoadGame - Now supports specifying SFS files
     -   [X] POC kRPC - connection over Internet successful, responses receieved
     -   [X] Install KSP <del>1.7.3</del> 1.8.1 from S3
@@ -49,9 +48,10 @@
 -   [X] Automate game-archiver
 -   [X] Choose kRPC client language - C++
 -   [X] VLC/Xvfb workflow for graphical debugging and SFS building
+-   [X] Debug RO Install, problems w/ Kopernicus?
 
 
-<a id="org9ed6686"></a>
+<a id="org10210ef"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -59,7 +59,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org4f1b9f4"></a>
+<a id="org539c452"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -67,7 +67,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org8273490"></a>
+<a id="org8ecb762"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -75,12 +75,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="orgd8d9bb4"></a>
+<a id="org4b27b3a"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="orgcea257a"></a>
+<a id="org8eae2c7"></a>
 
 ## TODO Backlog/As Needed <code>[0/2]</code>
 
@@ -93,7 +93,7 @@
     -   [ ] Astractl
 
 
-<a id="org293dd50"></a>
+<a id="orgc7bcf05"></a>
 
 ## KSP Mod Requirements
 
@@ -103,7 +103,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org7521195"></a>
+<a id="org2f13249"></a>
 
 ## On Hold
 
