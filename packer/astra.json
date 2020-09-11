@@ -18,7 +18,7 @@
       "api_key": "{{ user `vultr_api_key` }}",
       "os_id": 387,
       "region_id": 22,
-      "plan_id": 205,
+      "plan_id": 201,
       "snapshot_description": "astra-node",
       "ssh_username": "root",
       "ssh_key_ids": [
