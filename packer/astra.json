@@ -78,7 +78,6 @@
         "rm -f /tmp/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip",
         "mkdir -p /home/astra/ksp/saves/astra",
         "su astra -c 'ckan update'",
-        "su astra -c 'ckan install --headless --ksp astra RealismOverhaul'",
         "mkdir /tmp/principia",
         "wget $PRINCIPIA_ZIP_URL -O /tmp/$PRINCIPIA_ZIP_FILENAME",
         "unzip /tmp/$PRINCIPIA_ZIP_FILENAME -d /tmp/principia",
