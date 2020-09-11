@@ -1,28 +1,29 @@
 
 # Table of Contents
 
-1.  [Astra](#org0a1075f)
-    1.  [Stage 1 - Prep <code>[2/5]</code>](#org116b863)
-    2.  [Stage 2 - Data <code>[0/1]</code>](#org10210ef)
-    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org539c452)
-    4.  [Stage 4 - Operations <code>[0/2]</code>](#org8ecb762)
-    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org4b27b3a)
-    6.  [Backlog/As Needed <code>[0/2]</code>](#org8eae2c7)
-    7.  [KSP Mod Requirements](#orgc7bcf05)
-    8.  [On Hold](#org2f13249)
+1.  [Astra](#orgf82c32f)
+    1.  [Stage 1 - Prep <code>[4/7]</code>](#orgb815bbf)
+    2.  [Stage 2 - Data <code>[0/1]</code>](#org04ac968)
+    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org36d45b2)
+    4.  [Stage 4 - Operations <code>[0/2]</code>](#org29909fa)
+    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orgee990c5)
+    6.  [Backlog/As Needed <code>[0/2]</code>](#orgf0277a7)
+    7.  [KSP Mod Requirements](#orgc85b275)
+    8.  [On Hold](#orgb0e0634)
 
 
 
-<a id="org0a1075f"></a>
+<a id="orgf82c32f"></a>
 
 # Astra
 
 
-<a id="org116b863"></a>
+<a id="orgb815bbf"></a>
 
-## STRT Stage 1 - Prep <code>[2/5]</code>
+## STRT Stage 1 - Prep <code>[4/7]</code>
 
--   [-] Base VM Image(Packer) <code>[3/9]</code>
+-   [ ] Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)
+-   [-] Base VM Image(Packer) <code>[7/9]</code>
     -   [ ] File provision packer/files/\*
     -   [-] Automate mod install <code>[5/6]</code>
         -   [ ] [KK&rsquo;s SpaceX Pack](https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/)
@@ -51,7 +52,7 @@
 -   [X] Debug RO Install, problems w/ Kopernicus?
 
 
-<a id="org10210ef"></a>
+<a id="org04ac968"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -59,7 +60,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org539c452"></a>
+<a id="org36d45b2"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -67,7 +68,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org8ecb762"></a>
+<a id="org29909fa"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -75,16 +76,15 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="org4b27b3a"></a>
+<a id="orgee990c5"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="org8eae2c7"></a>
+<a id="orgf0277a7"></a>
 
 ## TODO Backlog/As Needed <code>[0/2]</code>
 
--   [ ] Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)
 -   [ ] Split Project into multiple repos <code>[0/3]</code>
     -   [ ] Terraform <code>[0/2]</code>
         -   [ ] Modules
@@ -93,7 +93,7 @@
     -   [ ] Astractl
 
 
-<a id="orgc7bcf05"></a>
+<a id="orgc85b275"></a>
 
 ## KSP Mod Requirements
 
@@ -103,7 +103,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org2f13249"></a>
+<a id="orgb0e0634"></a>
 
 ## On Hold
 
