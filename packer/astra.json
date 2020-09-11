@@ -50,7 +50,7 @@
       ],
       "inline": [
         "apt -y update",
-        "apt -y install mono-runtime unzip xvfb x11vnc",
+        "apt -y install mono-runtime unzip xvfb x11vnc libc++1-8 libc++abi1-8",
         "useradd -m astra",
         "chsh astra -s /bin/bash",
         "mkdir -p /home/astra/ksp",
