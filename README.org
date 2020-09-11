@@ -5,7 +5,9 @@
 
 * Astra
 ** STRT Stage 1 - Prep [2/5]
+  - [ ] VLC/Xvfb workflow for graphical debugging and SFS building
   - [-] Base VM Image(Packer) [3/9]
+    - [ ] Graphical Debug/SFS Building packages
     - [-] Automate mod install [5/6]
       - [ ] [[https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/][KK's SpaceX Pack]]
       - [X] RO via CKAN
