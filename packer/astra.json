@@ -50,7 +50,7 @@
       ],
       "inline": [
         "apt -y update",
-        "apt -y install mono-runtime unzip xvfb scrot",
+        "apt -y install mono-runtime unzip xvfb x11vnc",
         "useradd -m astra",
         "chsh astra -s /bin/bash",
         "mkdir -p /home/astra/ksp",
@@ -84,7 +84,7 @@
         "unzip /tmp/$PRINCIPIA_ZIP_FILENAME -d /tmp/principia",
         "mv /tmp/principia/GameData/Principia /home/astra/ksp/GameData",
         "rm -rf /tmp/principia",
-        "chwon -R astra:astra /home/astra"
+        "chown -R astra:astra /home/astra"
       ]
     }
   ]
