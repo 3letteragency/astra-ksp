@@ -18,7 +18,7 @@
       "api_key": "{{ user `vultr_api_key` }}",
       "os_id": 387,
       "region_id": 22,
-      "plan_id": 201,
+      "plan_id": 205,
       "snapshot_description": "astra-node",
       "ssh_username": "root",
       "ssh_key_ids": [
@@ -78,6 +78,7 @@
         "rm -f /tmp/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip",
         "mkdir -p /home/astra/ksp/saves/astra",
         "su astra -c 'ckan update'",
+        "su astra -c 'ckan install --headless --no-recommends RealSolarSystem'",
         "mkdir /tmp/principia",
         "wget $PRINCIPIA_ZIP_URL -O /tmp/$PRINCIPIA_ZIP_FILENAME",
         "unzip /tmp/$PRINCIPIA_ZIP_FILENAME -d /tmp/principia",
