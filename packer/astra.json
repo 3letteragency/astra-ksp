@@ -80,11 +80,14 @@
         "su astra -c 'ckan install --headless RSSTextures2048'",
         "su astra -c 'ckan install --headless --no-recommends RealSolarSystem'",
         "su astra -c 'ckan install --headless RealismOverhaul'",
+        "su astra -c 'ckan compat add 1.9.1'",
+        "su astra -c 'ckan install --headless SpaceXLaunchVehicles'",
         "mkdir /tmp/principia",
         "wget $PRINCIPIA_ZIP_URL -O /tmp/$PRINCIPIA_ZIP_FILENAME",
         "unzip /tmp/$PRINCIPIA_ZIP_FILENAME -d /tmp/principia",
         "mv /tmp/principia/GameData/Principia /home/astra/ksp/GameData",
         "rm -rf /tmp/principia",
+        "cp /home/astra/Ships/VAB/SpaceX* /home/astra/ksp/saves/Astra/Ships/VAB/",
         "chown -R astra:astra /home/astra"
       ]
     },
