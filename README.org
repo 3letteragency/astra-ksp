@@ -9,7 +9,7 @@
   - [-] Base VM Image(Packer) [8/9]
     - [-] Automate mod install [4/6]
       - [ ] [[https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/][KK's SpaceX Pack]]
-      - [ ] RO via CKAN
+      - [X] RO via CKAN
         * Debug, make sure startup is ok
       - [X] Principia
       - [X] Install CKAN.deb
@@ -35,8 +35,8 @@
   - [X] VLC/Xvfb workflow for graphical debugging and SFS building
   - [X] Debug RO Install, problems w/ Kopernicus?
 ** TODO Stage 2 - Data [0/1]
-- [ ] Set up client w/ all kRPC Data Stream - Once this is done, revisiting the image build will probably be worth it.
-  * Pipe into GMAT and OpenMCT ???
+- [ ] Set up client w/ all kRPC Data Stream
+  * Pipe into GMAT and OpenMCT ??? - yes
 ** TODO Stage 3 - RL Software integrations [0/2]
 - [ ] [[https://opensource.gsfc.nasa.gov/projects/GMAT/index.php][GMAT]] - Planning
 - [ ] [[https://github.com/nasa/openmct][OpenMCT]] - Ops HUD

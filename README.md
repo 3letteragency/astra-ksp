@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [Astra](#org8335c90)
-    1.  [Stage 1 - Prep <code>[4/7]</code>](#org78d31cb)
-    2.  [Stage 2 - Data <code>[0/1]</code>](#org1d0f5fe)
-    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org043b6c2)
-    4.  [Stage 4 - Operations <code>[0/2]</code>](#org49432c8)
-    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orgb261dd2)
-    6.  [Backlog/As Needed <code>[0/2]</code>](#orgcba578c)
-    7.  [KSP Mod Requirements](#org0b96126)
-    8.  [On Hold](#org70648c7)
+1.  [Astra](#org03b54ae)
+    1.  [Stage 1 - Prep <code>[4/7]</code>](#orgbac0509)
+    2.  [Stage 2 - Data <code>[0/1]</code>](#org9b4e124)
+    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org2453446)
+    4.  [Stage 4 - Operations <code>[0/2]</code>](#org6554495)
+    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org6a0db36)
+    6.  [Backlog/As Needed <code>[0/2]</code>](#org3b72706)
+    7.  [KSP Mod Requirements](#org225570e)
+    8.  [On Hold](#org7c8cdcc)
 
 
 
-<a id="org8335c90"></a>
+<a id="org03b54ae"></a>
 
 # Astra
 
 
-<a id="org78d31cb"></a>
+<a id="orgbac0509"></a>
 
 ## STRT Stage 1 - Prep <code>[4/7]</code>
 
@@ -26,7 +26,7 @@
 -   [-] Base VM Image(Packer) <code>[8/9]</code>
     -   [-] Automate mod install <code>[4/6]</code>
         -   [ ] [KK&rsquo;s SpaceX Pack](https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/)
-        -   [ ] RO via CKAN
+        -   [X] RO via CKAN
             -   Debug, make sure startup is ok
         -   [X] Principia
         -   [X] Install CKAN.deb
@@ -53,15 +53,15 @@
 -   [X] Debug RO Install, problems w/ Kopernicus?
 
 
-<a id="org1d0f5fe"></a>
+<a id="org9b4e124"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
--   [ ] Set up client w/ all kRPC Data Stream - Once this is done, revisiting the image build will probably be worth it.
-    -   Pipe into GMAT and OpenMCT ???
+-   [ ] Set up client w/ all kRPC Data Stream
+    -   Pipe into GMAT and OpenMCT ??? - yes
 
 
-<a id="org043b6c2"></a>
+<a id="org2453446"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -69,7 +69,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org49432c8"></a>
+<a id="org6554495"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -77,12 +77,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="orgb261dd2"></a>
+<a id="org6a0db36"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="orgcba578c"></a>
+<a id="org3b72706"></a>
 
 ## TODO Backlog/As Needed <code>[0/2]</code>
 
@@ -94,7 +94,7 @@
     -   [ ] Astractl
 
 
-<a id="org0b96126"></a>
+<a id="org225570e"></a>
 
 ## KSP Mod Requirements
 
@@ -104,7 +104,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org70648c7"></a>
+<a id="org7c8cdcc"></a>
 
 ## On Hold
 
