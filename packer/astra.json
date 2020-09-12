@@ -87,6 +87,26 @@
         "rm -rf /tmp/principia",
         "chown -R astra:astra /home/astra"
       ]
+    },
+    {
+      "type": "file",
+      "source": "files/ksp-conf/Astra",
+      "destination": "/home/astra/ksp/saves"
+    },
+    {
+      "type": "file",
+      "source": "files/ksp-conf/AutoLoadGame.conf",
+      "destination": "/home/astra/ksp/saves/AutoLoadGame.conf"
+    },
+    {
+      "type": "file",
+      "source": "files/ksp-conf/krpc-settings.cfg",
+      "destination": "/home/astra/ksp/GameData/kRPC/PluginData/settings.cfg"
+    },
+    {
+      "type": "file",
+      "source": "files/ksp-conf/ksp-settings.cfg",
+      "destination": "/home/astra/ksp/settings.cfg"
     }
   ]
 }
