@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-09-11 Fri 17:35 -->
+<!-- 2020-09-11 Fri 22:00 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Astra Docs and Planning</title>
@@ -227,38 +227,40 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org23021ec">1. Astra</a>
+<li><a href="#org70fde52">1. Astra</a>
 <ul>
-<li><a href="#org32334a2">1.1. <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[4/7]</code></a></li>
-<li><a href="#org7c08cd2">1.2. <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></a></li>
-<li><a href="#org06196f0">1.3. <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></a></li>
-<li><a href="#org2d0bf1a">1.4. <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></a></li>
-<li><a href="#org3c397a3">1.5. <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></a></li>
-<li><a href="#orgc9f582f">1.6. <span class="todo TODO">TODO</span> Backlog/As Needed <code>[0/2]</code></a></li>
-<li><a href="#org47ff3bf">1.7. KSP Mod Requirements</a></li>
-<li><a href="#org020470c">1.8. On Hold</a></li>
+<li><a href="#org65ce632">1.1. <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[4/7]</code></a></li>
+<li><a href="#org4061d01">1.2. <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></a></li>
+<li><a href="#org70a0e4b">1.3. <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></a></li>
+<li><a href="#org7c2290f">1.4. <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></a></li>
+<li><a href="#org07174b6">1.5. <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></a></li>
+<li><a href="#orgba142bc">1.6. <span class="todo TODO">TODO</span> Backlog/As Needed <code>[0/2]</code></a></li>
+<li><a href="#orgfce4710">1.7. KSP Mod Requirements</a></li>
+<li><a href="#org6d96d29">1.8. On Hold</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org23021ec" class="outline-2">
-<h2 id="org23021ec"><span class="section-number-2">1</span> Astra</h2>
+<div id="outline-container-org70fde52" class="outline-2">
+<h2 id="org70fde52"><span class="section-number-2">1</span> Astra</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org32334a2" class="outline-3">
-<h3 id="org32334a2"><span class="section-number-3">1.1</span> <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[4/7]</code></h3>
+<div id="outline-container-org65ce632" class="outline-3">
+<h3 id="org65ce632"><span class="section-number-3">1.1</span> <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[4/7]</code></h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)</li>
-<li class="trans"><code>[-]</code> Base VM Image(Packer) <code>[7/9]</code>
+<li class="trans"><code>[-]</code> Base VM Image(Packer) <code>[8/9]</code>
 <ul class="org-ul">
-<li class="off"><code>[&#xa0;]</code> File provision packer/files/*</li>
-<li class="trans"><code>[-]</code> Automate mod install <code>[5/6]</code>
+<li class="trans"><code>[-]</code> Automate mod install <code>[4/6]</code>
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> <a href="https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/">KK&rsquo;s SpaceX Pack</a></li>
-<li class="on"><code>[X]</code> RO via CKAN</li>
+<li class="off"><code>[&#xa0;]</code> RO via CKAN
+<ul class="org-ul">
+<li>Debug, make sure startup is ok</li>
+</ul></li>
 <li class="on"><code>[X]</code> Principia</li>
 <li class="on"><code>[X]</code> Install CKAN.deb</li>
 <li class="on"><code>[X]</code> kRPC manually from github</li>
@@ -274,6 +276,7 @@
 <li class="on"><code>[X]</code> AutoLoadGame - Now supports specifying SFS files</li>
 <li class="on"><code>[X]</code> POC kRPC - connection over Internet successful, responses receieved</li>
 <li class="on"><code>[X]</code> Install KSP <del>1.7.3</del> 1.8.1 from S3</li>
+<li class="on"><code>[X]</code> File provision packer/files/*</li>
 </ul></li>
 <li class="off"><code>[&#xa0;]</code> Need to implement an automated Xvfb workflow using screenshots to debug Automation
 <ul class="org-ul">
@@ -294,8 +297,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org7c08cd2" class="outline-3">
-<h3 id="org7c08cd2"><span class="section-number-3">1.2</span> <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></h3>
+<div id="outline-container-org4061d01" class="outline-3">
+<h3 id="org4061d01"><span class="section-number-3">1.2</span> <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Set up client w/ all kRPC Data Stream - Once this is done, revisiting the image build will probably be worth it.
@@ -305,8 +308,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org06196f0" class="outline-3">
-<h3 id="org06196f0"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></h3>
+<div id="outline-container-org70a0e4b" class="outline-3">
+<h3 id="org70a0e4b"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> <a href="https://opensource.gsfc.nasa.gov/projects/GMAT/index.php">GMAT</a> - Planning</li>
@@ -314,8 +317,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org2d0bf1a" class="outline-3">
-<h3 id="org2d0bf1a"><span class="section-number-3">1.4</span> <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></h3>
+<div id="outline-container-org7c2290f" class="outline-3">
+<h3 id="org7c2290f"><span class="section-number-3">1.4</span> <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></h3>
 <div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
 <li class="trans"><code>[-]</code> Starlink(s) <code>[0/0]</code></li>
@@ -323,11 +326,11 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org3c397a3" class="outline-3">
-<h3 id="org3c397a3"><span class="section-number-3">1.5</span> <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></h3>
+<div id="outline-container-org07174b6" class="outline-3">
+<h3 id="org07174b6"><span class="section-number-3">1.5</span> <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></h3>
 </div>
-<div id="outline-container-orgc9f582f" class="outline-3">
-<h3 id="orgc9f582f"><span class="section-number-3">1.6</span> <span class="todo TODO">TODO</span> Backlog/As Needed <code>[0/2]</code></h3>
+<div id="outline-container-orgba142bc" class="outline-3">
+<h3 id="orgba142bc"><span class="section-number-3">1.6</span> <span class="todo TODO">TODO</span> Backlog/As Needed <code>[0/2]</code></h3>
 <div class="outline-text-3" id="text-1-6">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Split Project into multiple repos <code>[0/3]</code>
@@ -343,8 +346,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org47ff3bf" class="outline-3">
-<h3 id="org47ff3bf"><span class="section-number-3">1.7</span> KSP Mod Requirements</h3>
+<div id="outline-container-orgfce4710" class="outline-3">
+<h3 id="orgfce4710"><span class="section-number-3">1.7</span> KSP Mod Requirements</h3>
 <div class="outline-text-3" id="text-1-7">
 <ul class="org-ul">
 <li><a href="https://github.com/allista/AutoLoadGame">AutoLoadGame</a> - by Allista, allows creating a configuration file in your saves dir that will automatically load the specified sfs file upong game start.</li>
@@ -354,8 +357,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org020470c" class="outline-3">
-<h3 id="org020470c"><span class="section-number-3">1.8</span> On Hold</h3>
+<div id="outline-container-org6d96d29" class="outline-3">
+<h3 id="org6d96d29"><span class="section-number-3">1.8</span> On Hold</h3>
 <div class="outline-text-3" id="text-1-8">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Properly version Packer builds
@@ -370,7 +373,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Tyler Weldon</p>
-<p class="date">Created: 2020-09-11 Fri 17:35</p>
+<p class="date">Created: 2020-09-11 Fri 22:00</p>
 </div>
 </body>
 </html>

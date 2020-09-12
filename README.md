@@ -1,33 +1,33 @@
 
 # Table of Contents
 
-1.  [Astra](#orgf82c32f)
-    1.  [Stage 1 - Prep <code>[4/7]</code>](#orgb815bbf)
-    2.  [Stage 2 - Data <code>[0/1]</code>](#org04ac968)
-    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org36d45b2)
-    4.  [Stage 4 - Operations <code>[0/2]</code>](#org29909fa)
-    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orgee990c5)
-    6.  [Backlog/As Needed <code>[0/2]</code>](#orgf0277a7)
-    7.  [KSP Mod Requirements](#orgc85b275)
-    8.  [On Hold](#orgb0e0634)
+1.  [Astra](#org8335c90)
+    1.  [Stage 1 - Prep <code>[4/7]</code>](#org78d31cb)
+    2.  [Stage 2 - Data <code>[0/1]</code>](#org1d0f5fe)
+    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org043b6c2)
+    4.  [Stage 4 - Operations <code>[0/2]</code>](#org49432c8)
+    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orgb261dd2)
+    6.  [Backlog/As Needed <code>[0/2]</code>](#orgcba578c)
+    7.  [KSP Mod Requirements](#org0b96126)
+    8.  [On Hold](#org70648c7)
 
 
 
-<a id="orgf82c32f"></a>
+<a id="org8335c90"></a>
 
 # Astra
 
 
-<a id="orgb815bbf"></a>
+<a id="org78d31cb"></a>
 
 ## STRT Stage 1 - Prep <code>[4/7]</code>
 
 -   [ ] Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)
--   [-] Base VM Image(Packer) <code>[7/9]</code>
-    -   [ ] File provision packer/files/\*
-    -   [-] Automate mod install <code>[5/6]</code>
+-   [-] Base VM Image(Packer) <code>[8/9]</code>
+    -   [-] Automate mod install <code>[4/6]</code>
         -   [ ] [KK&rsquo;s SpaceX Pack](https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/)
-        -   [X] RO via CKAN
+        -   [ ] RO via CKAN
+            -   Debug, make sure startup is ok
         -   [X] Principia
         -   [X] Install CKAN.deb
         -   [X] kRPC manually from github
@@ -40,6 +40,7 @@
     -   [X] AutoLoadGame - Now supports specifying SFS files
     -   [X] POC kRPC - connection over Internet successful, responses receieved
     -   [X] Install KSP <del>1.7.3</del> 1.8.1 from S3
+    -   [X] File provision packer/files/\*
 -   [ ] Need to implement an automated Xvfb workflow using screenshots to debug Automation
     -   <del>There are module load errors in KSP.log, not sure if its preventing AutoLoadGame from doing its thing, or if that is related to the Changelog startup dialog in KSP Main Menu.</del> KSP 1.8.1 Works great
     -   <del>Why are we stuck at the Change Log dialog on KSP Start?</del> A bit annoying but appears to be inconsequential for my automation purposes.
@@ -52,7 +53,7 @@
 -   [X] Debug RO Install, problems w/ Kopernicus?
 
 
-<a id="org04ac968"></a>
+<a id="org1d0f5fe"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -60,7 +61,7 @@
     -   Pipe into GMAT and OpenMCT ???
 
 
-<a id="org36d45b2"></a>
+<a id="org043b6c2"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -68,7 +69,7 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org29909fa"></a>
+<a id="org49432c8"></a>
 
 ## TODO Stage 4 - Operations <code>[0/2]</code>
 
@@ -76,12 +77,12 @@
 -   [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="orgee990c5"></a>
+<a id="orgb261dd2"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="orgf0277a7"></a>
+<a id="orgcba578c"></a>
 
 ## TODO Backlog/As Needed <code>[0/2]</code>
 
@@ -93,7 +94,7 @@
     -   [ ] Astractl
 
 
-<a id="orgc85b275"></a>
+<a id="org0b96126"></a>
 
 ## KSP Mod Requirements
 
@@ -103,7 +104,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orgb0e0634"></a>
+<a id="org70648c7"></a>
 
 ## On Hold
 

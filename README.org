@@ -6,11 +6,11 @@
 * Astra
 ** STRT Stage 1 - Prep [4/7]
   - [ ] Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)
-  - [-] Base VM Image(Packer) [7/9]
-    - [ ] File provision packer/files/*
-    - [-] Automate mod install [5/6]
+  - [-] Base VM Image(Packer) [8/9]
+    - [-] Automate mod install [4/6]
       - [ ] [[https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/][KK's SpaceX Pack]]
-      - [X] RO via CKAN
+      - [ ] RO via CKAN
+        * Debug, make sure startup is ok
       - [X] Principia
       - [X] Install CKAN.deb
       - [X] kRPC manually from github
@@ -23,6 +23,7 @@
     - [X] AutoLoadGame - Now supports specifying SFS files
     - [X] POC kRPC - connection over Internet successful, responses receieved
     - [X] Install KSP +1.7.3+ 1.8.1 from S3
+    - [X] File provision packer/files/*
   - [ ] Need to implement an automated Xvfb workflow using screenshots to debug Automation
     * +There are module load errors in KSP.log, not sure if its preventing AutoLoadGame from doing its thing, or if that is related to the Changelog startup dialog in KSP Main Menu.+ KSP 1.8.1 Works great
     * +Why are we stuck at the Change Log dialog on KSP Start?+ A bit annoying but appears to be inconsequential for my automation purposes.
