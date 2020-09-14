@@ -6,6 +6,7 @@
 * Astra
 ** STRT Stage 1 - Prep [4/6]
   - [ ] Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)
+    * Need to re-do raw-mods role tasks, ~--strip-components~ is a tar feature, not zip. Will need to extract to /tmp/$mod_name/GameData/$mod_name, move the mod dir to $KSP_DIR/GameData, then cleanup.
   - [-] Base VM Image(Packer) [8/15]
     - [ ] Forgot to add final chown after adding conf files
     - [ ] Archive SpaceX Pack
