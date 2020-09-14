@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-09-08 Tue 09:37 -->
+<!-- 2020-09-12 Sat 13:48 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Astra Docs and Planning</title>
@@ -227,76 +227,119 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org61a7d58">1. Astra</a>
+<li><a href="#org9a318b9">1. Astra</a>
 <ul>
-<li><a href="#org51c1e13">1.1. <span class="todo STRT">STRT</span> R&amp;D <code>[2/2]</code></a></li>
-<li><a href="#orgc025a6e">1.2. <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[2/4]</code></a></li>
-<li><a href="#orgb46ed21">1.3. <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></a></li>
-<li><a href="#orga8e4083">1.4. <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></a></li>
-<li><a href="#org16f0374">1.5. <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></a></li>
-<li><a href="#org62c1323">1.6. <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></a></li>
-<li><a href="#orgaaa7f1f">1.7. KSP Mod Requirements</a></li>
-<li><a href="#org3b7123e">1.8. On Hold</a></li>
+<li><a href="#orgb924e3f">1.1. <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[4/6]</code></a></li>
+<li><a href="#orgdd444f9">1.2. <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></a></li>
+<li><a href="#org6cc35d7">1.3. <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></a></li>
+<li><a href="#orgb32872b">1.4. <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></a></li>
+<li><a href="#org251480b">1.5. <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></a></li>
+<li><a href="#orgd156585">1.6. <span class="todo TODO">TODO</span> Backlog/As Needed <code>[0/2]</code></a></li>
+<li><a href="#org72d6534">1.7. KSP Mod Requirements</a></li>
+<li><a href="#org4508e4e">1.8. On Hold</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org61a7d58" class="outline-2">
-<h2 id="org61a7d58"><span class="section-number-2">1</span> Astra</h2>
+<div id="outline-container-org9a318b9" class="outline-2">
+<h2 id="org9a318b9"><span class="section-number-2">1</span> Astra</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org51c1e13" class="outline-3">
-<h3 id="org51c1e13"><span class="section-number-3">1.1</span> <span class="todo STRT">STRT</span> R&amp;D <code>[2/2]</code></h3>
+<div id="outline-container-orgb924e3f" class="outline-3">
+<h3 id="orgb924e3f"><span class="section-number-3">1.1</span> <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[4/6]</code></h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
-<li class="on"><code>[X]</code> Can we set up a headless/graphically limited KSP?
+<li class="off"><code>[&#xa0;]</code> Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)</li>
+<li class="trans"><code>[-]</code> Base VM Image(Packer) <code>[8/15]</code>
 <ul class="org-ul">
-<li><del>Running KSP in a VM seems promising.</del>
+<li class="off"><code>[&#xa0;]</code> Forgot to add final chown after adding conf files</li>
+<li class="off"><code>[&#xa0;]</code> Archive SpaceX Pack</li>
+<li class="off"><code>[&#xa0;]</code> Change KSP version from 1.9.1 to 1.8.1 in SpaceX Pack craft files</li>
+<li class="off"><code>[&#xa0;]</code> Add vehicles to Astra game save VAB</li>
+<li class="off"><code>[&#xa0;]</code> Systemd user service to start game</li>
+<li class="off"><code>[&#xa0;]</code> Figure something out w/ firewall</li>
+<li class="trans"><code>[-]</code> Automate mod install <code>[5/6]</code>
 <ul class="org-ul">
-<li><del>Set all graphics settings to minimum</del></li>
+<li class="off"><code>[&#xa0;]</code> <a href="https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/">KK&rsquo;s SpaceX Pack</a></li>
+<li class="on"><code>[X]</code> RO via CKAN
+<ul class="org-ul">
+<li>Debug, make sure startup is ok</li>
 </ul></li>
-<li>We sure can! Unity options: <code>~KSP.x86_64 -batchmode -nographics~</code></li>
+<li class="on"><code>[X]</code> Principia</li>
+<li class="on"><code>[X]</code> Install CKAN.deb</li>
+<li class="on"><code>[X]</code> kRPC manually from github</li>
+<li class="on"><code>[X]</code> AutoLoadGame - Allista</li>
 </ul></li>
-<li class="on"><code>[X]</code> If not headless, can we automate the launching of KSP &ldquo;instances&rdquo;, and entering/setting up the game as desired(specific missions, locations, etc.) via the <a href="https://krpc.github.io/krpc/cpp/api/ui/ui.html">kRPC UI API</a>?
+<li class="on"><code>[X]</code> astra-base.sfs
 <ul class="org-ul">
-<li><del>Might be able to use the Unity <a href="https://docs.unity3d.com/Manual/CLIBatchmodeCoroutines.html">Batch Mode</a> and <a href="https://docs.unity3d.com/Manual/CommandLineArguments.html">nographics</a> options to facilitate headless.</del></li>
-<li><del>Will need some means of automatically launching specified game saves.</del>
-<ul class="org-ul">
-<li><del><a href="https://github.com/allista/AutoLoadGame">AutoLoadGame</a> might do the trick.</del>
-<ul class="org-ul">
-<li><del>Might modify to use Unity CLI args instead of config file:</del>
-<ul class="org-ul">
-<li><a href="https://answers.unity.com/questions/138715/read-command-line-arguments.html">https://answers.unity.com/questions/138715/read-command-line-arguments.html</a></li>
-<li><a href="https://answers.unity.com/questions/366195/parameters-at-startup.html">https://answers.unity.com/questions/366195/parameters-at-startup.html</a></li>
+<li>Might need to hop into a graphical run to get the minimal base + mods setup</li>
 </ul></li>
+<li class="on"><code>[X]</code> AutoLoadGame.conf</li>
+<li class="on"><code>[X]</code> settings.cfg</li>
+<li class="on"><code>[X]</code> krpc-settings.cfg</li>
+<li class="on"><code>[X]</code> AutoLoadGame - Now supports specifying SFS files</li>
+<li class="on"><code>[X]</code> POC kRPC - connection over Internet successful, responses receieved</li>
+<li class="on"><code>[X]</code> Install KSP <del>1.7.3</del> 1.8.1 from S3</li>
+<li class="on"><code>[X]</code> File provision packer/files/*</li>
 </ul></li>
-</ul></li>
-<li>No longer neccessary, headless is possible w/ unity opts in above task</li>
+<li class="on"><code>[X]</code> Automate game-archiver</li>
+<li class="on"><code>[X]</code> Choose kRPC client language - C++</li>
+<li class="on"><code>[X]</code> VLC/Xvfb workflow for graphical debugging and SFS building</li>
+<li class="on"><code>[X]</code> Debug RO Install, problems w/ Kopernicus?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdd444f9" class="outline-3">
+<h3 id="orgdd444f9"><span class="section-number-3">1.2</span> <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Set up client w/ all kRPC Data Stream
+<ul class="org-ul">
+<li>Pipe into GMAT and OpenMCT ??? - yes</li>
 </ul></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc025a6e" class="outline-3">
-<h3 id="orgc025a6e"><span class="section-number-3">1.2</span> <span class="todo STRT">STRT</span> Stage 1 - Prep <code>[2/4]</code></h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-org6cc35d7" class="outline-3">
+<h3 id="org6cc35d7"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></h3>
+<div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
-<li class="on"><code>[X]</code> Automate game-archiver</li>
-<li class="trans"><code>[-]</code> Base VM Image(Packer) <code>[1/4]</code>
+<li class="off"><code>[&#xa0;]</code> <a href="https://opensource.gsfc.nasa.gov/projects/GMAT/index.php">GMAT</a> - Planning</li>
+<li class="off"><code>[&#xa0;]</code> <a href="https://github.com/nasa/openmct">OpenMCT</a> - Ops HUD</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb32872b" class="outline-3">
+<h3 id="orgb32872b"><span class="section-number-3">1.4</span> <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></h3>
+<div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
-<li class="on"><code>[X]</code> Install KSP 1.7.3 from S3</li>
-<li class="trans"><code>[-]</code> Automate mod install <code>[3/4]</code>
+<li class="trans"><code>[-]</code> Starlink(s) <code>[0/0]</code></li>
+<li class="trans"><code>[-]</code> Long running, real time ops <code>[0/0]</code></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org251480b" class="outline-3">
+<h3 id="org251480b"><span class="section-number-3">1.5</span> <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></h3>
+</div>
+<div id="outline-container-orgd156585" class="outline-3">
+<h3 id="orgd156585"><span class="section-number-3">1.6</span> <span class="todo TODO">TODO</span> Backlog/As Needed <code>[0/2]</code></h3>
+<div class="outline-text-3" id="text-1-6">
 <ul class="org-ul">
-<li class="on"><code>[X]</code> Install CKAN.deb</li>
-<li class="on"><code>[X]</code> kRPC manually from github</li>
-<li class="on"><code>[X]</code> AutoLoadGame - Allista</li>
-<li class="off"><code>[&#xa0;]</code> RO via CKAN</li>
+<li class="off"><code>[&#xa0;]</code> Need to implement an automated Xvfb workflow using screenshots to debug Automation
+<ul class="org-ul">
+<li><del>There are module load errors in KSP.log, not sure if its preventing AutoLoadGame from doing its thing, or if that is related to the Changelog startup dialog in KSP Main Menu.</del> KSP 1.8.1 Works great</li>
+<li><del>Why are we stuck at the Change Log dialog on KSP Start?</del> A bit annoying but appears to be inconsequential for my automation purposes.
+<ul class="org-ul">
+<li>ksp settings.cfg:
+<ul class="org-ul">
+<li>SHOW<sub>WHATSNEW</sub><sub>DIALOG</sub> = False</li>
+<li><del>Version 1.7.3 was not honoring settings.cfg, lets see if 1.8.1 works</del> Still not honored in 1.8.1 but again, appears inconsequential</li>
 </ul></li>
-<li class="off"><code>[&#xa0;]</code> AutoLoadGame - Now supports specifying SFS files</li>
-<li class="off"><code>[&#xa0;]</code> POC kRPC</li>
 </ul></li>
-<li class="off"><code>[&#xa0;]</code> Split Project into multiple repos <code>[0/2]</code>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Split Project into multiple repos <code>[0/3]</code>
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Terraform <code>[0/2]</code>
 <ul class="org-ul">
@@ -304,69 +347,30 @@
 <li class="off"><code>[&#xa0;]</code> Plans</li>
 </ul></li>
 <li class="off"><code>[&#xa0;]</code> Packer Base Image</li>
-</ul></li>
-<li class="on"><code>[X]</code> Choose kRPC client language - C++</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgb46ed21" class="outline-3">
-<h3 id="orgb46ed21"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Stage 2 - Data <code>[0/1]</code></h3>
-<div class="outline-text-3" id="text-1-3">
-<ul class="org-ul">
-<li class="off"><code>[&#xa0;]</code> Set up client w/ all kRPC Data Stream - Once this is done, revisiting the image build will probably be worth it.
-<ul class="org-ul">
-<li>Pipe into GMAT and OpenMCT ???</li>
+<li class="off"><code>[&#xa0;]</code> Astractl</li>
 </ul></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orga8e4083" class="outline-3">
-<h3 id="orga8e4083"><span class="section-number-3">1.4</span> <span class="todo TODO">TODO</span> Stage 3 - RL Software integrations <code>[0/2]</code></h3>
-<div class="outline-text-3" id="text-1-4">
-<ul class="org-ul">
-<li class="off"><code>[&#xa0;]</code> <a href="https://opensource.gsfc.nasa.gov/projects/GMAT/index.php">GMAT</a> - Planning</li>
-<li class="off"><code>[&#xa0;]</code> <a href="https://github.com/nasa/openmct">OpenMCT</a> - Ops HUD</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org16f0374" class="outline-3">
-<h3 id="org16f0374"><span class="section-number-3">1.5</span> <span class="todo TODO">TODO</span> Stage 4 - Operations <code>[0/2]</code></h3>
-<div class="outline-text-3" id="text-1-5">
-<ul class="org-ul">
-<li class="trans"><code>[-]</code> Starlink(s) <code>[0/0]</code></li>
-<li class="trans"><code>[-]</code> Long running, real time ops <code>[0/0]</code></li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org62c1323" class="outline-3">
-<h3 id="org62c1323"><span class="section-number-3">1.6</span> <span class="todo TODO">TODO</span> Stage 5 - Stream Real Time Ops <code>[0/0]</code></h3>
-</div>
-<div id="outline-container-orgaaa7f1f" class="outline-3">
-<h3 id="orgaaa7f1f"><span class="section-number-3">1.7</span> KSP Mod Requirements</h3>
+<div id="outline-container-org72d6534" class="outline-3">
+<h3 id="org72d6534"><span class="section-number-3">1.7</span> KSP Mod Requirements</h3>
 <div class="outline-text-3" id="text-1-7">
 <ul class="org-ul">
+<li><a href="https://github.com/allista/AutoLoadGame">AutoLoadGame</a> - by Allista, allows creating a configuration file in your saves dir that will automatically load the specified sfs file upong game start.</li>
 <li><a href="https://krpc.github.io/krpc/">kRPC</a> - kRPC allows you to control Kerbal Space Program from scripts running outside of the game.</li>
 <li><a href="https://github.com/KSP-RO/RealismOverhaul/wiki">Realism Overhaul</a> - Its not certain this will place nice with <a href="https://krpc.github.io/krpc/">kRPC</a>, however realistic(ish?) control theory is really the purpose of this project so we will proceed with it until/unless we encounter problems.</li>
 <li><a href="https://ksp-kos.github.io/KOS/">kOS</a> - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org3b7123e" class="outline-3">
-<h3 id="org3b7123e"><span class="section-number-3">1.8</span> On Hold</h3>
+<div id="outline-container-org4508e4e" class="outline-3">
+<h3 id="org4508e4e"><span class="section-number-3">1.8</span> On Hold</h3>
 <div class="outline-text-3" id="text-1-8">
 <ul class="org-ul">
-<li class="on"><code>[X]</code> Do I even want to use KSP? This <a href="http://orbit.medphys.ucl.ac.uk/index.html">Orbiter Space flight simulator</a> seems interesting:
+<li class="off"><code>[&#xa0;]</code> Properly version Packer builds
 <ul class="org-ul">
-<li>Results: perhaps I&rsquo;ll work up to this at some point&#x2026;</li>
-<li><a href="https://www.orbiterwiki.org/wiki/">Docs</a></li>
-<li><a href="https://www.orbiterwiki.org/wiki/SDK_documentation">SDK Docs</a></li>
-</ul></li>
-<li class="off"><code>[&#xa0;]</code> Automate S3 hosting of tar&rsquo;d game download
-<ul class="org-ul">
-<li>On Hold: Can just use steam cmd locally for now to create the tars then automate the uploading/point packer builds to the &ldquo;latest&rdquo; tar.</li>
-<li>No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.</li>
-<li>Will be nice to automate, but is not strictly necessary and would only need to be done on game updates.</li>
-<li>If ever necessary can provide &ldquo;depot&rdquo; and manifest ID&rsquo;s to steamcmd to DL specific KSP releases.</li>
+<li>dev builds by commit short SHA</li>
+<li>&ldquo;Prod&rdquo; builds by Releae Tag</li>
 </ul></li>
 </ul>
 </div>
@@ -375,7 +379,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Tyler Weldon</p>
-<p class="date">Created: 2020-09-08 Tue 09:37</p>
+<p class="date">Created: 2020-09-12 Sat 13:48</p>
 </div>
 </body>
 </html>

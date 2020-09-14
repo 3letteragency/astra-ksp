@@ -4,39 +4,39 @@
 #+EMAIL: tylerweldon94@gmail.com
 
 * Astra
-** STRT R&D [2/2]
-- [X] Can we set up a headless/graphically limited KSP?
-  * +Running KSP in a VM seems promising.+
-    * +Set all graphics settings to minimum+
-  * We sure can! Unity options: ~~KSP.x86_64 -batchmode -nographics~~
-- [X] If not headless, can we automate the launching of KSP "instances", and entering/setting up the game as desired(specific missions, locations, etc.) via the [[https://krpc.github.io/krpc/cpp/api/ui/ui.html][kRPC UI API]]?
-  * +Might be able to use the Unity [[https://docs.unity3d.com/Manual/CLIBatchmodeCoroutines.html][Batch Mode]] and [[https://docs.unity3d.com/Manual/CommandLineArguments.html][nographics]] options to facilitate headless.+
-  * +Will need some means of automatically launching specified game saves.+
-    * +[[https://github.com/allista/AutoLoadGame][AutoLoadGame]] might do the trick.+
-      * +Might modify to use Unity CLI args instead of config file:+
-        + https://answers.unity.com/questions/138715/read-command-line-arguments.html
-        + https://answers.unity.com/questions/366195/parameters-at-startup.html
-  * No longer neccessary, headless is possible w/ unity opts in above task
-** STRT Stage 1 - Prep [2/4]
-  - [X] Automate game-archiver
-  - [-] Base VM Image(Packer) [1/4]
-    - [X] Install KSP 1.7.3 from S3
-    - [-] Automate mod install [3/4]
+** STRT Stage 1 - Prep [4/6]
+  - [ ] Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)
+  - [-] Base VM Image(Packer) [8/15]
+    - [ ] Forgot to add final chown after adding conf files
+    - [ ] Archive SpaceX Pack
+    - [ ] Change KSP version from 1.9.1 to 1.8.1 in SpaceX Pack craft files
+    - [ ] Add vehicles to Astra game save VAB
+    - [ ] Systemd user service to start game
+    - [ ] Figure something out w/ firewall
+    - [-] Automate mod install [5/6]
+      - [ ] [[https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/][KK's SpaceX Pack]]
+      - [X] RO via CKAN
+        * Debug, make sure startup is ok
+      - [X] Principia
       - [X] Install CKAN.deb
       - [X] kRPC manually from github
       - [X] AutoLoadGame - Allista
-      - [ ] RO via CKAN
-    - [ ] AutoLoadGame - Now supports specifying SFS files
-    - [ ] POC kRPC
-  - [ ] Split Project into multiple repos [0/2]
-    - [ ] Terraform [0/2]
-      - [ ] Modules
-      - [ ] Plans
-    - [ ] Packer Base Image
+    - [X] astra-base.sfs
+      * Might need to hop into a graphical run to get the minimal base + mods setup
+    - [X] AutoLoadGame.conf
+    - [X] settings.cfg
+    - [X] krpc-settings.cfg
+    - [X] AutoLoadGame - Now supports specifying SFS files
+    - [X] POC kRPC - connection over Internet successful, responses receieved
+    - [X] Install KSP +1.7.3+ 1.8.1 from S3
+    - [X] File provision packer/files/*
+  - [X] Automate game-archiver
   - [X] Choose kRPC client language - C++
+  - [X] VLC/Xvfb workflow for graphical debugging and SFS building
+  - [X] Debug RO Install, problems w/ Kopernicus?
 ** TODO Stage 2 - Data [0/1]
-- [ ] Set up client w/ all kRPC Data Stream - Once this is done, revisiting the image build will probably be worth it.
-  * Pipe into GMAT and OpenMCT ???
+- [ ] Set up client w/ all kRPC Data Stream
+  * Pipe into GMAT and OpenMCT ??? - yes
 ** TODO Stage 3 - RL Software integrations [0/2]
 - [ ] [[https://opensource.gsfc.nasa.gov/projects/GMAT/index.php][GMAT]] - Planning
 - [ ] [[https://github.com/nasa/openmct][OpenMCT]] - Ops HUD
@@ -44,18 +44,25 @@
 - [-] Starlink(s) [0/0]
 - [-] Long running, real time ops [0/0]
 ** TODO Stage 5 - Stream Real Time Ops [0/0]
+** TODO Backlog/As Needed [0/2]
+  - [ ] Need to implement an automated Xvfb workflow using screenshots to debug Automation
+    * +There are module load errors in KSP.log, not sure if its preventing AutoLoadGame from doing its thing, or if that is related to the Changelog startup dialog in KSP Main Menu.+ KSP 1.8.1 Works great
+    * +Why are we stuck at the Change Log dialog on KSP Start?+ A bit annoying but appears to be inconsequential for my automation purposes.
+      * ksp settings.cfg:
+        * SHOW_WHATSNEW_DIALOG = False
+        * +Version 1.7.3 was not honoring settings.cfg, lets see if 1.8.1 works+ Still not honored in 1.8.1 but again, appears inconsequential
+  - [ ] Split Project into multiple repos [0/3]
+    - [ ] Terraform [0/2]
+      - [ ] Modules
+      - [ ] Plans
+    - [ ] Packer Base Image
+    - [ ] Astractl
 ** KSP Mod Requirements
 - [[https://github.com/allista/AutoLoadGame][AutoLoadGame]] - by Allista, allows creating a configuration file in your saves dir that will automatically load the specified sfs file upong game start.
 - [[https://krpc.github.io/krpc/][kRPC]] - kRPC allows you to control Kerbal Space Program from scripts running outside of the game.
 - [[https://github.com/KSP-RO/RealismOverhaul/wiki][Realism Overhaul]] - Its not certain this will place nice with [[https://krpc.github.io/krpc/][kRPC]], however realistic(ish?) control theory is really the purpose of this project so we will proceed with it until/unless we encounter problems.
 - [[https://ksp-kos.github.io/KOS/][kOS]] - kOS might be useful for some simpler tasks where we don't want the full power of kRPC. Might use, might not. We'll see.
 ** On Hold
-  - [X] Do I even want to use KSP? This [[http://orbit.medphys.ucl.ac.uk/index.html][Orbiter Space flight simulator]] seems interesting:
-    * Results: perhaps I'll work up to this at some point...
-    * [[https://www.orbiterwiki.org/wiki/][Docs]]
-    * [[https://www.orbiterwiki.org/wiki/SDK_documentation][SDK Docs]]
-  - [ ] Automate S3 hosting of tar'd game download
-    * On Hold: Can just use steam cmd locally for now to create the tars then automate the uploading/point packer builds to the "latest" tar.
-    * No Steam DRM on KSP, should be able to move this around/host in S3 however I need. No direct DL necessary, and should negate the need for steamcmd in the Game Packer build.
-    * Will be nice to automate, but is not strictly necessary and would only need to be done on game updates.
-    * If ever necessary can provide "depot" and manifest ID's to steamcmd to DL specific KSP releases.
+  - [ ] Properly version Packer builds
+    - dev builds by commit short SHA
+    - "Prod" builds by Releae Tag
