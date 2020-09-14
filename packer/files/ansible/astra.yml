@@ -8,7 +8,9 @@
     autoloadgame_version:
     autoloadgame_zip_url:
     principia_version:
+    principia_zip_url:
     spacex_launch_vehicles_version:
+    spacex_launch_vehicles_zip_url:
     ksp_archive_url:
     ksp_install_dir: /home/astra/ksp
     game_user: astra
