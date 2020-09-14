@@ -1,0 +1,16 @@
+- name: Install AutoLoadGame
+  unarchive:
+   src: {{ autoloadgame_zip_url }}
+   remote_src: yes
+   dest: {{ ksp_install_dir }}/GameData
+   owner: {{ game_user }}
+   group: {{ game_user }}
+   extra_opts:
+     - --strip-components=1
+
+- name: Configure AutoLoadGame for Astra
+  file:
+    src: files/AutoLoadGame.conf
+    dest: {{ ksp_install_dir }}/saves/AutoLoadGame.conf
+    owner: {{ game_user }}
+    group: {{ game_user }}

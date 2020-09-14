@@ -1,0 +1,6 @@
+- name: Install/configure raw(non-ckan) mods
+  import_tasks:
+    - krpc.yml
+    - autoloadgame.yml
+    - principia.yml
+    - spacex.yml

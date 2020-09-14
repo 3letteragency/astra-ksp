@@ -1,0 +1,17 @@
+- name: Install kRPC
+  unarchive:
+   src: {{ krpc_zip_url }}
+   remote_src: yes
+   dest: {{ ksp_install_dir }}/GameData
+   owner: {{ game_user }}
+   group: {{ game_user }}
+   extra_opts:
+     - --strip-components=1
+
+- name: Configure kRPC
+  file:
+    src: files/krpc-settings.cfg
+    dest: {{ ksp_install_dir }}/GameData/kRPC/PluginData/settings.cfg
+    owner: {{ game_user }}
+    group: {{ game_user }}
+    mode: '0644'

@@ -1,0 +1,7 @@
+- name: Apt update
+  apt:
+    update_cache: yes
+
+- name: Install Astra dependencies
+  import_tasks:
+    - apt.yml

@@ -1,0 +1,9 @@
+- name: Install Principia
+  unarchive:
+    src: {{ principia_zip_url }}
+    remote_src: yes
+    dest: {{ ksp_install_dir }}/GameData
+    owner: {{ game_user }}
+    group: {{ game_user }}
+    extra_opts:
+      - --strip-components=1
