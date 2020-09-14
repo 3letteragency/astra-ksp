@@ -40,9 +40,11 @@
 ** TODO Stage 3 - RL Software integrations [0/2]
 - [ ] [[https://opensource.gsfc.nasa.gov/projects/GMAT/index.php][GMAT]] - Planning
 - [ ] [[https://github.com/nasa/openmct][OpenMCT]] - Ops HUD
-** TODO Stage 4 - Operations [0/2]
-- [-] Starlink(s) [0/0]
-- [-] Long running, real time ops [0/0]
+** TODO Stage 4 - Operations [0/3]
+*** [-] For re-usable missions: [0/1]
+**** [ ] Will need something like [[https://forum.kerbalspaceprogram.com/index.php?/topic/157214-19x-flight-manager-for-reusable-stages-fmrs-now-with-recoverycontroller-integration/][FMRS]] implemented via kRPC
+*** [-] Starlink(s) [0/0]
+*** [-] Long running, real time ops [0/0]
 ** TODO Stage 5 - Stream Real Time Ops [0/0]
 ** TODO Backlog/As Needed [0/2]
   - [ ] Need to implement an automated Xvfb workflow using screenshots to debug Automation
