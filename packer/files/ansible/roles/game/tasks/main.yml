@@ -21,3 +21,10 @@
     owner: {{ game_user }}
     group: {{ game_user }}
     mode: '0644'
+
+- name: Add Astra base game save
+  file:
+    src: files/Astra
+    dest: {{ ksp_install_dir }}/saves
+    owner: {{ game_user }}
+    group: {{ game_user }}

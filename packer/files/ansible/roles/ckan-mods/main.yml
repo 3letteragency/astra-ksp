@@ -1,0 +1,15 @@
+- name: Load task vars
+  include_vars:
+    file: task-vars.yml
+    name: task_vars
+
+- name: Update CKAN Index
+  command: /usr/bin/ckan update --headless
+  become: yes
+  become_user: {{ game_user }}
+
+- name: Install CKAN Mods
+  import_tasks:
+    - real-solar-system.yml
+    - realism-overhaul.yml
+    - spacex-launch-vehicles.yml

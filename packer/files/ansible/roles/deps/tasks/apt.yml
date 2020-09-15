@@ -27,3 +27,8 @@
   apt:
     name: libc++abi1-8
     state: present
+
+- name: Install CKAN
+  apt:
+    deb: {{ task_vars.ckan_deb_url }}
+    state: present
