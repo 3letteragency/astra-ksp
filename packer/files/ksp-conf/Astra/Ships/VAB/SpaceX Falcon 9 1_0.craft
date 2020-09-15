@@ -1,5 +1,5 @@
 ship = SpaceX Falcon 9 1.0
-version = 1.9.0
+version = 1.8.1
 description = The first ever flown version of the Falcon 9. It features the Merlin 1C engine. A vacuum optimized version of this engine is used on the second stage.
 type = VAB
 size = 4.64195204,53.2568893,5.20001125

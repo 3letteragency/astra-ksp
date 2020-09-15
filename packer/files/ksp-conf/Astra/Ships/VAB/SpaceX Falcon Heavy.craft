@@ -1,5 +1,5 @@
 ship = SpaceX Falcon Heavy
-version = 1.9.1
+version = 1.8.1
 description = AG1: Core main engines toggle + Side Booster center (landing) engine toggle¨AG2: Core entry engines toggle + Side booster entry engines toggle¨AG5: Side booster shutdown and seperation¨GEAR: landing leg toggle¨BRAKES: gridfin deploy¨THROTTLE: controls throttle of the core and recovery-relevant side booster engines, main side booster engines not affected. Throttle down to 50-60% to enable side boosters to drain faster than the core.
 type = VAB
 size = 13.8317909,69.2826691,5.35208797

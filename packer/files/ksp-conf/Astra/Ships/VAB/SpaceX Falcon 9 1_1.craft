@@ -1,5 +1,5 @@
 ship = SpaceX Falcon 9 1.1
-version = 1.9.0
+version = 1.8.1
 description = The Falcon 9 1.1 is a major upgrade from the Falcon 9 1.0. It features new Merlin 1D engines which are now arranged in the so-called "Octaweb" pattern. The more powerful engines allow for a signifcant increase in takeoff weight, which is achieved by stretched tanks.
 type = VAB
 size = 4.68598604,67.8126678,5.20001125

@@ -1,5 +1,5 @@
 ship = SpaceX Crew Dragon F9 Stack
-version = 1.9.1
+version = 1.8.1
 description = AG1: Shutdown main engines¨AG2: Shutdown boostback engines¨AG6: Toggle Nosecone¨[Non-Animated Decouplers Only:¨AG7: Deploy Trunk Umbilical]
 type = VAB
 size = 5.35191059,64.6905975,5.35190964
