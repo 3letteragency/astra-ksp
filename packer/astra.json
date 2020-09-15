@@ -23,6 +23,13 @@
   ],
   "provisioners": [
     {
+      "type": "shell",
+      "inline": [
+        "apt -y update",
+        "apt -y install ansible"
+      ]
+    },
+    {
       "type": "ansible-local",
       "playbook_file": "files/ansible/astra.yml",
       "extra_arguments": []
