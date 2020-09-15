@@ -4,6 +4,6 @@
   become_user: {{ game_user }}
 
 - name: Install KK's SpaceX Launch Vehicles via CKAN
-  command: /usr/bin/ckan install --headless --no-recommends
+  command: /usr/bin/ckan install --headless --no-recommends SpaceXLaunchVehicles
   become: yes
   become_user: {{ game_user }}
