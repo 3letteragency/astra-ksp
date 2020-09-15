@@ -3,11 +3,16 @@
     file: task-vars.yml
     name: task_vars
 
+- name: Add KSP Install to CKAN
+  command: /usr/bin/ckan ksp add astra {{ ksp_install_dir }}
+  become: yes
+  become_user: {{ game_user }}
+
 - name: Update CKAN Index
   command: /usr/bin/ckan update --headless
   become: yes
   become_user: {{ game_user }}
-
+ 
 - name: Install CKAN Mods
   import_tasks:
     - real-solar-system.yml
