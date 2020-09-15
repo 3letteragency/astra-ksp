@@ -1,9 +1,24 @@
-- name: Install Principia
+- name: Create tmp dir for extract
+  file:
+    path: {{ role_vars.principia_tmp_dir }}
+    state: directory
+    mode: '0755'
+
+- name: Get Principia
   unarchive:
-    src: {{ principia_zip_url }}
-    remote_src: yes
+   src: {{ principia_zip_url }}
+   remote_src: yes
+   dest: {{ role_vars.principia_tmp_dir }}
+
+- name: Install Principia to game directory
+  file:
+    src: {{ role_vars.principia_tmp_dir }}/GameData/Principia
     dest: {{ ksp_install_dir }}/GameData
     owner: {{ game_user }}
     group: {{ game_user }}
-    extra_opts:
-      - --strip-components=1
+    remote_src: yes
+
+- name: Cleanup
+  file:
+    path: {{ role_vars.principia_tmp_dir }}
+    state: absent

@@ -1,12 +1,22 @@
-- name: Install kRPC
+- name: Create tmp dir for extract
+  file:
+    path: {{ role_vars.krpc_tmp_dir }}
+    state: directory
+    mode: '0755'
+
+- name: Get kRPC
   unarchive:
    src: {{ krpc_zip_url }}
    remote_src: yes
-   dest: {{ ksp_install_dir }}/GameData
-   owner: {{ game_user }}
-   group: {{ game_user }}
-   extra_opts:
-     - --strip-components=1
+   dest: {{ role_vars.krpc_tmp_dir }}
+
+- name: Install kRPC to game directory
+  file:
+    src: {{ role_vars.krpc_tmp_dir }}/GameData/kRPC
+    dest: {{ ksp_install_dir }}/GameData
+    owner: {{ game_user }}
+    group: {{ game_user }}
+    remote_src: yes
 
 - name: Configure kRPC
   file:
@@ -15,3 +25,8 @@
     owner: {{ game_user }}
     group: {{ game_user }}
     mode: '0644'
+
+- name: Cleanup
+  file:
+    path: {{ role_vars.krpc_tmp_dir }}
+    state: absent
