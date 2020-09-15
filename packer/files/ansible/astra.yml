@@ -1,20 +1,19 @@
 ---
 - hosts: localhost
   vars:
-    ksp_version:
-    ckan_version:
-    krpc_version:
-    krpc_zip_url:
-    autoloadgame_version:
-    autoloadgame_zip_url:
-    principia_version:
-    principia_zip_url:
-    spacex_launch_vehicles_version:
-    spacex_launch_vehicles_zip_url:
+    game_user: astra
+    ksp_version: 1.8.1
+    ckan_version: 1.28.0
     ksp_archive_url:
     ksp_install_dir: /home/astra/ksp
-    game_user: astra
-    ssh_key:
+    krpc_version: 0.4.9.1
+    krpc_zip_url: https://github.com/haeena/krpc/releases/download/v{{ krpc_version }}/krpc-{{ krpc_version }}.zip
+    autoloadgame_version: 1.0.10
+    autoloadgame_zip_url: https://github.com/allista/AutoLoadGame/releases/download/v{{ autoloadgame_version }}/AutoLoadGame-v{{ autoloadgame_version }}.zip
+    principia_codename: galois
+    principia_version: 1.9.1
+    principia_zip_url:
+    game_user_ssh_key:
 
   roles:
     - users
