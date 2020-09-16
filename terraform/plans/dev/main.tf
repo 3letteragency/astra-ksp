@@ -1,5 +1,5 @@
 module "astra" {
-  source = "../../modules/terraform-astra-node"
+  source = "../../modules/terraform-vultr-astra"
   region = "Toronto"
   machine_type = 205
 }
