@@ -1,8 +1,5 @@
-- name: Install/configure raw(non-ckan) mods
-  include_vars:
-    file: role-vars.yml
-    name: role_vars
-  import_tasks:
-    - krpc.yml
-    - autoloadgame.yml
-    - principia.yml
+- include_vars: task-vars.yml
+
+- import_tasks: krpc.yml
+- import_tasks: autoloadgame.yml
+- import_tasks: principia.yml

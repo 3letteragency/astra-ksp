@@ -1,30 +1,30 @@
 - name: Create game install directory
   file:
-    path: {{ ksp_install_dir }}
+    path: "{{ ksp_install_dir }}"
     state: directory
     mode: '0755'
-    owner: {{ game_user }}
-    group: {{ game_user }}
+    owner: "{{ game_user }}"
+    group: "{{ game_user }}"
 
 - name: Install game
   unarchive:
-    src: {{ ksp_archive_url }}
-    dest: {{ ksp_install_dir }}
+    src: "{{ ksp_archive_url }}"
+    dest: "{{ ksp_install_dir }}"
     remote_src: yes
-    owner: {{ game_user }}
-    group: {{ game_user }}
+    owner: "{{ game_user }}"
+    group: "{{ game_user }}"
 
 - name: Configure game
   file:
     src: files/ksp-settings.cfg
-    dest: {{ ksp_install_dir }}/settings.cfg
-    owner: {{ game_user }}
-    group: {{ game_user }}
+    dest: "{{ ksp_install_dir }}/settings.cfg"
+    owner: "{{ game_user }}"
+    group: "{{ game_user }}"
     mode: '0644'
 
 - name: Add Astra base game save
   file:
     src: files/Astra
-    dest: {{ ksp_install_dir }}/saves
-    owner: {{ game_user }}
-    group: {{ game_user }}
+    dest: "{{ ksp_install_dir }}/saves"
+    owner: "{{ game_user }}"
+    group: "{{ game_user }}"

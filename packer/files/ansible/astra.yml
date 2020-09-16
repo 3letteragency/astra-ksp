@@ -13,7 +13,6 @@
     principia_codename: galois
     principia_version: 1.9.1
     principia_zip_url:
-    game_user_ssh_key:
 
   roles:
     - users

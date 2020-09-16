@@ -30,5 +30,5 @@
 
 - name: Install CKAN
   apt:
-    deb: {{ task_vars.ckan_deb_url }}
+    deb: "{{ task_vars.ckan_deb_url }}"
     state: present

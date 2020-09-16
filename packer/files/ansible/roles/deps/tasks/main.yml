@@ -8,5 +8,4 @@
     update_cache: yes
 
 - name: Install Astra dependencies
-  import_tasks:
-    - apt.yml
+  import_tasks: apt.yml
