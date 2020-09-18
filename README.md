@@ -1,49 +1,45 @@
 
 # Table of Contents
 
-1.  [Astra](#org8a98c3e)
-    1.  [Stage 1 - Prep <code>[4/6]</code>](#org7968240)
-    2.  [Stage 2 - Data <code>[0/1]</code>](#org814f25d)
-    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org249f87a)
-    4.  [Stage 4 - Operations <code>[0/3]</code>](#org2346d7e)
-        1.  [For re-usable missions: <code>[0/1]</code>](#orgaefc367)
-        2.  [Starlink(s) <code>[0/0]</code>](#org1291360)
-        3.  [Long running, real time ops <code>[0/0]</code>](#org3090799)
-    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org72eab05)
-    6.  [Backlog/As Needed <code>[0/2]</code>](#org8230ea6)
-    7.  [KSP Mod Requirements](#org8edab0e)
-    8.  [On Hold](#orgbe785ff)
+1.  [Astra](#orgd763161)
+    1.  [Stage 1 - Prep <code>[5/6]</code>](#orgc89bb89)
+    2.  [Stage 2 - Data <code>[0/1]</code>](#org717eb8a)
+    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orgade7dfe)
+    4.  [Stage 4 - Operations <code>[0/3]</code>](#org757a3ea)
+        1.  [For re-usable missions: <code>[0/1]</code>](#org13088a3)
+        2.  [Starlink(s) <code>[0/0]</code>](#orgdd57c51)
+        3.  [Long running, real time ops <code>[0/0]</code>](#orgd58f98a)
+    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org444bc52)
+    6.  [Backlog/As Needed <code>[0/2]</code>](#org8035f95)
+    7.  [KSP Mod Requirements](#orgf7df4a9)
+    8.  [On Hold](#orgf431885)
 
 
 
-<a id="org8a98c3e"></a>
+<a id="orgd763161"></a>
 
 # Astra
 
 
-<a id="org7968240"></a>
+<a id="orgc89bb89"></a>
 
-## STRT Stage 1 - Prep <code>[4/6]</code>
+## STRT Stage 1 - Prep <code>[5/6]</code>
 
--   [ ] Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)
-    -   How do I generate the signed s3 urls for the game and some mods??
--   [-] Base VM Image(Packer) <code>[8/15]</code>
-    -   [ ] Forgot to add final chown after adding conf files
-    -   [ ] Archive SpaceX Pack
-    -   [ ] Change KSP version from 1.9.1 to 1.8.1 in SpaceX Pack craft files
-    -   [ ] Add vehicles to Astra game save VAB
+-   [X] Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)
+-   [-] Base VM Image(Packer) <code>[10/13]</code>
+    -   [X] Change KSP version from 1.9.1 to 1.8.1 in SpaceX Pack craft files
+    -   [X] Add vehicles to Astra game save VAB
     -   [ ] Systemd user service to start game
     -   [ ] Figure something out w/ firewall
-    -   [-] Automate mod install <code>[5/6]</code>
-        -   [ ] [KK&rsquo;s SpaceX Pack](https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/)
+    -   [X] Automate mod install <code>[6/6]</code>
+        -   [X] [KK&rsquo;s SpaceX Pack](https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/)
         -   [X] RO via CKAN
-            -   Debug, make sure startup is ok
         -   [X] Principia
         -   [X] Install CKAN.deb
         -   [X] kRPC manually from github
         -   [X] AutoLoadGame - Allista
     -   [X] astra-base.sfs
-        -   Might need to hop into a graphical run to get the minimal base + mods setup
+        -   <del>Might need to hop into a graphical run to get the minimal base + mods setup</del>
     -   [X] AutoLoadGame.conf
     -   [X] settings.cfg
     -   [X] krpc-settings.cfg
@@ -57,7 +53,7 @@
 -   [X] Debug RO Install, problems w/ Kopernicus?
 
 
-<a id="org814f25d"></a>
+<a id="org717eb8a"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -65,7 +61,7 @@
     -   Pipe into GMAT and OpenMCT ??? - yes
 
 
-<a id="org249f87a"></a>
+<a id="orgade7dfe"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -73,34 +69,34 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org2346d7e"></a>
+<a id="org757a3ea"></a>
 
 ## TODO Stage 4 - Operations <code>[0/3]</code>
 
 
-<a id="orgaefc367"></a>
+<a id="org13088a3"></a>
 
 ### [-] For re-usable missions: <code>[0/1]</code>
 
 1.  [ ] Will need something like [FMRS](https://forum.kerbalspaceprogram.com/index.php?/topic/157214-19x-flight-manager-for-reusable-stages-fmrs-now-with-recoverycontroller-integration/) implemented via kRPC
 
 
-<a id="org1291360"></a>
+<a id="orgdd57c51"></a>
 
 ### [-] Starlink(s) <code>[0/0]</code>
 
 
-<a id="org3090799"></a>
+<a id="orgd58f98a"></a>
 
 ### [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="org72eab05"></a>
+<a id="org444bc52"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="org8230ea6"></a>
+<a id="org8035f95"></a>
 
 ## TODO Backlog/As Needed <code>[0/2]</code>
 
@@ -118,7 +114,7 @@
     -   [ ] Astractl
 
 
-<a id="org8edab0e"></a>
+<a id="orgf7df4a9"></a>
 
 ## KSP Mod Requirements
 
@@ -128,7 +124,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orgbe785ff"></a>
+<a id="orgf431885"></a>
 
 ## On Hold
 

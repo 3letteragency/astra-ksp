@@ -1,3 +1,14 @@
+- name: Get Game URL from S3
+  aws_s3:
+    rgw: yes
+    s3_url: "{{ vultr_s3_url }}"
+    aws_access_key: "{{ s3_access_key }}"
+    aws_secret_key: "{{ s3_secret_key }}"
+    bucket: "{{ project_s3_bucket }}"
+    object: "{{ s3_game_archive_prefix }}/{{ ksp_tar_filename }}"
+    mode: geturl
+  register: game_s3
+
 - name: Create game install directory
   file:
     path: "{{ ksp_install_dir }}"
@@ -8,14 +19,16 @@
 
 - name: Install game
   unarchive:
-    src: "{{ ksp_archive_url }}"
+    src: "{{ game_s3.url }}"
     dest: "{{ ksp_install_dir }}"
     remote_src: yes
     owner: "{{ game_user }}"
     group: "{{ game_user }}"
+    creates: "{{ ksp_install_dir }}/KSP.x86_64"
+  ignore_errors: "{{ ansible_check_mode }}"
 
 - name: Configure game
-  file:
+  copy:
     src: files/ksp-settings.cfg
     dest: "{{ ksp_install_dir }}/settings.cfg"
     owner: "{{ game_user }}"
@@ -23,7 +36,7 @@
     mode: '0644'
 
 - name: Add Astra base game save
-  file:
+  copy:
     src: files/Astra
     dest: "{{ ksp_install_dir }}/saves"
     owner: "{{ game_user }}"
