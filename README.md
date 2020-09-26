@@ -1,27 +1,27 @@
 
 # Table of Contents
 
-1.  [Astra](#org73de397)
-    1.  [Stage 1 - Prep <code>[5/6]</code>](#org1a53593)
-    2.  [Stage 2 - Data <code>[0/1]</code>](#org9a3eb13)
-    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org7eca111)
-    4.  [Stage 4 - Operations <code>[0/3]</code>](#org019ce70)
-        1.  [For re-usable missions: <code>[0/1]</code>](#org03bfdba)
-        2.  [Starlink(s) <code>[0/0]</code>](#orgde80887)
-        3.  [Long running, real time ops <code>[0/0]</code>](#orgfd58d0a)
-    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org41d9e9b)
-    6.  [Backlog/As Needed <code>[0/2]</code>](#orge981799)
-    7.  [KSP Mod Requirements](#org75a1994)
-    8.  [On Hold](#org4fed9c6)
+1.  [Astra](#org0ff58d3)
+    1.  [Stage 1 - Prep <code>[5/6]</code>](#orgb5f5da7)
+    2.  [Stage 2 - Data <code>[0/1]</code>](#orgaf68c22)
+    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orgd295be8)
+    4.  [Stage 4 - Operations <code>[0/3]</code>](#org4508616)
+        1.  [For re-usable missions: <code>[0/1]</code>](#orga892f31)
+        2.  [Starlink(s) <code>[0/0]</code>](#org5893076)
+        3.  [Long running, real time ops <code>[0/0]</code>](#org51af636)
+    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orgf080965)
+    6.  [Backlog/As Needed <code>[0/2]</code>](#org249c71c)
+    7.  [KSP Mod Requirements](#orgd207af9)
+    8.  [On Hold](#orgdf572ea)
 
 
 
-<a id="org73de397"></a>
+<a id="org0ff58d3"></a>
 
 # Astra
 
 
-<a id="org1a53593"></a>
+<a id="orgb5f5da7"></a>
 
 ## STRT Stage 1 - Prep <code>[5/6]</code>
 
@@ -31,6 +31,7 @@
     -   [X] Add vehicles to Astra game save VAB
     -   [ ] Figure out how to get a `systemd --user` instance running on Astra user
     -   [ ] Systemd user service to start game
+        -   added systemd service/linger config, but may need to set XDG<sub>RUNTIME</sub><sub>DIR</sub> var in the systemd task as shown [here](https://gist.github.com/carlwgeorge/dbe186ce7562843932ebd03ccccd1a6d).
     -   [ ] Figure something out w/ firewall
     -   [X] Automate mod install <code>[6/6]</code>
         -   [X] [KK&rsquo;s SpaceX Pack](https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/)
@@ -54,7 +55,7 @@
 -   [X] Debug RO Install, problems w/ Kopernicus?
 
 
-<a id="org9a3eb13"></a>
+<a id="orgaf68c22"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -62,7 +63,7 @@
     -   Pipe into GMAT and OpenMCT ??? - yes
 
 
-<a id="org7eca111"></a>
+<a id="orgd295be8"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -70,34 +71,34 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org019ce70"></a>
+<a id="org4508616"></a>
 
 ## TODO Stage 4 - Operations <code>[0/3]</code>
 
 
-<a id="org03bfdba"></a>
+<a id="orga892f31"></a>
 
 ### [-] For re-usable missions: <code>[0/1]</code>
 
 1.  [ ] Will need something like [FMRS](https://forum.kerbalspaceprogram.com/index.php?/topic/157214-19x-flight-manager-for-reusable-stages-fmrs-now-with-recoverycontroller-integration/) implemented via kRPC
 
 
-<a id="orgde80887"></a>
+<a id="org5893076"></a>
 
 ### [-] Starlink(s) <code>[0/0]</code>
 
 
-<a id="orgfd58d0a"></a>
+<a id="org51af636"></a>
 
 ### [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="org41d9e9b"></a>
+<a id="orgf080965"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="orge981799"></a>
+<a id="org249c71c"></a>
 
 ## TODO Backlog/As Needed <code>[0/2]</code>
 
@@ -116,7 +117,7 @@
     -   [ ] Astractl
 
 
-<a id="org75a1994"></a>
+<a id="orgd207af9"></a>
 
 ## KSP Mod Requirements
 
@@ -126,7 +127,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="org4fed9c6"></a>
+<a id="orgdf572ea"></a>
 
 ## On Hold
 

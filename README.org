@@ -11,6 +11,7 @@
     - [X] Add vehicles to Astra game save VAB
     - [ ] Figure out how to get a ~systemd --user~ instance running on Astra user
     - [ ] Systemd user service to start game
+      - added systemd service/linger config, but may need to set XDG_RUNTIME_DIR var in the systemd task as shown [[https://gist.github.com/carlwgeorge/dbe186ce7562843932ebd03ccccd1a6d][here]].
     - [ ] Figure something out w/ firewall
     - [X] Automate mod install [6/6]
       - [X] [[https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/][KK's SpaceX Pack]]
