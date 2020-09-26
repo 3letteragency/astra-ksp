@@ -2,9 +2,7 @@
   "variables": {
     "vultr_api_key": "{{ env `VULTR_API_KEY` }}",
     "s3_access_key": "{{ env `S3_ACCESS_KEY` }}",
-    "s3_secret_key": "{{ env `S3_SECRET_KEY` }}",
-    "game_archive_url": "{{ env `GAME_ARCHIVE_URL` }}",
-    "principia_zip_url": "{{ env `PRINCIPIA_ZIP_URL` }}"
+    "s3_secret_key": "{{ env `S3_SECRET_KEY` }}"
   },
   "builders": [
     {
@@ -33,6 +31,7 @@
     },
     {
       "type": "ansible-local",
+      "playbook_dir": "files/ansible",
       "playbook_file": "files/ansible/astra.yml",
       "extra_arguments": ["--extra-vars", "\"s3_access_key={{ user `s3_access_key` }}\"", "\"s3_secret_key={{ user `s3_secret_key` }}\""]
     }

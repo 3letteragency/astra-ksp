@@ -1,3 +1,4 @@
+# We use geturl mode instead of just getting the archive so we can use the Unarchive module below
 - name: Get Game URL from S3
   aws_s3:
     rgw: yes
@@ -17,6 +18,7 @@
     owner: "{{ game_user }}"
     group: "{{ game_user }}"
 
+# We use geturl mode in the aws_s3 module aboveinstead of just getting the archive with that so we can use the Unarchive module below
 - name: Install game
   unarchive:
     src: "{{ game_s3.url }}"
