@@ -43,3 +43,27 @@
     dest: "{{ ksp_install_dir }}/saves"
     owner: "{{ game_user }}"
     group: "{{ game_user }}"
+
+- name: Create Astra systemd user service directory
+  file:
+    path: "/home/{{ game_user }}/.config/systemd/user/"
+    state: directory
+    recurse: yes
+    owner: "{{ game_user }}"
+    group: "{{ game_user }}"
+
+- name: Write Astra systemd user service
+  copy:
+    src: "files/astra.service"
+    dest: "/home/{{ game_user }}/.config/systemd/user/"
+    owner: "{{ game_user }}"
+    group: "{{ game_user }}"
+
+- name: Enable Astra systemd service
+  systemd:
+    name: astra
+    enabled: yes
+    scope: user
+
+- name: Start game users systemd instance on boot
+  command: "loginctl enable-linger {{ game_user }}"
