@@ -44,6 +44,7 @@
 *** [-] Long running, real time ops [0/0]
 ** TODO Stage 5 - Stream Real Time Ops [0/0]
 ** TODO Backlog/As Needed [0/2]
+  - [ ] If TCP latency becomes a problem, try implementing a kRPC unix socket comm. protocol
   - [ ] Need to implement an automated Xvfb workflow using screenshots to debug Automation
     * +There are module load errors in KSP.log, not sure if its preventing AutoLoadGame from doing its thing, or if that is related to the Changelog startup dialog in KSP Main Menu.+ KSP 1.8.1 Works great
     * +Why are we stuck at the Change Log dialog on KSP Start?+ A bit annoying but appears to be inconsequential for my automation purposes.

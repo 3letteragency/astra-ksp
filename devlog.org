@@ -1,0 +1,12 @@
+#+TITLE: Devlog
+#+AUTHOR: Tyler Weldon
+#+EMAIL: tylerweldon94@gmail.com
+
+* <2020-09-26 Sat>
+- Ansible provisioner porting from bash is mostly finished. Just a couple small things like a SystemD service for automatically starting KSP on deployment, and autoconfiguring the firewall to allow connections to the kRPC ports from the provisioning machine(Laptop, workstation, etc.). Adding functionality via the ansible config will be very much easier than stuffing more bash in here. Once those are done I'll initiate a build based on the new provisioner, at which point I think we'll be able to get some real work done.
+
+  As we're running the game without graphics, we do need some kind of visuals. Initially I believe some combination of NASA's GMAT, and OpenMCT will do the trick. I'll begin by linking up:
+  + Some misc. [[https://krpc.github.io/krpc/python/api/space-center/space-center.html][SpaceCenter]], [[https://krpc.github.io/krpc/python/api/space-center/comms.html][Comms]], [[https://krpc.github.io/krpc/python/api/space-center/parts.html][Parts]], [[https://krpc.github.io/krpc/python/api/space-center/reference-frame.html][ReferenceFrame]], and [[https://krpc.github.io/krpc/python/api/space-center/waypoints.html][Waypoints]] functions
+  + Most of the [[https://krpc.github.io/krpc/python/api/space-center/vessel.html][Vessel]], [[https://krpc.github.io/krpc/python/api/space-center/vessel.html][CelestialBody]], [[https://krpc.github.io/krpc/python/api/space-center/flight.html][Flight]], [[https://krpc.github.io/krpc/python/api/space-center/orbit.html][Orbit]], and [[https://krpc.github.io/krpc/python/api/krpc/krpc.html][kRPC]] functions
+
+  This should all give a pretty good picture of what is going on in the game so we can begin flying and experimenting with the Control and Flight functions.
