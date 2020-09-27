@@ -1,36 +1,36 @@
 
 # Table of Contents
 
-1.  [Astra](#orgca18cdc)
-    1.  [Stage 1 - Prep <code>[5/6]</code>](#org6d2e332)
-    2.  [Stage 2 - Data <code>[0/1]</code>](#org9c67a38)
-    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#orge5dde9e)
-    4.  [Stage 4 - Operations <code>[0/3]</code>](#org9ffea93)
-        1.  [For re-usable missions: <code>[0/1]</code>](#org4e0bacb)
-        2.  [Starlink(s) <code>[0/0]</code>](#orgabd1d47)
-        3.  [Long running, real time ops <code>[0/0]</code>](#org949c5ad)
-    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org8ce6739)
-    6.  [Backlog/As Needed <code>[0/2]</code>](#org7a6bb7d)
-    7.  [KSP Mod Requirements](#org6240c23)
-    8.  [On Hold](#orgaae5537)
+1.  [Astra](#orga1c27b0)
+    1.  [Stage 1 - Prep <code>[5/6]</code>](#orgac05814)
+    2.  [Stage 2 - Data <code>[0/1]</code>](#orgdf76b68)
+    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org93d3109)
+    4.  [Stage 4 - Operations <code>[0/3]</code>](#orgfeca566)
+        1.  [For re-usable missions: <code>[0/1]</code>](#org7f5fb46)
+        2.  [Starlink(s) <code>[0/0]</code>](#org3914b42)
+        3.  [Long running, real time ops <code>[0/0]</code>](#org8faf256)
+    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org66ab373)
+    6.  [Backlog/As Needed <code>[0/2]</code>](#orgda7e30e)
+    7.  [KSP Mod Requirements](#orgfa83845)
+    8.  [On Hold](#org56b78b3)
 
 
 
-<a id="orgca18cdc"></a>
+<a id="orga1c27b0"></a>
 
 # Astra
 
 
-<a id="org6d2e332"></a>
+<a id="orgac05814"></a>
 
 ## STRT Stage 1 - Prep <code>[5/6]</code>
 
 -   [X] Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)
--   [-] Base VM Image(Packer) <code>[11/14]</code>
+-   [-] Base VM Image(Packer) <code>[13/14]</code>
     -   [X] Change KSP version from 1.9.1 to 1.8.1 in SpaceX Pack craft files
     -   [X] Add vehicles to Astra game save VAB
-    -   [ ] Figure out how to get a `systemd --user` instance running on Astra user
-    -   [ ] Systemd user service to start game
+    -   [X] Figure out how to get a `systemd --user` instance running on Astra user
+    -   [X] Systemd user service to start game
         -   added systemd service/linger config, but may need to set XDG<sub>RUNTIME</sub><sub>DIR</sub> var in the systemd task as shown [here](https://gist.github.com/carlwgeorge/dbe186ce7562843932ebd03ccccd1a6d).
     -   [ ] Figure something out w/ firewall
     -   [X] Automate mod install <code>[6/6]</code>
@@ -55,7 +55,7 @@
 -   [X] Debug RO Install, problems w/ Kopernicus?
 
 
-<a id="org9c67a38"></a>
+<a id="orgdf76b68"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -63,7 +63,7 @@
     -   Pipe into GMAT and OpenMCT ??? - yes
 
 
-<a id="orge5dde9e"></a>
+<a id="org93d3109"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -71,34 +71,34 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org9ffea93"></a>
+<a id="orgfeca566"></a>
 
 ## TODO Stage 4 - Operations <code>[0/3]</code>
 
 
-<a id="org4e0bacb"></a>
+<a id="org7f5fb46"></a>
 
 ### [-] For re-usable missions: <code>[0/1]</code>
 
 1.  [ ] Will need something like [FMRS](https://forum.kerbalspaceprogram.com/index.php?/topic/157214-19x-flight-manager-for-reusable-stages-fmrs-now-with-recoverycontroller-integration/) implemented via kRPC
 
 
-<a id="orgabd1d47"></a>
+<a id="org3914b42"></a>
 
 ### [-] Starlink(s) <code>[0/0]</code>
 
 
-<a id="org949c5ad"></a>
+<a id="org8faf256"></a>
 
 ### [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="org8ce6739"></a>
+<a id="org66ab373"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="org7a6bb7d"></a>
+<a id="orgda7e30e"></a>
 
 ## TODO Backlog/As Needed <code>[0/2]</code>
 
@@ -117,7 +117,7 @@
     -   [ ] Astractl
 
 
-<a id="org6240c23"></a>
+<a id="orgfa83845"></a>
 
 ## KSP Mod Requirements
 
@@ -127,7 +127,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orgaae5537"></a>
+<a id="org56b78b3"></a>
 
 ## On Hold
 

@@ -6,11 +6,11 @@
 * Astra
 ** STRT Stage 1 - Prep [5/6]
   - [X] Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)
-  - [-] Base VM Image(Packer) [11/14]
+  - [-] Base VM Image(Packer) [13/14]
     - [X] Change KSP version from 1.9.1 to 1.8.1 in SpaceX Pack craft files
     - [X] Add vehicles to Astra game save VAB
-    - [ ] Figure out how to get a ~systemd --user~ instance running on Astra user
-    - [ ] Systemd user service to start game
+    - [X] Figure out how to get a ~systemd --user~ instance running on Astra user
+    - [X] Systemd user service to start game
       - added systemd service/linger config, but may need to set XDG_RUNTIME_DIR var in the systemd task as shown [[https://gist.github.com/carlwgeorge/dbe186ce7562843932ebd03ccccd1a6d][here]].
     - [ ] Figure something out w/ firewall
     - [X] Automate mod install [6/6]
