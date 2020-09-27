@@ -32,3 +32,8 @@
   apt:
     deb: "{{ task_vars.ckan_deb_url }}"
     state: present
+
+- name: Install boto3 py lib for S3 tasks
+  apt:
+    name: python3-boto3
+    state: present
