@@ -59,11 +59,14 @@
     owner: "{{ game_user }}"
     group: "{{ game_user }}"
 
+- name: Start game users systemd instance on boot
+  command: "loginctl enable-linger {{ game_user }}"
+
 - name: Enable Astra systemd service
+  become: true
+  become_user: "{{ game_user }}"
   systemd:
     name: astra
     enabled: yes
     scope: user
-
-- name: Start game users systemd instance on boot
-  command: "loginctl enable-linger {{ game_user }}"
+   
