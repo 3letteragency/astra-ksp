@@ -13,6 +13,7 @@
     - [X] Systemd user service to start game
       - added systemd service/linger config, but may need to set XDG_RUNTIME_DIR var in the systemd task as shown [[https://gist.github.com/carlwgeorge/dbe186ce7562843932ebd03ccccd1a6d][here]].
     - [ ] Figure something out w/ firewall
+      + I think leaving the image as is, and opening the kRPC Ports via a TF provisioner combined w/ the HTTP Datasource(to get ifconfig.me data) will be a good solution
     - [X] Automate mod install [6/6]
       - [X] [[https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/][KK's SpaceX Pack]]
       - [X] RO via CKAN
