@@ -1,38 +1,38 @@
 
 # Table of Contents
 
-1.  [Astra](#org89e42a8)
-    1.  [Stage 1 - Prep <code>[5/6]</code>](#org95db389)
-    2.  [Stage 2 - Data <code>[0/1]</code>](#org9b62a5c)
-    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org30e8834)
-    4.  [Stage 4 - Operations <code>[0/3]</code>](#org083f045)
-        1.  [For re-usable missions: <code>[0/1]</code>](#orgda52a6d)
-        2.  [Starlink(s) <code>[0/0]</code>](#org61dc724)
-        3.  [Long running, real time ops <code>[0/0]</code>](#org0322832)
-    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#org2161ddf)
-    6.  [Backlog/As Needed <code>[0/2]</code>](#orgc894e8b)
-    7.  [KSP Mod Requirements](#org9e2ddcd)
-    8.  [On Hold](#orga61a90d)
+1.  [Astra](#orge58c519)
+    1.  [Stage 1 - Prep <code>[5/6]</code>](#orgd61d65c)
+    2.  [Stage 2 - Data <code>[0/1]</code>](#org6452022)
+    3.  [Stage 3 - RL Software integrations <code>[0/2]</code>](#org8942559)
+    4.  [Stage 4 - Operations <code>[0/3]</code>](#org9da0a69)
+        1.  [For re-usable missions: <code>[0/1]</code>](#org1bda0c3)
+        2.  [Starlink(s) <code>[0/0]</code>](#org182b3ff)
+        3.  [Long running, real time ops <code>[0/0]</code>](#org6ebc88d)
+    5.  [Stage 5 - Stream Real Time Ops <code>[0/0]</code>](#orgd8d86ec)
+    6.  [Backlog/As Needed <code>[0/2]</code>](#org861ef4f)
+    7.  [KSP Mod Requirements](#orgd999962)
+    8.  [On Hold](#orgb22f681)
 
 
 
-<a id="org89e42a8"></a>
+<a id="orge58c519"></a>
 
 # Astra
 
 
-<a id="org95db389"></a>
+<a id="orgd61d65c"></a>
 
 ## STRT Stage 1 - Prep <code>[5/6]</code>
 
 -   [X] Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)
--   [-] Base VM Image(Packer) <code>[13/14]</code>
+-   [-] Base VM Image(Packer) <code>[14/14]</code>
     -   [X] Change KSP version from 1.9.1 to 1.8.1 in SpaceX Pack craft files
     -   [X] Add vehicles to Astra game save VAB
     -   [X] Figure out how to get a `systemd --user` instance running on Astra user
     -   [X] Systemd user service to start game
         -   added systemd service/linger config, but may need to set XDG<sub>RUNTIME</sub><sub>DIR</sub> var in the systemd task as shown [here](https://gist.github.com/carlwgeorge/dbe186ce7562843932ebd03ccccd1a6d).
-    -   [ ] Figure something out w/ firewall
+    -   [X] Figure something out w/ firewall
         -   I think leaving the image as is, and opening the kRPC Ports via a TF provisioner combined w/ the HTTP Datasource(to get ifconfig.me data) will be a good solution
     -   [X] Automate mod install <code>[6/6]</code>
         -   [X] [KK&rsquo;s SpaceX Pack](https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/)
@@ -56,7 +56,7 @@
 -   [X] Debug RO Install, problems w/ Kopernicus?
 
 
-<a id="org9b62a5c"></a>
+<a id="org6452022"></a>
 
 ## TODO Stage 2 - Data <code>[0/1]</code>
 
@@ -64,7 +64,7 @@
     -   Pipe into GMAT and OpenMCT ??? - yes
 
 
-<a id="org30e8834"></a>
+<a id="org8942559"></a>
 
 ## TODO Stage 3 - RL Software integrations <code>[0/2]</code>
 
@@ -72,34 +72,34 @@
 -   [ ] [OpenMCT](https://github.com/nasa/openmct) - Ops HUD
 
 
-<a id="org083f045"></a>
+<a id="org9da0a69"></a>
 
 ## TODO Stage 4 - Operations <code>[0/3]</code>
 
 
-<a id="orgda52a6d"></a>
+<a id="org1bda0c3"></a>
 
 ### [-] For re-usable missions: <code>[0/1]</code>
 
 1.  [ ] Will need something like [FMRS](https://forum.kerbalspaceprogram.com/index.php?/topic/157214-19x-flight-manager-for-reusable-stages-fmrs-now-with-recoverycontroller-integration/) implemented via kRPC
 
 
-<a id="org61dc724"></a>
+<a id="org182b3ff"></a>
 
 ### [-] Starlink(s) <code>[0/0]</code>
 
 
-<a id="org0322832"></a>
+<a id="org6ebc88d"></a>
 
 ### [-] Long running, real time ops <code>[0/0]</code>
 
 
-<a id="org2161ddf"></a>
+<a id="orgd8d86ec"></a>
 
 ## TODO Stage 5 - Stream Real Time Ops <code>[0/0]</code>
 
 
-<a id="orgc894e8b"></a>
+<a id="org861ef4f"></a>
 
 ## TODO Backlog/As Needed <code>[0/2]</code>
 
@@ -118,7 +118,7 @@
     -   [ ] Astractl
 
 
-<a id="org9e2ddcd"></a>
+<a id="orgd999962"></a>
 
 ## KSP Mod Requirements
 
@@ -128,7 +128,7 @@
 -   [kOS](https://ksp-kos.github.io/KOS/) - kOS might be useful for some simpler tasks where we don&rsquo;t want the full power of kRPC. Might use, might not. We&rsquo;ll see.
 
 
-<a id="orga61a90d"></a>
+<a id="orgb22f681"></a>
 
 ## On Hold
 
