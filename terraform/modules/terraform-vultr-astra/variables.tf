@@ -12,3 +12,8 @@ variable "snapshot" {
   type = string
   default = "astra-node"
 }
+
+variable "flight_count" {
+  type = string
+  default = 1
+}

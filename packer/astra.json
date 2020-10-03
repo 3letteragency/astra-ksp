@@ -1,16 +1,9 @@
 {
   "variables": {
     "vultr_api_key": "{{ env `VULTR_API_KEY` }}",
-    "game_archive_url": "{{ env `GAME_ARCHIVE_URL` }}",
-    "ckan_version": "{{ env `CKAN_VERSION` }}",
-    "ckan_deb_url": "{{ env `CKAN_DEB_URL` }}",
-    "krpc_version": "{{ env `KRPC_VERSION` }}",
-    "krpc_zip_url": "{{ env `KRPC_ZIP_URL` }}",
-    "vultr_ssh_key_id_mission_control": "{{ env `VULTR_SSH_KEY_ID_MISSION_CONTROL` }}",
-    "autoloadgame_version": "{{ env `AUTOLOADGAME_VERSION`}}",
-    "autoloadgame_zip_url": "{{ env `AUTOLOADGAME_ZIP_URL` }}",
-    "principia_zip_filename": "{{ env `PRINCIPIA_ZIP_FILENAME` }}",
-    "principia_zip_url": "{{ env `PRINCIPIA_ZIP_URL` }}"
+    "s3_access_key": "{{ env `S3_ACCESS_KEY` }}",
+    "s3_secret_key": "{{ env `S3_SECRET_KEY` }}",
+    "vultr_ssh_key_id_mission_control": "5ed67cbe05110"
   },
   "builders": [
     {
@@ -31,85 +24,17 @@
   ],
   "provisioners": [
     {
-      "type": "file",
-      "source": "files/ksp-conf",
-      "destination": "/tmp/ksp-conf"
-    },
-    {
       "type": "shell",
-      "environment_vars": [
-        "GAME_ARCHIVE_URL={{ user `game_archive_url` }}",
-        "CKAN_VERSION={{ user `ckan_version` }}",
-        "CKAN_DEB_URL={{ user `ckan_deb_url` }}",
-        "KRPC_VERSION={{ user `krpc_version` }}",
-        "KRPC_ZIP_URL={{ user `krpc_zip_url` }}",
-        "AUTOLOADGAME_VERSION={{ user `autoloadgame_version` }}",
-        "AUTOLOADGAME_ZIP_URL={{ user `autoloadgame_zip_url` }}",
-        "PRINCIPIA_ZIP_FILENAME={{ user `principia_zip_filename` }}",
-        "PRINCIPIA_ZIP_URL={{ user `principia_zip_url` }}"
-      ],
       "inline": [
         "apt -y update",
-        "apt -y install mono-runtime unzip xvfb x11vnc libc++1-8 libc++abi1-8",
-        "useradd -m astra",
-        "chsh astra -s /bin/bash",
-        "mkdir -p /home/astra/ksp",
-        "wget $GAME_ARCHIVE_URL -O /tmp/ksp.tar.gz",
-        "tar -xzvf /tmp/ksp.tar.gz -C /home/astra/ksp",
-        "rm -f /tmp/ksp.tar.gz",
-        "cd /tmp",
-        "wget $CKAN_DEB_URL -O /tmp/ckan_${CKAN_VERSION}_all.deb",
-        "apt -y install /tmp/ckan_${CKAN_VERSION}_all.deb",
-        "rm -f /tmp/ckan_${CKAN_VERSION}_all.deb",
-        "su astra -c 'ckan ksp add astra /home/astra/ksp'",
-        "cd /tmp",
-        "wget $KRPC_ZIP_URL -O /tmp/krpc-${KRPC_VERSION}.zip",
-        "mkdir krpc",
-        "unzip /tmp/krpc-${KRPC_VERSION}.zip -d /tmp/krpc",
-        "mv /tmp/krpc/GameData/kRPC /home/astra/ksp/GameData",
-        "rm -rf /tmp/krpc",
-        "rm -f /tmp/krpc-${KRPC_VERSION}.zip",
-        "wget $AUTOLOADGAME_ZIP_URL -O /tmp/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip",
-        "mkdir -p /tmp/alg",
-        "unzip /tmp/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip -d /tmp/alg",
-        "mv /tmp/alg/GameData/AutoLoadGame/ /home/astra/ksp/GameData/",
-        "chown -R astra:astra /home/astra/ksp/GameData",
-        "rm -rf /tmp/alg",
-        "rm -f /tmp/AutoLoadGame-v${AUTOLOADGAME_VERSION}.zip",
-        "su astra -c 'ckan update'",
-        "su astra -c 'ckan install --headless RSSTextures2048'",
-        "su astra -c 'ckan install --headless --no-recommends RealSolarSystem'",
-        "su astra -c 'ckan install --headless RealismOverhaul'",
-        "su astra -c 'ckan compat add 1.9.1'",
-        "su astra -c 'ckan install --headless SpaceXLaunchVehicles'",
-        "mkdir /tmp/principia",
-        "wget $PRINCIPIA_ZIP_URL -O /tmp/$PRINCIPIA_ZIP_FILENAME",
-        "unzip /tmp/$PRINCIPIA_ZIP_FILENAME -d /tmp/principia",
-        "mv /tmp/principia/GameData/Principia /home/astra/ksp/GameData",
-        "rm -rf /tmp/principia",
-        "cp /home/astra/Ships/VAB/SpaceX* /home/astra/ksp/saves/Astra/Ships/VAB/",
-        "chown -R astra:astra /home/astra"
+        "apt -y install ansible"
       ]
     },
     {
-      "type": "file",
-      "source": "files/ksp-conf/Astra",
-      "destination": "/home/astra/ksp/saves"
-    },
-    {
-      "type": "file",
-      "source": "files/ksp-conf/AutoLoadGame.conf",
-      "destination": "/home/astra/ksp/saves/AutoLoadGame.conf"
-    },
-    {
-      "type": "file",
-      "source": "files/ksp-conf/krpc-settings.cfg",
-      "destination": "/home/astra/ksp/GameData/kRPC/PluginData/settings.cfg"
-    },
-    {
-      "type": "file",
-      "source": "files/ksp-conf/ksp-settings.cfg",
-      "destination": "/home/astra/ksp/settings.cfg"
+      "type": "ansible-local",
+      "playbook_dir": "files/ansible",
+      "playbook_file": "files/ansible/astra.yml",
+      "extra_arguments": ["--extra-vars", "\"s3_access_key={{ user `s3_access_key` }} s3_secret_key={{ user `s3_secret_key` }}\""]
     }
   ]
 }

@@ -4,25 +4,25 @@
 #+EMAIL: tylerweldon94@gmail.com
 
 * Astra
-** STRT Stage 1 - Prep [4/6]
-  - [ ] Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)
-  - [-] Base VM Image(Packer) [8/15]
-    - [ ] Forgot to add final chown after adding conf files
-    - [ ] Archive SpaceX Pack
-    - [ ] Change KSP version from 1.9.1 to 1.8.1 in SpaceX Pack craft files
-    - [ ] Add vehicles to Astra game save VAB
-    - [ ] Systemd user service to start game
-    - [ ] Figure something out w/ firewall
-    - [-] Automate mod install [5/6]
-      - [ ] [[https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/][KK's SpaceX Pack]]
+** STRT Stage 1 - Prep [5/6]
+  - [X] Script or Ansible or etc. Out Packer Script provisioner(getting long and unweildy)
+  - [-] Base VM Image(Packer) [14/14]
+    - [X] Change KSP version from 1.9.1 to 1.8.1 in SpaceX Pack craft files
+    - [X] Add vehicles to Astra game save VAB
+    - [X] Figure out how to get a ~systemd --user~ instance running on Astra user
+    - [X] Systemd user service to start game
+      - added systemd service/linger config, but may need to set XDG_RUNTIME_DIR var in the systemd task as shown [[https://gist.github.com/carlwgeorge/dbe186ce7562843932ebd03ccccd1a6d][here]].
+    - [X] Figure something out w/ firewall
+      + I think leaving the image as is, and opening the kRPC Ports via a TF provisioner combined w/ the HTTP Datasource(to get ifconfig.me data) will be a good solution
+    - [X] Automate mod install [6/6]
+      - [X] [[https://forum.kerbalspaceprogram.com/index.php?/topic/193933-110-kks-spacex-pack-july-06-2020/][KK's SpaceX Pack]]
       - [X] RO via CKAN
-        * Debug, make sure startup is ok
       - [X] Principia
       - [X] Install CKAN.deb
       - [X] kRPC manually from github
       - [X] AutoLoadGame - Allista
     - [X] astra-base.sfs
-      * Might need to hop into a graphical run to get the minimal base + mods setup
+      * +Might need to hop into a graphical run to get the minimal base + mods setup+
     - [X] AutoLoadGame.conf
     - [X] settings.cfg
     - [X] krpc-settings.cfg
@@ -40,11 +40,14 @@
 ** TODO Stage 3 - RL Software integrations [0/2]
 - [ ] [[https://opensource.gsfc.nasa.gov/projects/GMAT/index.php][GMAT]] - Planning
 - [ ] [[https://github.com/nasa/openmct][OpenMCT]] - Ops HUD
-** TODO Stage 4 - Operations [0/2]
-- [-] Starlink(s) [0/0]
-- [-] Long running, real time ops [0/0]
+** TODO Stage 4 - Operations [0/3]
+*** [-] For re-usable missions: [0/1]
+**** [ ] Will need something like [[https://forum.kerbalspaceprogram.com/index.php?/topic/157214-19x-flight-manager-for-reusable-stages-fmrs-now-with-recoverycontroller-integration/][FMRS]] implemented via kRPC
+*** [-] Starlink(s) [0/0]
+*** [-] Long running, real time ops [0/0]
 ** TODO Stage 5 - Stream Real Time Ops [0/0]
 ** TODO Backlog/As Needed [0/2]
+  - [ ] If TCP latency becomes a problem, try implementing a kRPC unix socket comm. protocol
   - [ ] Need to implement an automated Xvfb workflow using screenshots to debug Automation
     * +There are module load errors in KSP.log, not sure if its preventing AutoLoadGame from doing its thing, or if that is related to the Changelog startup dialog in KSP Main Menu.+ KSP 1.8.1 Works great
     * +Why are we stuck at the Change Log dialog on KSP Start?+ A bit annoying but appears to be inconsequential for my automation purposes.
