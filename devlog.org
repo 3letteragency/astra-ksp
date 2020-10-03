@@ -10,3 +10,6 @@
   + Most of the [[https://krpc.github.io/krpc/python/api/space-center/vessel.html][Vessel]], [[https://krpc.github.io/krpc/python/api/space-center/vessel.html][CelestialBody]], [[https://krpc.github.io/krpc/python/api/space-center/flight.html][Flight]], [[https://krpc.github.io/krpc/python/api/space-center/orbit.html][Orbit]], and [[https://krpc.github.io/krpc/python/api/krpc/krpc.html][kRPC]] functions
 
   This should all give a pretty good picture of what is going on in the game so we can begin flying and experimenting with the Control and Flight functions.
+
+* <2020-10-03 Sat>
+- Another Saturday. I got the KSP systemd service and automatated opening the firewall for kRPC ports for connections from the controlling machine. Once I build the final image esetting to the base game becomes a matter of just `terraform destroy; terraform apply`. Time to start piping data into OpenMCT and GMAT.

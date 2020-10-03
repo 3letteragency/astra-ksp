@@ -1,11 +1,12 @@
 
 # Table of Contents
 
-1.  [<span class="timestamp-wrapper"><span class="timestamp">&lt;2020-09-26 Sat&gt;</span></span>](#org77e4543)
+1.  [<span class="timestamp-wrapper"><span class="timestamp">&lt;2020-09-26 Sat&gt;</span></span>](#orgbb3e774)
+2.  [<span class="timestamp-wrapper"><span class="timestamp">&lt;2020-10-03 Sat&gt;</span></span>](#org9ef90e7)
 
 
 
-<a id="org77e4543"></a>
+<a id="orgbb3e774"></a>
 
 # <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-09-26 Sat&gt;</span></span>
 
@@ -17,4 +18,11 @@
     -   Most of the [Vessel](https://krpc.github.io/krpc/python/api/space-center/vessel.html), [CelestialBody](https://krpc.github.io/krpc/python/api/space-center/vessel.html), [Flight](https://krpc.github.io/krpc/python/api/space-center/flight.html), [Orbit](https://krpc.github.io/krpc/python/api/space-center/orbit.html), and [kRPC](https://krpc.github.io/krpc/python/api/krpc/krpc.html) functions
     
     This should all give a pretty good picture of what is going on in the game so we can begin flying and experimenting with the Control and Flight functions.
+
+
+<a id="org9ef90e7"></a>
+
+# <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-10-03 Sat&gt;</span></span>
+
+-   Another Saturday. I got the KSP systemd service and automatated opening the firewall for kRPC ports for connections from the controlling machine. Once I build the final image esetting to the base game becomes a matter of just \`terraform destroy; terraform apply\`. Time to start piping data into OpenMCT and GMAT.
 
