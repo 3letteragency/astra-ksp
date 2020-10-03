@@ -1,12 +1,12 @@
 
 # Table of Contents
 
-1.  [<span class="timestamp-wrapper"><span class="timestamp">&lt;2020-09-26 Sat&gt;</span></span>](#orgbb3e774)
-2.  [<span class="timestamp-wrapper"><span class="timestamp">&lt;2020-10-03 Sat&gt;</span></span>](#org9ef90e7)
+1.  [<span class="timestamp-wrapper"><span class="timestamp">&lt;2020-09-26 Sat&gt;</span></span>](#org719d184)
+2.  [<span class="timestamp-wrapper"><span class="timestamp">&lt;2020-10-03 Sat&gt;</span></span>](#orgd3d589e)
 
 
 
-<a id="orgbb3e774"></a>
+<a id="org719d184"></a>
 
 # <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-09-26 Sat&gt;</span></span>
 
@@ -20,9 +20,9 @@
     This should all give a pretty good picture of what is going on in the game so we can begin flying and experimenting with the Control and Flight functions.
 
 
-<a id="org9ef90e7"></a>
+<a id="orgd3d589e"></a>
 
 # <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-10-03 Sat&gt;</span></span>
 
--   Another Saturday. I got the KSP systemd service and automatated opening the firewall for kRPC ports for connections from the controlling machine. Once I build the final image esetting to the base game becomes a matter of just \`terraform destroy; terraform apply\`. Time to start piping data into OpenMCT and GMAT.
+-   Another Saturday. I got the KSP systemd service and automatated opening the firewall for kRPC ports for connections from the controlling machine. Final image is built so we can start with the fun stuff, piping data into OpenMCT and GMAT.
 

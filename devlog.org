@@ -12,4 +12,4 @@
   This should all give a pretty good picture of what is going on in the game so we can begin flying and experimenting with the Control and Flight functions.
 
 * <2020-10-03 Sat>
-- Another Saturday. I got the KSP systemd service and automatated opening the firewall for kRPC ports for connections from the controlling machine. Once I build the final image esetting to the base game becomes a matter of just `terraform destroy; terraform apply`. Time to start piping data into OpenMCT and GMAT.
+- Another Saturday. I got the KSP systemd service and automatated opening the firewall for kRPC ports for connections from the controlling machine. Final image is built so we can start with the fun stuff, piping data into OpenMCT and GMAT.
