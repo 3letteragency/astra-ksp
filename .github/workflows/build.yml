@@ -30,7 +30,7 @@ jobs:
           KSP_TAR_FILENAME: "ksp-${KSP_VERSION}.tar.gz"
 
         run: |
-          apt -y install s3cmd
+          sudo apt -y install s3cmd
           echo "$S3_CFG" > ~/.s3cfg
           steamcmd +login $STEAM_USER $STEAM_PASS +download_depot $KSP_STEAM_APP_ID $KSP_STEAM_DEPOT_ID $KSP_STEAM_MANIFEST_ID +quit
           mv /opt/hostedtoolcache/steamcmd/latest/i386/linux32/steamapps/content/app_"$KSP_STEAM_APP_ID"/depot_"$KSP_STEAM_DEPOT_ID" "$KSP_TMP_DIR"
