@@ -10,7 +10,7 @@ on:
 
 jobs:
   game-archiver:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: Installing Steam
         run: |
