@@ -1,0 +1,8 @@
+name: Build
+
+jobs:
+  game-archiver:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Installing Steam
+        run: sudo apt -y install steamcmd
