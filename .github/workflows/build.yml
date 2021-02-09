@@ -27,7 +27,7 @@ jobs:
           KSP_STEAM_MANIFEST_ID: "8147916484178367240"
           KSP_VERSION: "1.8.1"
           KSP_TMP_DIR: "~/ksp"
-          KSP_TAR_FILENAME: ksp-${{ env.KSP_VERSION }}.tar.gz
+          KSP_TAR_FILENAME: ksp-$KSP_VERSION.tar.gz
 
         run: env
 
