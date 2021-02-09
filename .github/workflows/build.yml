@@ -24,4 +24,7 @@ jobs:
           KSP_STEAM_MANIFEST_ID: 8147916484178367240
 
         run: |
-          steamcmd +login $STEAM_USER $STEAM_PASS +download_depot $KSP_STEAM_APP_ID $KSP_STEAM_DEPOT_ID $KSP_STEAM_MANIFEST_ID +quit
+          echo "KSP App ID: $KSP_STEAM_APP_ID"
+          echo "KSP Steam Depot ID: $KSP_STEAM_DEPOT_ID"
+          echo "KSP Steam Manifest ID: $KSP_STEAM_MANIFEST_ID"
+          steamcmd +login "$STEAM_USER" "$STEAM_PASS" +download_depot "$KSP_STEAM_APP_ID" "$KSP_STEAM_DEPOT_ID" "$KSP_STEAM_MANIFEST_ID" +quit
