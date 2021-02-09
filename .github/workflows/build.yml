@@ -13,4 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Installing Steam
-        run: sudo apt -y install steamcmd
+        run: |
+          sudo dpkg --add-architecture i386
+          sudo apt -y update
+          sudo apt -y install steamcmd
