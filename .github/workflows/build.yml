@@ -27,12 +27,13 @@ jobs:
           KSP_STEAM_MANIFEST_ID: "8147916484178367240"
           KSP_VERSION: "1.8.1"
           KSP_TMP_DIR: "~/ksp"
-          KSP_TAR_FILENAME: "ksp-${KSP_VERSION}.tar.gz"
+          KSP_TAR_FILENAME: "ksp-$KSP_VERSION.tar.gz"
 
         run: |
           sudo apt -y install s3cmd
           echo "$S3_CFG" > ~/.s3cfg
           steamcmd +login $STEAM_USER $STEAM_PASS +download_depot $KSP_STEAM_APP_ID $KSP_STEAM_DEPOT_ID $KSP_STEAM_MANIFEST_ID +quit
-          mv /opt/hostedtoolcache/steamcmd/latest/i386/linux32/steamapps/content/app_"$KSP_STEAM_APP_ID"/depot_"$KSP_STEAM_DEPOT_ID" "$KSP_TMP_DIR"
+          ls -la /opt/hostedtoolcache/steamcmd/latest/i386/linux32
+          mv /opt/hostedtoolcache/steamcmd/latest/i386/linux32\steamapps\content\app_"$KSP_STEAM_APP_ID"\depot_"$KSP_STEAM_DEPOT_ID" "$KSP_TMP_DIR"
           tar -C "$KSP_TMP_DIR" -czvf "$KSP_TAR_FILENAME"
           s3cmd put ~/"$KSP_TAR_FILENAME" "$ASTRA_ASSETS_BUCKET"/"$ASTRA_ASSETS_BUCKET_GAME_ARCHIVE_PREFIX"/"$KSP_TAR_FILENAME"
