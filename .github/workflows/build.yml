@@ -19,12 +19,12 @@ jobs:
         env:
           STEAM_USER: ${{ secrets.STEAM_USER }}
           STEAM_PASS: ${{ secrets.STEAM_PASS }}
-          KSP_STEAM_APP_ID: 220200
-          KSP_STEAM_DEPOT_ID: 220203
-          KSP_STEAM_MANIFEST_ID: 8147916484178367240
+          KSP_STEAM_APP_ID: "220200"
+          KSP_STEAM_DEPOT_ID: "220203"
+          KSP_STEAM_MANIFEST_ID: "8147916484178367240"
 
         run: |
           echo "KSP App ID: $KSP_STEAM_APP_ID"
           echo "KSP Steam Depot ID: $KSP_STEAM_DEPOT_ID"
           echo "KSP Steam Manifest ID: $KSP_STEAM_MANIFEST_ID"
-          steamcmd +login "$STEAM_USER" "$STEAM_PASS" +download_depot "$KSP_STEAM_APP_ID" "$KSP_STEAM_DEPOT_ID" "$KSP_STEAM_MANIFEST_ID" +quit
+          steamcmd +login $STEAM_USER $STEAM_PASS +download_depot $KSP_STEAM_APP_ID $KSP_STEAM_DEPOT_ID $KSP_STEAM_MANIFEST_ID +quit
