@@ -12,8 +12,5 @@ jobs:
   game-archiver:
     runs-on: ubuntu-18.04
     steps:
-      - name: Installing Steam
-        run: |
-          sudo dpkg --add-architecture i386
-          sudo apt -y update
-          sudo apt -y install steamcmd
+      - name: Setup SteamCMD
+        uses: CyberAndrii/setup-steamcmd@v1.1.1
