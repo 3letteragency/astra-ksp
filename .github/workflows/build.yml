@@ -31,6 +31,6 @@ jobs:
         run: |
           steamcmd +login $STEAM_USER $STEAM_PASS +download_depot $KSP_STEAM_APP_ID $KSP_STEAM_DEPOT_ID $KSP_STEAM_MANIFEST_ID +quit
           mkdir -p "$KSP_TMP_DIR"
-          mv /opt/hostedtoolcache/steamcmd/latest/i386/linux32/steamapps/content/app_"$KSP_STEAM_APP_ID"/depot_"$KSP_STEAM_DEPOT_ID" "$KSP_TMP_DIR"
+          mv /opt/hostedtoolcache/steamcmd/latest/i386/linux32/steamapps/content/app_"$KSP_STEAM_APP_ID"/depot_"$KSP_STEAM_DEPOT_ID"/* "$KSP_TMP_DIR"
           ls -l "$KSP_TMP_DIR"
           tar -C "$KSP_TMP_DIR" -czvf ksp-$KSP_VERSION.tar.gz
