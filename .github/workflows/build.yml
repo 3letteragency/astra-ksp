@@ -15,7 +15,7 @@ jobs:
       - name: Setup SteamCMD
         uses: CyberAndrii/setup-steamcmd@v1.1.1
 
-      - name: Fetch and Archive KSP
+      - name: Fetch, Archive, and push KSP
         env:
           STEAM_USER: ${{ secrets.STEAM_USER }}
           STEAM_PASS: ${{ secrets.STEAM_PASS }}
@@ -30,16 +30,9 @@ jobs:
         run: |
           sudo apt -y update
           sudo apt -y install s3cmd
-#        run: |
-#          steamcmd +login $STEAM_USER $STEAM_PASS +download_depot $KSP_STEAM_APP_ID $KSP_STEAM_DEPOT_ID $KSP_STEAM_MANIFEST_ID +quit
-#          mkdir "$KSP_TMP_DIR"
-#          mv /opt/hostedtoolcache/steamcmd/latest/i386/linux32/steamapps/content/app_"$KSP_STEAM_APP_ID"/depot_"$KSP_STEAM_DEPOT_ID"/* "$KSP_TMP_DIR"
-#          tar -C "$KSP_TMP_DIR" -czvf ksp-$KSP_VERSION.tar.gz .
-
-#      - name: S3 Sync
-#        uses: jakejarvis/s3-sync-action@v0.5.1
-#        AWS_S3_BUCKET: ${{ secrets.ASTRA_ASSETS_S3_BUCKET }}
-#        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-#        SOURCE_DIR:
-#        DEST_DIR: "/astra-assets"
+          steamcmd +login $STEAM_USER $STEAM_PASS +download_depot $KSP_STEAM_APP_ID $KSP_STEAM_DEPOT_ID $KSP_STEAM_MANIFEST_ID +quit
+          mkdir "$KSP_TMP_DIR"
+          mv /opt/hostedtoolcache/steamcmd/latest/i386/linux32/steamapps/content/app_"$KSP_STEAM_APP_ID"/depot_"$KSP_STEAM_DEPOT_ID"/* "$KSP_TMP_DIR"
+          tar -C "$KSP_TMP_DIR" -czvf ksp-$KSP_VERSION.tar.gz .
+          echo "$S3_CFG" > .s3cfg
+          s3cmd -c .s3cfg put ./ksp-$KSP_VERSION.tar.gz $ASTRA_ASSETS_BUCKET/$ASTRA_ASSETS_BUCKET_GAME_ARCHIVE_PREFIX/ksp-$KSP_VERSION.tar.gz
