@@ -27,10 +27,19 @@ jobs:
           KSP_STEAM_MANIFEST_ID: "8147916484178367240"
           KSP_VERSION: "1.8.1"
           KSP_TMP_DIR: "ksp"
-
         run: |
-          steamcmd +login $STEAM_USER $STEAM_PASS +download_depot $KSP_STEAM_APP_ID $KSP_STEAM_DEPOT_ID $KSP_STEAM_MANIFEST_ID +quit
-          mkdir "$KSP_TMP_DIR"
-          mv /opt/hostedtoolcache/steamcmd/latest/i386/linux32/steamapps/content/app_"$KSP_STEAM_APP_ID"/depot_"$KSP_STEAM_DEPOT_ID"/* "$KSP_TMP_DIR"
-          tar -C "$KSP_TMP_DIR" -czvf ksp-$KSP_VERSION.tar.gz .
-          ls -la
+          sudo apt -y update
+          sudo apt -y install s3cmd
+#        run: |
+#          steamcmd +login $STEAM_USER $STEAM_PASS +download_depot $KSP_STEAM_APP_ID $KSP_STEAM_DEPOT_ID $KSP_STEAM_MANIFEST_ID +quit
+#          mkdir "$KSP_TMP_DIR"
+#          mv /opt/hostedtoolcache/steamcmd/latest/i386/linux32/steamapps/content/app_"$KSP_STEAM_APP_ID"/depot_"$KSP_STEAM_DEPOT_ID"/* "$KSP_TMP_DIR"
+#          tar -C "$KSP_TMP_DIR" -czvf ksp-$KSP_VERSION.tar.gz .
+
+#      - name: S3 Sync
+#        uses: jakejarvis/s3-sync-action@v0.5.1
+#        AWS_S3_BUCKET: ${{ secrets.ASTRA_ASSETS_S3_BUCKET }}
+#        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#        SOURCE_DIR:
+#        DEST_DIR: "/astra-assets"
